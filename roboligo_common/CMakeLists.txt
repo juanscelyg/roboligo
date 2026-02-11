@@ -11,6 +11,7 @@ find_package(rclcpp_lifecycle REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(mavros_msgs REQUIRED)
 
 add_library(${PROJECT_NAME} SHARED
   src/roboligo_common/types/RobotState.cpp
@@ -43,6 +44,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
   pluginlib::pluginlib
   ${sensor_msgs_TARGETS}
   ${nav_msgs_TARGETS}
+  ${mavros_msgs_TARGETS}
 )
 
 install(
@@ -77,5 +79,6 @@ ament_export_dependencies(
   pluginlib
   sensor_msgs
   nav_msgs
+  mavros_msgs
 )
 ament_package()

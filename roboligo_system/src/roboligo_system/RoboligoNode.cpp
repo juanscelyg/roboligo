@@ -1,5 +1,18 @@
+//  Copyright 2026 Juan S. Cely G.
+
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+
+//      https://www.apache.org/licenses/LICENSE-2.0
+
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+
 #include "roboligo_system/RoboligoNode.hpp"
-#include <functional>
 
 namespace roboligo
 {
@@ -52,6 +65,7 @@ RoboligoNode::on_configure(const rclcpp_lifecycle::State & state)
   get_parameter("stamped", stamped_);
 
   robot_state_->set_name(robot_name_);
+  robot_state_->set_stamp(stamped_);
 
   for (auto & roboligo_system_node : get_roboligo_system_nodes()) {
     RCLCPP_INFO(get_logger(), "Configuring [%s]", roboligo_system_node.first.c_str());
@@ -105,7 +119,12 @@ RoboligoNode::on_configure(const rclcpp_lifecycle::State & state)
       robot_state_->output->twist.publisher = create_publisher<geometry_msgs::msg::Twist>(
           robot_state_->output->get_topic(), qos_profile);
     }
+  }
 
+  if(robot_state_->position_target->is_configured())
+  {
+    robot_state_->position_target->position_target.publisher = create_publisher<mavros_msgs::msg::PositionTarget>(
+          robot_state_->position_target->get_topic(), qos_profile);
   }
 
 

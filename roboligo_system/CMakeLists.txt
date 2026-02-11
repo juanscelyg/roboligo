@@ -12,6 +12,7 @@ find_package(roboligo_common REQUIRED)
 find_package(roboligo_states REQUIRED)
 find_package(roboligo_connector REQUIRED)
 find_package(roboligo_interfaces REQUIRED)
+find_package(mavros_msgs REQUIRED)
 
 
 set(dependencies
@@ -53,6 +54,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
   ${roboligo_interfaces_TARGETS}
   ${lifecycle_msgs_TARGETS}
   ${std_srvs_TARGETS}
+  ${mavros_msgs_TARGETS}
 )
 
 add_executable(roboligo_main src/roboligo_main.cpp)
@@ -94,5 +96,6 @@ ament_export_dependencies(
   roboligo_states
   roboligo_connector
   roboligo_interfaces
+  mavros_msgs
 )
 ament_package()

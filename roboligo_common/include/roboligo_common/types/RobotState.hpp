@@ -1,3 +1,17 @@
+//  Copyright 2026 Juan S. Cely G.
+
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+
+//      https://www.apache.org/licenses/LICENSE-2.0
+
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+
 #ifndef ROBOLIGO_COMMON__ROBOT_HPP_
 #define ROBOLIGO_COMMON__ROBOT_HPP_
 
@@ -50,6 +64,10 @@ namespace roboligo
 
         void set_simulation(bool new_state);
 
+        bool is_stamped(void);
+
+        void set_stamp(bool new_state);
+
         std::string show_triggers(void);
 
         std::string show_modes(void);
@@ -68,6 +86,8 @@ namespace roboligo
 
         std::shared_ptr<roboligo::Input> input = std::make_shared<roboligo::Input>( "input", "input_topic");
 
+        std::shared_ptr<roboligo::Output> position_target = std::make_shared<roboligo::Output>( "position_target", "output_topic");
+
     private:
 
         std::string name_{"default_robot"}; ///< roboligo robot name 
@@ -79,6 +99,8 @@ namespace roboligo
         std::vector<Trigger> triggers_;
 
         bool available_{false};
+
+        bool stamped_{false};
 
     };
 }

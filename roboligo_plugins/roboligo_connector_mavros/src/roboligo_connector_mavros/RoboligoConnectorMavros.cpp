@@ -1,3 +1,17 @@
+//  Copyright 2026 Juan S. Cely G.
+
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+
+//      https://www.apache.org/licenses/LICENSE-2.0
+
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+
 #include "roboligo_connector_mavros/RoboligoConnectorMavros.hpp"
 
 using namespace std::chrono_literals;
@@ -98,10 +112,9 @@ namespace roboligo
         robot_state.gps->init("gps", "/mavros/global_position/global");
         robot_state.battery->init("baterry", "/mavros/battery");
         robot_state.odom->init("odom", "/mavros/local_position/odom");
-        robot_state.output->init("output", "/mavros/setpoint_velocity/cmd_vel_unstamped");
-        robot_state.output->set_stamp(false);
+        robot_state.position_target->init("output_position_target", "/mavros/setpoint_raw/local");
         robot_state.input->init("input", "/cmd_vel");
-        robot_state.input->set_stamp(false);
+        robot_state.input->set_stamp(robot_state.is_stamped());
 
         set_data_loss_exception(7);
         set_rcl_loss_exception(2);
@@ -116,29 +129,41 @@ namespace roboligo
     RoboligoConnectorMavros::on_update(RobotState & robot_state)
     {
         auto node = get_node();
-        if(robot_state.is_available() && robot_state.input->is_available() && robot_state.output->is_configured())
-        {           
-            if(robot_state.output->is_stamped() && robot_state.input->is_stamped()){
-                auto msg = geometry_msgs::msg::TwistStamped();
+        // RCLCPP_INFO_STREAM(node->get_logger(), "Available: " << robot_state.is_available() <<
+        //                                         "Available input: " << robot_state.input->is_available() <<
+        //                                         "Position targe configured: " << robot_state.position_target->is_configured());
+        if(robot_state.is_available() && robot_state.input->is_available() && robot_state.position_target->is_configured())
+        {     
+            auto msg = mavros_msgs::msg::PositionTarget();      
+            msg.coordinate_frame = robot_state.position_target->position_target.coordinate_frame;
+            msg.type_mask = robot_state.position_target->position_target.type_mask;
+
+            geometry_msgs::msg::Vector3 velocity;
+            float yaw_rate;
+
+            if(robot_state.input->is_stamped()){
                 msg.header.stamp = robot_state.input->twist_stamped.data->header.stamp;
-                msg.twist.linear.x = robot_state.input->twist_stamped.data->twist.linear.x;
-                msg.twist.linear.y = robot_state.input->twist_stamped.data->twist.linear.y;
-                msg.twist.linear.z = robot_state.input->twist_stamped.data->twist.linear.z;
-                msg.twist.angular.x = robot_state.input->twist_stamped.data->twist.angular.x;
-                msg.twist.angular.y = robot_state.input->twist_stamped.data->twist.angular.y;
-                msg.twist.angular.z = robot_state.input->twist_stamped.data->twist.angular.z;
-                robot_state.output->twist_stamped.publisher->publish(msg);
+
+                velocity.x = robot_state.input->twist_stamped.data->twist.linear.x;
+                velocity.y = robot_state.input->twist_stamped.data->twist.linear.y;
+                velocity.z = robot_state.input->twist_stamped.data->twist.linear.z;
+
+                yaw_rate = robot_state.input->twist_stamped.data->twist.angular.z;
+
 
             } else {
-                auto msg = geometry_msgs::msg::Twist();
-                msg.linear.x = robot_state.input->twist.data->linear.x;
-                msg.linear.y = robot_state.input->twist.data->linear.y;
-                msg.linear.z = robot_state.input->twist.data->linear.z;
-                msg.angular.x = robot_state.input->twist.data->angular.x;
-                msg.angular.y = robot_state.input->twist.data->angular.y;
-                msg.angular.z = robot_state.input->twist.data->angular.z;
-                robot_state.output->twist.publisher->publish(msg);
+                msg.header.stamp = node->get_clock()->now();
+
+                velocity.x = robot_state.input->twist.data->linear.x;
+                velocity.y = robot_state.input->twist.data->linear.y;
+                velocity.z = robot_state.input->twist.data->linear.z;
+
+                yaw_rate = robot_state.input->twist.data->angular.z;
+
             }
+            msg.velocity = velocity;
+            msg.yaw_rate = yaw_rate;
+            robot_state.position_target->position_target.publisher->publish(msg);
 
         }
     }
