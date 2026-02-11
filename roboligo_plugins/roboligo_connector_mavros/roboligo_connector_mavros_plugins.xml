@@ -1,0 +1,9 @@
+<class_libraries>
+  <library path="roboligo_connector_mavros">
+    <class name="roboligo_connector_mavros/RoboligoConnectorMavros"  type="roboligo::RoboligoConnectorMavros" base_class_type="roboligo::ConnectorBase">
+      <description>
+      Roboligo plugin for MavROS
+      </description>
+    </class>
+  </library>
+</class_libraries>

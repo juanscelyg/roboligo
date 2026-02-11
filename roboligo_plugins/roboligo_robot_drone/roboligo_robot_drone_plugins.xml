@@ -1,0 +1,9 @@
+<class_libraries>
+  <library path="roboligo_robot_drone">
+    <class name="roboligo_robot_drone/RoboligoRobotDrone"  type="roboligo::RoboligoRobotDrone" base_class_type="roboligo::ClassificationBase">
+      <description>
+      Roboligo plugin for a Drone States
+      </description>
+    </class>
+  </library>
+</class_libraries>

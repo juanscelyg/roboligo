@@ -1,0 +1,21 @@
+states_node:
+  ros__parameters:
+    use_sim_time: true
+    robot_types: [drone]
+    drone:
+      plugin: roboligo_robot_drone/RoboligoRobotDrone
+
+connector_node:
+  ros__parameters:
+    use_sim_time: true
+    connector_types: [mavros]
+    mavros:
+      plugin: roboligo_connector_mavros/RoboligoConnectorMavros
+
+roboligo_node:
+  ros__parameters:
+    use_sim_time: true
+    robot_name: droncito
+    input_topic: /cmd_vel
+    stamped: false
+
