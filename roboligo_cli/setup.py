@@ -22,7 +22,7 @@ setup(
     description='roboligo cli: roboligo cli tools to manage robots',
     long_description="""\
 roboligo cli: roboligo cli tools to manage robots.""",
-    license='GPL-3.0-only',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'ros2cli.command': [
