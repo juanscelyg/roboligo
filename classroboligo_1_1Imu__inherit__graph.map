@@ -1,0 +1,7 @@
+<map id="roboligo::Imu" name="roboligo::Imu">
+<area shape="rect" id="Node000001" title="IMU sensor connector that subscribes to sensor messages and manages IMU data." alt="" coords="15,153,109,178"/>
+<area shape="rect" id="Node000002" href="$classroboligo_1_1Sensor.html" title="A sensor class that extends Linker functionality for subscribing to sensor data." alt="" coords="5,79,119,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,120,65,152,59,152,59,120"/>
+<area shape="rect" id="Node000003" href="$classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections." alt="" coords="8,5,116,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,46,65,79,59,79,59,46"/>
+</map>

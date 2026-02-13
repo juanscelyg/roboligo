@@ -1,0 +1,7 @@
+<map id="roboligo::PluginBase" name="roboligo::PluginBase">
+<area shape="rect" id="Node000001" title="Base class for plugin implementations with lifecycle node integration." alt="" coords="123,5,262,31"/>
+<area shape="rect" id="Node000002" href="$classroboligo_1_1ClassificationBase.html" title="Base class for classification plugins in the Roboligo system." alt="" coords="5,79,185,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,43,113,81,110,76,162,38"/>
+<area shape="rect" id="Node000003" href="$classroboligo_1_1ConnectorBase.html" title="Base class for connector plugins that manage robot state transitions." alt="" coords="209,79,370,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,38,275,76,272,81,219,43"/>
+</map>

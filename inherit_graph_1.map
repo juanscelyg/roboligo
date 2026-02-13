@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,55,205,80"/>
+<area shape="rect" id="Node000001" href="$classroboligo_1_1ConnectorNode.html" title="A lifecycle node that manages the robot connector." alt="" coords="253,5,415,31"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="182,48,270,29,271,34,183,53"/>
+<area shape="rect" id="Node000002" href="$classroboligo_1_1RoboligoNode.html" title="A lifecycle node that manages the Roboligo robot system." alt="" coords="257,55,410,80"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="220,65,257,65,257,70,220,70"/>
+<area shape="rect" id="Node000003" href="$classroboligo_1_1StatesNode.html" title="A lifecycle node that manages the configuration robot." alt="" coords="263,104,404,130"/>
+<area shape="poly" id="edge4_Node000000_Node000003" title=" " alt="" coords="183,82,271,101,270,106,182,87"/>
+</map>

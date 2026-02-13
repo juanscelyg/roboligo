@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,177,110,202"/>
+<area shape="rect" id="Node000001" href="$classroboligo__cli_1_1verb_1_1arming_1_1ArmingVerb.html" title=" " alt="" coords="166,5,326,46"/>
+<area shape="poly" id="edge16_Node000000_Node000001" title=" " alt="" coords="71,162,105,109,129,81,156,57,177,44,180,49,159,61,133,85,110,112,75,165"/>
+<area shape="rect" id="Node000002" href="$classroboligo__cli_1_1verb_1_1disarming_1_1DisarmingVerb.html" title=" " alt="" coords="158,71,334,111"/>
+<area shape="poly" id="edge17_Node000000_Node000002" title=" " alt="" coords="87,165,156,122,184,109,186,114,159,127,90,170"/>
+<area shape="rect" id="Node000003" href="$classroboligo__cli_1_1verb_1_1landing_1_1LandingVerb.html" title=" " alt="" coords="165,136,326,177"/>
+<area shape="poly" id="edge18_Node000000_Node000003" title=" " alt="" coords="124,175,164,168,165,173,125,180"/>
+<area shape="rect" id="Node000004" href="$classroboligo__cli_1_1verb_1_1offboard_1_1OffboardVerb.html" title=" " alt="" coords="163,201,329,242"/>
+<area shape="poly" id="edge19_Node000000_Node000004" title=" " alt="" coords="125,198,163,205,162,210,124,204"/>
+<area shape="rect" id="Node000005" href="$classroboligo__cli_1_1verb_1_1standby_1_1StandbyVerb.html" title=" " alt="" coords="163,267,328,307"/>
+<area shape="poly" id="edge20_Node000000_Node000005" title=" " alt="" coords="91,209,159,251,186,264,184,268,156,256,88,214"/>
+<area shape="rect" id="Node000006" href="$classroboligo__cli_1_1verb_1_1takeoff_1_1TakeoffVerb.html" title=" " alt="" coords="166,332,326,373"/>
+<area shape="poly" id="edge21_Node000000_Node000006" title=" " alt="" coords="75,215,110,266,133,293,159,317,180,329,177,334,156,321,129,297,105,269,71,217"/>
+</map>

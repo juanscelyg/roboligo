@@ -1,0 +1,7 @@
+<map id="roboligo::Output" name="roboligo::Output">
+<area shape="rect" id="Node000001" title="Handles output commands for robot motion control." alt="" coords="21,153,132,178"/>
+<area shape="rect" id="Node000002" href="$classroboligo_1_1Commander.html" title="Base class for commanding robotic operations through message publishing." alt="" coords="5,79,148,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,120,79,152,74,152,74,120"/>
+<area shape="rect" id="Node000003" href="$classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections." alt="" coords="22,5,131,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,46,79,79,74,79,74,46"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="roboligo::ConnectorBase" name="roboligo::ConnectorBase">
+<area shape="rect" id="Node000001" title="Base class for connector plugins that manage robot state transitions." alt="" coords="5,79,167,105"/>
+<area shape="rect" id="Node000002" href="$classroboligo_1_1PluginBase.html" title="Base class for plugin implementations with lifecycle node integration." alt="" coords="17,5,155,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,46,89,79,83,79,83,46"/>
+</map>

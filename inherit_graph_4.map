@@ -1,0 +1,21 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections." alt="" coords="5,153,114,179"/>
+<area shape="rect" id="Node000001" href="$classroboligo_1_1Commander.html" title="Base class for commanding robotic operations through message publishing." alt="" coords="162,80,304,106"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="105,144,199,104,201,109,107,149"/>
+<area shape="rect" id="Node000005" href="$classroboligo_1_1Sensor.html" title="A sensor class that extends Linker functionality for subscribing to sensor data." alt="" coords="176,203,290,228"/>
+<area shape="poly" id="edge9_Node000000_Node000005" title=" " alt="" coords="123,181,186,199,184,205,121,186"/>
+<area shape="rect" id="Node000002" href="$classroboligo_1_1Input.html" title="Commander that subscribes to and processes Twist messages." alt="" coords="360,5,461,31"/>
+<area shape="poly" id="edge6_Node000001_Node000002" title=" " alt="" coords="278,71,351,40,376,29,378,34,353,45,280,76"/>
+<area shape="rect" id="Node000003" href="$classroboligo_1_1Output.html" title="Handles output commands for robot motion control." alt="" coords="354,55,466,80"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="319,78,353,73,354,78,319,83"/>
+<area shape="rect" id="Node000004" href="$classroboligo_1_1Service.html" title="A service commander that extends the Commander interface." alt="" coords="352,104,468,130"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="320,102,352,106,351,112,319,107"/>
+<area shape="rect" id="Node000006" href="$classroboligo_1_1Battery.html" title="Sensor subclass for monitoring battery state information." alt="" coords="354,153,467,179"/>
+<area shape="poly" id="edge10_Node000005_Node000006" title=" " alt="" coords="296,195,360,177,362,182,297,201"/>
+<area shape="rect" id="Node000007" href="$classroboligo_1_1Imu.html" title="IMU sensor connector that subscribes to sensor messages and manages IMU data." alt="" coords="363,203,457,228"/>
+<area shape="poly" id="edge11_Node000005_Node000007" title=" " alt="" coords="305,213,362,213,362,218,305,218"/>
+<area shape="rect" id="Node000008" href="$classroboligo_1_1NavSat.html" title="A sensor class for handling GNSS/GPS navigation satellite data." alt="" coords="352,252,468,278"/>
+<area shape="poly" id="edge12_Node000005_Node000008" title=" " alt="" coords="297,230,362,249,360,254,296,236"/>
+<area shape="rect" id="Node000009" href="$classroboligo_1_1Odom.html" title="Sensor class for handling odometry data from a ROS 2 topic." alt="" coords="356,301,464,327"/>
+<area shape="poly" id="edge13_Node000005_Node000009" title=" " alt="" coords="267,235,353,288,376,298,374,303,351,293,264,240"/>
+</map>
