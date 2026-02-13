@@ -59,7 +59,7 @@ roboligo_node:
     robot_name: <robot_name>
     input_topic: <topic_name>
     stamped: <use_stamped>
-``
+```
 
 ## Usage
 
@@ -102,7 +102,7 @@ Contributions to roboligo are welcome! Please follow these guidelines:
 
 1. Fork the repository and create a new branch for your feature or bug fix.
 2. Ensure your code adheres to the existing style and includes appropriate documentation.
-3. Submit a pull request with a clear description of your changes and the problem they address. 
+3. Submit a pull request with a clear description of your changes and the problem they address.
 
 ## License
 

@@ -15,6 +15,7 @@
 
   <depend>rclcpp</depend>
   <depend>rclcpp_lifecycle</depend>
+  <depend>pluginlib</depend>
   <depend>sensor_msgs</depend>
   <depend>nav_msgs</depend>
   
