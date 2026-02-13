@@ -1,5 +1,7 @@
 # roboligo
 
+[![main](https://github.com/juanscelyg/roboligo/actions/workflows/main.yml/badge.svg?event=status)](https://github.com/juanscelyg/roboligo/actions/workflows/main.yml)
+
 Roboligo is a centralized command interface layer that bridges navigation stacks and hardware interfaces for robotic systems. It provides a unified abstraction for robot control, simplifying the complexity of managing diverse hardware implementations while maintaining compatibility with standard navigation algorithms.
 
 ![Roboligo](docs/img/roboligo_0.png)
