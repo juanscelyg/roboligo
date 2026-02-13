@@ -24,7 +24,7 @@ The connectors components are designed to be modular and extensible, allowing fo
 cd ~/ros2_ws/src
 git clone https://github.com/juanscelyg/roboligo.git
 cd ~/ros2_ws
-colcon build
+colcon build --symlink-install
 source install/setup.bash
 ```
 
@@ -33,10 +33,10 @@ source install/setup.bash
 Launch roboligo with:
 
 ```bash
-ros2 launch roboligo roboligo_launch.py 
+ros2 launch roboligo roboligo.launch.py
 ```
 
-Replace `your_params_file.yaml` with the path to your configuration file containing robot-specific parameters.
+Into launch, you should replace `your_params_file.yaml` with the path to your configuration file containing robot-specific parameters.
 
 The structure of the configuration file is shown below:
 

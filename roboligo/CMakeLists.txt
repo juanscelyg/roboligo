@@ -3,7 +3,7 @@ project(roboligo)
 
 find_package(ament_cmake REQUIRED)
 
-install(DIRECTORY launch
+install(DIRECTORY launch params
         DESTINATION share/${PROJECT_NAME})
 
 ament_export_dependencies(
