@@ -19,10 +19,10 @@ jobs:
       - name: Generate Doxygen for roboligo
         uses: mattnotmitt/doxygen-action@edge
         with:
-          doxyfile-path: ".github/Doxygen"
+          doxyfile-path: ".github/Doxyfile"
 
       - name: Doxygen Deployment
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./html
+          publish_branch: gh-pages
