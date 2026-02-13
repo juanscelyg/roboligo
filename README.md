@@ -36,6 +36,31 @@ ros2 launch roboligo roboligo_launch.py
 
 Replace `your_params_file.yaml` with the path to your configuration file containing robot-specific parameters.
 
+The structure of the configuration file is shown below:
+
+```yaml
+states_node:
+  ros__parameters:
+    use_sim_time: true
+    robot_types: [<robot_type>]
+    <robot_type>:
+      plugin: <plugin_name>
+
+connector_node:
+  ros__parameters:
+    use_sim_time: true
+    connector_types: [<connector_type>]
+    <connector_type>:
+      plugin: <plugin_name>
+
+roboligo_node:
+  ros__parameters:
+    use_sim_time: true
+    robot_name: <robot_name>
+    input_topic: <topic_name>
+    stamped: <use_stamped>
+``
+
 ## Usage
 
 Once roboligo is running, you can send commands to the robot using standard ROS 2 cli. For example, to send an instruction to specific trigger configured previously in a plugin, you can use:
