@@ -16,6 +16,9 @@ jobs:
       contents: write
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Generate Doxygen for roboligo
         uses: mattnotmitt/doxygen-action@edge
         with:
