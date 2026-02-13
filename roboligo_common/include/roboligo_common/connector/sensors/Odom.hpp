@@ -21,18 +21,37 @@
 
 namespace roboligo
 {
+    /**
+     * @class Odom
+     * @brief Sensor class for handling odometry data from a ROS 2 topic.
+     * 
+     * Subscribes to odometry messages and stores the latest odometry information.
+     * Inherits from the Sensor base class.
+     */
     class Odom : public Sensor
     {
     public:
+        /**
+        * @brief Constructor for Odom sensor.
+        * @param new_name The name identifier for the sensor.
+        * @param new_topic The ROS 2 topic name to subscribe to.
+        */
         Odom(std::string new_name, std::string new_topic)
             : Sensor(new_name, new_topic){}
 
+        /**
+        * @brief Virtual destructor.
+        */
         virtual ~Odom() = default;
 
-        rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscriber;  
+        rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscriber;  ///< ROS 2 subscription object for odometry messages
 
-        nav_msgs::msg::Odometry::SharedPtr data;
+        nav_msgs::msg::Odometry::SharedPtr data; ///< Shared pointer storing the latest received odometry message
 
+        /**
+        * @brief Callback function invoked when a new odometry message is received.
+        * @param msg Shared pointer to the received Odometry message.
+        */
         void callback(nav_msgs::msg::Odometry::SharedPtr msg);
     };
 } // namespace roboligo

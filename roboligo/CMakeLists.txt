@@ -3,10 +3,14 @@ project(roboligo)
 
 find_package(ament_cmake REQUIRED)
 
+install(DIRECTORY launch
+        DESTINATION share/${PROJECT_NAME})
+
 ament_export_dependencies(
   roboligo_cli
   roboligo_common
   roboligo_connector
+  roboligo_interfaces
   roboligo_connector_mavros
   roboligo_robot_drone
   roboligo_states

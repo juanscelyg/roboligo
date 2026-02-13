@@ -26,23 +26,61 @@
 
 namespace roboligo 
 {
+    /**
+    * @class ClassificationBase
+    * @brief Base class for classification plugins in the Roboligo system.
+    * 
+    * ClassificationBase provides an abstract interface for implementing classification
+    * functionality within the robot control framework. It inherits from PluginBase and
+    * follows a plugin architecture pattern, allowing extensibility through derived classes.
+    */
     class ClassificationBase : public PluginBase
     {
-        public:
+    public:
+        /**
+        * @brief constructor
+        */
         ClassificationBase() = default;
+
+        /**
+        * @brief Destructor
+        */
         virtual ~ClassificationBase() = default;
 
+        /**
+        * @brief Initializes the classification plugin.
+        * @param parent_node Shared pointer to the lifecycle node managing this plugin.
+        * @param plugin_name Name identifier for this plugin instance.
+        */
         virtual void initialize(
             const std::shared_ptr<rclcpp_lifecycle::LifecycleNode> parent_node,
             const std::string & plugin_name);
 
+        /**
+        * @brief Sets the robot state classification.
+        * @param robot_state Reference to the robot state to classify.
+        * @return True if the operation succeeded, false otherwise.
+        */
         virtual bool set(RobotState & robot_state);
 
+        /**
+        * @brief Updates the robot state classification.
+        * @param robot_state Reference to the robot state to update.
+        * @return True if the operation succeeded, false otherwise.
+        */
         virtual bool update(RobotState & robot_state);
 
-        protected:
+    protected:
+        /**
+        * @brief Called when setting robot state (override in derived classes).
+        * @param robot_state Reference to the robot state being set.
+        */
         virtual void on_set([[maybe_unused]]RobotState & robot_state){}
 
+        /**
+        * @brief Called when updating robot state (override in derived classes).
+        * @param robot_state Reference to the robot state being updated.
+        */
         virtual void on_update([[maybe_unused]]RobotState & robot_state){}
 
     };

@@ -31,7 +31,7 @@ source install/setup.bash
 Launch roboligo with:
 
 ```bash
-ros2 run roboligo_system roboligo_main --ros-args --params-file your_params_file.yaml 
+ros2 launch roboligo roboligo_launch.py 
 ```
 
 Replace `your_params_file.yaml` with the path to your configuration file containing robot-specific parameters.

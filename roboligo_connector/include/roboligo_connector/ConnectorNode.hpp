@@ -26,45 +26,99 @@
 
 namespace roboligo
 {
-
+    /**
+    * @class ConnectorNode
+    * @brief A lifecycle node that manages the robot connector.
+    * 
+    * This class managments the connector working into roboligo
+    */
     class ConnectorNode : public rclcpp_lifecycle::LifecycleNode
     {
     public:
 
-    RCLCPP_SMART_PTR_DEFINITIONS(ConnectorNode)
+        RCLCPP_SMART_PTR_DEFINITIONS(ConnectorNode)
+        using CallbackReturnT = rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn;
 
-    using CallbackReturnT = rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn;
+        /**
+        * @brief Constructor for ConnectorNode
+        * @param NodeOptions to configurate lifecycle node
+        */
+        explicit ConnectorNode(
+            const rclcpp::NodeOptions & options = rclcpp::NodeOptions());
 
-    explicit ConnectorNode(
-        const rclcpp::NodeOptions & options = rclcpp::NodeOptions());
+        /**
+        * @brief Destructor
+        */
+        virtual ~ConnectorNode();
 
-    virtual ~ConnectorNode();
+        /**
+        * @brief Instructions on_configure state
+        * @param state lifecycle
+        * @return CallbackReturnT defined in this class
+        */
+        CallbackReturnT on_configure(const rclcpp_lifecycle::State & state);
 
-    CallbackReturnT on_configure(const rclcpp_lifecycle::State & state);
+        /**
+        * @brief Instructions on_activate state
+        * @param state lifecycle
+        * @return CallbackReturnT defined in this class
+        */
+        CallbackReturnT on_activate(const rclcpp_lifecycle::State & state);
 
-    CallbackReturnT on_activate(const rclcpp_lifecycle::State & state);
+        /**
+        * @brief Instructions on_deactivate state
+        * @param state lifecycle
+        * @return CallbackReturnT defined in this class
+        */
+        CallbackReturnT on_deactivate(const rclcpp_lifecycle::State & state);
 
-    CallbackReturnT on_deactivate(const rclcpp_lifecycle::State & state);
+        /**
+        * @brief Instructions on_cleanup state
+        * @param state lifecycle
+        * @return CallbackReturnT defined in this class
+        */  
+        CallbackReturnT on_cleanup(const rclcpp_lifecycle::State & state);
 
-    CallbackReturnT on_cleanup(const rclcpp_lifecycle::State & state);
+        /**
+        * @brief Instructions on_shutdown state
+        * @param state lifecycle
+        * @return CallbackReturnT defined in this class
+        */  
+        CallbackReturnT on_shutdown(const rclcpp_lifecycle::State & state);
 
-    CallbackReturnT on_shutdown(const rclcpp_lifecycle::State & state);
+        /**
+        * @brief Instructions on_error state
+        * @param state lifecycle
+        * @return CallbackReturnT defined in this class
+        */     
+        CallbackReturnT on_error(const rclcpp_lifecycle::State & state);
 
-    CallbackReturnT on_error(const rclcpp_lifecycle::State & state);
+        /**
+        * @brief Method called when the node is initialize
+        * @param Robot State object
+        * @return bool success
+        */
+        bool init(std::shared_ptr<RobotState> robot_state);
 
-    bool init(std::shared_ptr<RobotState> robot_state);
+        /**
+        * @brief Method called when the node will be destroyed
+        */
+        void reset_connector(void);
 
-    void reset_connector(void);
-
-    bool cycle(std::shared_ptr<RobotState> robot_state);
+        /**
+        * @brief Method called cycle by cycle
+        * @param Robot State object
+        * @return bool success
+        */
+        bool cycle(std::shared_ptr<RobotState> robot_state);
 
     private:
 
-    std::shared_ptr<ConnectorBase> connector_ {nullptr};
+        std::shared_ptr<ConnectorBase> connector_ {nullptr}; ///< ConnectorBase instance
+ 
+        const std::shared_ptr<const RobotState> robot_state_; ///< Robot State Object
 
-    const std::shared_ptr<const RobotState> robot_state_;
-
-    std::shared_ptr<pluginlib::ClassLoader<roboligo::ConnectorBase>> connector_loader_;
+        std::shared_ptr<pluginlib::ClassLoader<roboligo::ConnectorBase>> connector_loader_; ///< Class Loader
     };
 
 }  // namespace roboligo

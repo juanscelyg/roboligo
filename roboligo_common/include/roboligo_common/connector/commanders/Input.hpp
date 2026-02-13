@@ -22,29 +22,67 @@
 
 namespace roboligo
 {
+    /**
+    * @struct RoboligoInputTwist
+    * @brief Encapsulates a ROS 2 subscription and data storage for Twist messages.
+    * 
+    * @var subscriber Shared pointer to the ROS 2 Twist message subscriber.
+    * @var data Shared pointer to the received Twist message data.
+    */
     struct RoboligoInputTwist{
         rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscriber;
         geometry_msgs::msg::Twist::SharedPtr data;
     };
 
+    /**
+    * @struct RoboligoInputTwistStamped
+    * @brief Encapsulates a ROS 2 subscription and data storage for TwistStamped messages.
+    * 
+    * @var subscriber Shared pointer to the ROS 2 TwistStamped message subscriber.
+    * @var data Shared pointer to the received TwistStamped message data.
+    */
     struct RoboligoInputTwistStamped{
         rclcpp::Subscription<geometry_msgs::msg::TwistStamped>::SharedPtr subscriber;
         geometry_msgs::msg::TwistStamped::SharedPtr data;
     };
 
+    /**
+    * @class Input
+    * @brief Commander that subscribes to and processes Twist messages.
+    * 
+    * Manages subscriptions to both Twist and TwistStamped message topics,
+    * storing the received data and providing callback handlers for message processing.
+    * 
+    * @param new_name The name identifier for this input commander.
+    * @param new_topic The ROS 2 topic to subscribe to.
+    */
     class Input : public Commander
     {
     public:
+        /**
+        * @brief Constructor
+        */
         Input(std::string new_name, std::string new_topic);
-
+                
+        /**
+        * @brief Destructor
+        */
         virtual ~Input() = default;
 
-        RoboligoInputTwist twist;
+        RoboligoInputTwist twist; ///< RoboligoInputTwist element
 
-        RoboligoInputTwistStamped twist_stamped;
+        RoboligoInputTwistStamped twist_stamped; ///< RoboligoInputTwistStamped element
     
+        /**
+        * @brief Callback handler for Twist messages.
+        * @param msg Shared pointer to the received Twist message.
+        */
         void callback(const geometry_msgs::msg::Twist::SharedPtr msg);
         
+        /**
+        * @brief Callback handler for TwistStamped messages.
+        * @param msg Shared pointer to the received TwistStamped message.
+        */
         void callback_stamped(const geometry_msgs::msg::TwistStamped::SharedPtr msg);
 
     };

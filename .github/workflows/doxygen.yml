@@ -1,0 +1,32 @@
+name: Doxygen Deployment
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * 6'
+  workflow_dispatch:
+
+jobs:
+  doxygen_generation:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Generate Doxygen for roboligo
+        uses: mattnotmitt/doxygen-action@edge
+        with:
+          doxyfile-path: ".github/Doxygen"
+
+      - name: Doxygen Deployment
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: docs/html

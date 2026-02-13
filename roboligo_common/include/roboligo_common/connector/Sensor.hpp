@@ -20,20 +20,45 @@
 
 namespace roboligo
 {
+    /**
+    * @class Sensor
+    * @brief A sensor class that extends Linker functionality for subscribing to sensor data.
+    * 
+    * This class provides the base implementation for sensor connections in the roboligo system.
+    * It handles subscription to sensor topics and manages sensor-specific initialization.
+    */
     class Sensor : public Linker
     {
         public:
+            /**
+            * @brief Constructor for Sensor.
+            * @param new_name The name identifier for the sensor.
+            * @param new_topic The ROS topic name to subscribe to.
+            */
             Sensor(std::string new_name, std::string new_topic);
 
+            /**
+            * @brief Virtual destructor.
+            */
             virtual ~Sensor() = default;
 
+            /**
+            * @brief Initializes the sensor with a name and topic.
+            * @param new_name The name identifier for the sensor.
+            * @param new_topic The ROS topic name to subscribe to.
+            */
             void init(std::string new_name, std::string new_topic);
 
-            
         protected:
+
+            /**
+            * @brief Protected initialization method.
+            * @param new_name The name identifier for the sensor.
+            * @param new_topic The ROS topic name to subscribe to.
+            */
             void initialize(std::string new_name, std::string new_topic);
             
-            interfaces::modes mode_{interfaces::modes::SUBSCRIBER};
+            interfaces::modes mode_{interfaces::modes::SUBSCRIBER}; ///< The connection mode set to SUBSCRIBER for receiving sensor data
             
     };
 

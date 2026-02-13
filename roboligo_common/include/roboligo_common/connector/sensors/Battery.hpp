@@ -21,18 +21,37 @@
 
 namespace roboligo
 {
+    /**
+    * @class Battery
+    * @brief Sensor subclass for monitoring battery state information.
+    * 
+    * Subscribes to battery state messages and stores the latest battery data.
+    * Inherits from Sensor base class.
+    */
     class Battery : public Sensor
     {
     public:
+        /**
+        * @brief Constructor for Battery sensor.
+        * @param new_name The name identifier for this battery sensor.
+        * @param new_topic The ROS topic to subscribe to for battery messages.
+        */
         Battery(std::string new_name, std::string new_topic)
             : Sensor(new_name, new_topic){}
 
+        /**
+        * @brief Virtual destructor.
+        */
         virtual ~Battery() = default;
 
-        rclcpp::Subscription<sensor_msgs::msg::BatteryState>::SharedPtr subscriber;  
+        rclcpp::Subscription<sensor_msgs::msg::BatteryState>::SharedPtr subscriber;  ///< ROS 2 subscription to receive BatteryState messages
 
-        sensor_msgs::msg::BatteryState::SharedPtr data;
+        sensor_msgs::msg::BatteryState::SharedPtr data; ///< Latest received battery state data
 
+        /**
+        * @brief Callback function invoked when a new battery state message is received.
+        * @param msg Shared pointer to the received BatteryState message.
+        */
         void callback(sensor_msgs::msg::BatteryState::SharedPtr msg);
     };
 } // namespace roboligo

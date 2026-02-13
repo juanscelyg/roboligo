@@ -24,47 +24,85 @@
 
 namespace roboligo
 {
+    /**
+     * @class RoboligoRobotDrone
+     * @brief Drone robot controller that manages flight modes and transitions.
+     * 
+     * This class extends ClassificationBase to provide drone-specific functionality,
+     * including mode management (standby, offboard) and trigger-based state transitions
+     * (arming, takeoff, landing, disarming, etc.).
+     */
     class RoboligoRobotDrone : public ClassificationBase
     {
-        public:
-            RoboligoRobotDrone() {}
+    public:
+        /**
+        * @brief Default constructor.
+        */
+        RoboligoRobotDrone() {}
+        
+        /**
+        * @brief Default destructor.
+        */
+        ~RoboligoRobotDrone() = default;
 
-            ~RoboligoRobotDrone() = default;
+        /**
+        * @brief Initializes the drone robot and its components.
+        */
+        void on_initialize() override;
 
-            void on_initialize() override;
+        /**
+        * @brief Sets the robot state.
+        * @param robot_state Reference to the RobotState object to be set.
+        */
+        void on_set(RobotState & robot_state) override;
 
-            void on_set(RobotState & robot_state) override;
+        /**
+        * @brief Configures all available flight modes.
+        */
+        void set_modes(void);
 
-            void set_modes(void);
+        /**
+        * @brief Configures all state transition triggers.
+        */
+        void set_triggers(void);
 
-            void set_triggers(void);
+        std::shared_ptr<RoboligoConnectorMavros> connector_mavros_ = std::make_shared<RoboligoConnectorMavros>(); ///< Shared pointer to the MAVROS connector for communication
 
-            std::shared_ptr<RoboligoConnectorMavros> connector_mavros_ = std::make_shared<RoboligoConnectorMavros>();
+        Mode standby = Mode("standby", "AUTO.LOITER"); ///< Standby mode (AUTO.LOITER)
 
-            bool verbose_{false}; 
-            std::vector<Mode> modes_;
-            Mode standby = Mode("standby", "AUTO.LOITER");
-            Mode offboard = Mode("offboard", "OFFBOARD");
+        Mode offboard = Mode("offboard", "OFFBOARD"); ///< Offboard control mode
 
-            std::vector<Trigger> triggers_;
-            Trigger arming = Trigger("arming", "arming", 
-                std::vector<Mode>{standby}, 
-                std::vector<Mode>{offboard});
-            Trigger takeoff = Trigger("takeoff", "AUTO.TAKEOFF", 
-                std::vector<Mode>{standby, offboard}, 
-                std::vector<Mode>{offboard});
-            Trigger landing = Trigger("landing", "AUTO.LAND", 
-                std::vector<Mode>{standby, offboard}, 
-                std::vector<Mode>{standby});
-            Trigger offboarding = Trigger("offboard", "OFFBOARD", 
-                std::vector<Mode>{standby, offboard}, 
-                std::vector<Mode>{standby, offboard});
-            Trigger disarming = Trigger("disarming", "disarming", 
-                std::vector<Mode>{standby, offboard}, 
-                std::vector<Mode>{standby, offboard});
-            Trigger standingby = Trigger("standby", "AUTO:LOITER", 
-                std::vector<Mode>{offboard}, 
-                std::vector<Mode>{offboard});
+        Trigger arming = Trigger("arming", "arming", 
+            std::vector<Mode>{standby}, 
+            std::vector<Mode>{offboard}); ///< Trigger for arming the drone
+
+        Trigger takeoff = Trigger("takeoff", "AUTO.TAKEOFF", 
+            std::vector<Mode>{standby, offboard}, 
+            std::vector<Mode>{offboard}); ///< Trigger for takeoff
+
+        Trigger landing = Trigger("landing", "AUTO.LAND", 
+            std::vector<Mode>{standby, offboard}, 
+            std::vector<Mode>{standby}); ///< Trigger for landing
+
+        Trigger offboarding = Trigger("offboard", "OFFBOARD", 
+            std::vector<Mode>{standby, offboard}, 
+            std::vector<Mode>{standby, offboard}); ///< Trigger for offboard mode transition
+
+        Trigger disarming = Trigger("disarming", "disarming", 
+            std::vector<Mode>{standby, offboard}, 
+            std::vector<Mode>{standby, offboard}); ///< Trigger for disarming the drone
+
+        Trigger standingby = Trigger("standby", "AUTO:LOITER", 
+            std::vector<Mode>{offboard}, 
+            std::vector<Mode>{offboard}); ///< Trigger for returning to standby mode
+
+    protected:
+        bool verbose_{false}; ///< Flag to enable/disable verbose logging
+        
+        std::vector<Mode> modes_; ///< Vector containing all available flight modes.
+        
+        std::vector<Trigger> triggers_; ///< Vector containing all state transition triggers
+
 
     };
 } // namespace roboligo

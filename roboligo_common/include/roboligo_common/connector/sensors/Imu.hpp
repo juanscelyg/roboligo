@@ -21,18 +21,35 @@
 
 namespace roboligo
 {
+    /**
+     * @class Imu
+     * @brief IMU sensor connector that subscribes to sensor messages and manages IMU data.
+     * 
+     * Provides an interface for receiving and storing IMU (Inertial Measurement Unit) data
+     * from ROS 2 topics.
+     */
     class Imu : public Sensor
     {
     public:
+        /**
+        * @brief Constructor for Imu sensor.
+        * @param new_name Identifier name for the sensor.
+        * @param new_topic ROS 2 topic name to subscribe to.
+        */
         Imu(std::string new_name, std::string new_topic)
             : Sensor(new_name, new_topic){}
-
+        /**
+        * @brief Virtual destructor.
+        */
         virtual ~Imu() = default;
 
-        rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr subscriber;  
+        rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr subscriber;  ///< ROS 2 subscription handle for IMU messages
 
-        sensor_msgs::msg::Imu::SharedPtr data;
-
+        sensor_msgs::msg::Imu::SharedPtr data; ///< Latest IMU data received from the subscriber
+        /**
+        * @brief Callback function triggered when new IMU message is received.
+        * @param msg Shared pointer to the received IMU message.
+        */
         void callback(sensor_msgs::msg::Imu::SharedPtr msg);
     };
 } // namespace roboligo

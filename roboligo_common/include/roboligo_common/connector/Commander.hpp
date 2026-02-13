@@ -19,23 +19,56 @@
 
 namespace roboligo
 {
+    /**
+    * @class Commander
+    * @brief Base class for commanding robotic operations through message publishing.
+    * 
+    * Inherits from Linker to provide ROS communication functionality.
+    * Manages stamped message publishing with optional timestamp inclusion.
+    */
     class Commander : public Linker
     {
     public:
+        /**
+        * @brief Constructor for Commander.
+        * @param new_name The name identifier for the commander instance.
+        * @param new_value The initial value or topic associated with the commander.
+        */
         Commander(std::string new_name, std::string new_value);
 
+        /**
+        * @brief Virtual destructor.
+        */
         virtual ~Commander() = default;
 
+        /**
+        * @brief Enable or disable timestamp stamping for messages.
+        * @param stamped True to include timestamps, false otherwise.
+        */
         void set_stamp(bool stamped);
 
+        /**
+        * @brief Check if timestamp stamping is enabled.
+        * @return True if stamping is enabled, false otherwise.
+        */
         bool is_stamped(void);
 
+        /**
+        * @brief Initialize the commander with name and value.
+        * @param new_name The name identifier for the commander instance.
+        * @param new_value The initial value or topic associated with the commander.
+        */
         void init(std::string new_name, std::string new_value);
         
     protected:
+        /**
+        * @brief Protected initialization method.
+        * @param new_name The name identifier for the commander instance.
+        * @param new_topic The ROS topic for publishing messages.
+        */
         void initialize(std::string new_name, std::string new_topic);
         
-        bool use_stamp_{true};
+        bool use_stamp_{true}; ///< Flag indicating whether to include timestamps in published messages
     };
 
 } // namespace roboligo

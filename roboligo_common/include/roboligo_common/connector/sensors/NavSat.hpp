@@ -21,18 +21,36 @@
 
 namespace roboligo
 {
+    /**
+     * @class NavSat
+     * @brief A sensor class for handling GNSS/GPS navigation satellite data.
+     * 
+     * Inherits from Sensor and manages subscriptions to NavSatFix messages,
+     * typically containing latitude, longitude, and altitude information.
+     */
     class NavSat : public Sensor
     {
     public:
+        /**
+        * @brief Constructor for NavSat sensor.
+        * @param new_name The name identifier for this sensor instance.
+        * @param new_topic The ROS 2 topic to subscribe to for NavSatFix messages.
+        */
         NavSat(std::string new_name, std::string new_topic)
             : Sensor(new_name, new_topic){}
 
+        /**
+        * @brief Virtual destructor.
+        */
         virtual ~NavSat() = default;
 
-        rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr subscriber;  
+        rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr subscriber;  ///< ROS 2 subscription to NavSatFix messages
 
-        sensor_msgs::msg::NavSatFix::SharedPtr data;
-
+        sensor_msgs::msg::NavSatFix::SharedPtr data; ///< Pointer to the most recent NavSatFix data received.
+        /**
+        * @brief Callback function invoked when new NavSatFix data is received.
+        * @param msg Shared pointer to the received NavSatFix message.
+        */
         void callback(sensor_msgs::msg::NavSatFix::SharedPtr msg);
     };
 } // namespace roboligo

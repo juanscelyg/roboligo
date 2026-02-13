@@ -26,28 +26,93 @@
 
 namespace roboligo 
 {
+    /**
+    * @class ConnectorBase
+    * @brief Base class for connector plugins that manage robot state transitions.
+    * 
+    * ConnectorBase provides a plugin interface for handling robot state initialization,
+    * updates, and cleanup. Derived classes should override the virtual methods to
+    * implement specific connector behavior.
+    */
     class ConnectorBase : public PluginBase
     {
-        public:
+    public:
+        /**
+        * @brief Default constructor.
+        */
         ConnectorBase() = default;
+
+        /**
+        * @brief Virtual destructor.
+        */
         virtual ~ConnectorBase() = default;
 
+        /**
+        * @brief Initialize the connector with a lifecycle node.
+        * 
+        * @param parent_node Shared pointer to the lifecycle node that owns this plugin.
+        * @param plugin_name Name identifier for this connector plugin.
+        */
         virtual void initialize(
             const std::shared_ptr<rclcpp_lifecycle::LifecycleNode> parent_node,
             const std::string & plugin_name);
 
+        /**
+        * @brief Set initial robot state.
+        * 
+        * Called during the configuration phase to establish the initial robot state.
+        * 
+        * @param robot_state Reference to the robot state to configure.
+        * @return true if set operation succeeded, false otherwise.
+        */
         virtual bool set(RobotState & robot_state);
 
+        /**
+        * @brief Update robot state.
+        * 
+        * Called during the active phase to update the robot state.
+        * 
+        * @param robot_state Reference to the robot state to update.
+        * @return true if update operation succeeded, false otherwise.
+        */
         virtual bool update(RobotState & robot_state);
 
+        /**
+        * @brief Exit and cleanup robot state.
+        * 
+        * Called during shutdown to finalize the robot state.
+        * 
+        * @param robot_state Reference to the robot state to finalize.
+        * @return true if exit operation succeeded, false otherwise.
+        */
         virtual bool exit(RobotState & robot_state);
 
-        protected:
-
+    protected:
+        /**
+        * @brief Hook called during set operation.
+        * 
+        * Override this method to implement custom set behavior.
+        * 
+        * @param robot_state Reference to the robot state.
+        */
         virtual void on_set([[maybe_unused]]RobotState & robot_state){}
 
+        /**
+        * @brief Hook called during update operation.
+        * 
+        * Override this method to implement custom update behavior.
+        * 
+        * @param robot_state Reference to the robot state.
+        */
         virtual void on_update([[maybe_unused]]RobotState & robot_state){}
 
+        /**
+        * @brief Hook called during exit operation.
+        * 
+        * Override this method to implement custom cleanup behavior.
+        * 
+        * @param robot_state Reference to the robot state.
+        */
         virtual void on_exit([[maybe_unused]]RobotState & robot_state){}
 
     };
