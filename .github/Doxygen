@@ -753,7 +753,7 @@ GENERATE_BUGLIST       = YES
 # the documentation.
 # The default value is: YES.
 
-GENERATE_DEPRECATEDLIST= YES
+GENERATE_DEPRECATEDLIST = YES
 
 # The ENABLED_SECTIONS tag can be used to enable conditional documentation
 # sections, marked by \if <section_label> ... \endif and \cond <section_label>
@@ -948,8 +948,6 @@ INPUT                  = README.md \
                             roboligo_common \
                             roboligo_connector \
                             roboligo_interfaces \
-                            roboligo_connector_mavros \
-                            roboligo_robot_drone \
                             roboligo_states \
                             roboligo_system
 
@@ -1046,7 +1044,7 @@ FILE_PATTERNS          = *.c \
 # be searched for input files as well.
 # The default value is: NO.
 
-RECURSIVE              = NO
+RECURSIVE              = YES
 
 # The EXCLUDE tag can be used to specify files and/or directories that should be
 # excluded from the INPUT source files. This way you can easily exclude a

@@ -92,7 +92,7 @@ namespace roboligo
             std::vector<Mode>{standby, offboard}, 
             std::vector<Mode>{standby, offboard}); ///< Trigger for disarming the drone
 
-        Trigger standingby = Trigger("standby", "AUTO:LOITER", 
+        Trigger standingby = Trigger("standby", "AUTO.LOITER", 
             std::vector<Mode>{offboard}, 
             std::vector<Mode>{offboard}); ///< Trigger for returning to standby mode
 
