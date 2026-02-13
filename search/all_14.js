@@ -1,21 +1,7 @@
 var searchData=
 [
-  ['_7ebattery_0',['~Battery',['../classroboligo_1_1Battery.html#a92019e252a607cba264bce2ba45c215d',1,'roboligo::Battery']]],
-  ['_7eclassificationbase_1',['~ClassificationBase',['../classroboligo_1_1ClassificationBase.html#a729166de3f9dc7d6a2ed8e5d32957d9f',1,'roboligo::ClassificationBase']]],
-  ['_7ecommander_2',['~Commander',['../classroboligo_1_1Commander.html#a05d7a046a3b2b2e805eb758c81e82a55',1,'roboligo::Commander']]],
-  ['_7econnectorbase_3',['~ConnectorBase',['../classroboligo_1_1ConnectorBase.html#a69a011213e0bcb863998815231ec0c1d',1,'roboligo::ConnectorBase']]],
-  ['_7econnectornode_4',['~ConnectorNode',['../classroboligo_1_1ConnectorNode.html#ad3b147b2c2a7df50c54131467b30eb67',1,'roboligo::ConnectorNode']]],
-  ['_7eimu_5',['~Imu',['../classroboligo_1_1Imu.html#a73e036ed0f560709f013f7b0cff9a4a2',1,'roboligo::Imu']]],
-  ['_7einput_6',['~Input',['../classroboligo_1_1Input.html#a75d98ba54c0815d6f9689c4d0c5d4cd5',1,'roboligo::Input']]],
-  ['_7elinker_7',['~Linker',['../classroboligo_1_1Linker.html#a55c52391c1d4b60fdb1eec36c8b8f581',1,'roboligo::Linker']]],
-  ['_7emode_8',['~Mode',['../classroboligo_1_1Mode.html#a5fadb3c9ae172ffcecdfa83442642e97',1,'roboligo::Mode']]],
-  ['_7enavsat_9',['~NavSat',['../classroboligo_1_1NavSat.html#a279ed0c3b667c9ed6a04398c10a103d4',1,'roboligo::NavSat']]],
-  ['_7eodom_10',['~Odom',['../classroboligo_1_1Odom.html#a288654ef886ab0b8033af56065dff294',1,'roboligo::Odom']]],
-  ['_7eoutput_11',['~Output',['../classroboligo_1_1Output.html#a11a14465db47b48ab2a24ab6c35fcb27',1,'roboligo::Output']]],
-  ['_7epluginbase_12',['~PluginBase',['../classroboligo_1_1PluginBase.html#a85b541467f073c4bfb86e4ff9a01803f',1,'roboligo::PluginBase']]],
-  ['_7eroboligonode_13',['~RoboligoNode',['../classroboligo_1_1RoboligoNode.html#a32def40cb66bdec488264c61a9f0463a',1,'roboligo::RoboligoNode']]],
-  ['_7erobotstate_14',['~RobotState',['../classroboligo_1_1RobotState.html#a796eee3a90619ad67273fba52961080f',1,'roboligo::RobotState']]],
-  ['_7esensor_15',['~Sensor',['../classroboligo_1_1Sensor.html#a2a6b2008275f46718dbc4cbb8278ae8a',1,'roboligo::Sensor']]],
-  ['_7estatesnode_16',['~StatesNode',['../classroboligo_1_1StatesNode.html#a29f9e296fb51d79105232b415a300592',1,'roboligo::StatesNode']]],
-  ['_7etrigger_17',['~Trigger',['../classroboligo_1_1Trigger.html#ae042c8d054ad83ebbd4f15835db1c1d3',1,'roboligo::Trigger']]]
+  ['value_0',['value',['../structroboligo_1_1interfaces_1_1type.html#a2f4eb0df38f91158d7502a2a8df04045',1,'roboligo::interfaces::type']]],
+  ['value_5f_1',['value_',['../classroboligo_1_1Mode.html#a07e9905fde28e3851a64f45ed1c7454e',1,'roboligo::Mode::value_'],['../classroboligo_1_1Trigger.html#a17df1819d07d988735f0d3e99d0414eb',1,'roboligo::Trigger::value_']]],
+  ['verbextension_2',['VerbExtension',['../classVerbExtension.html',1,'']]],
+  ['version_3',['version',['../namespacesetup.html#a2aa722b36a933088812b50ea79b97a5c',1,'setup']]]
 ];

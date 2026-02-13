@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['execute_0',['execute',['../classroboligo_1_1Trigger.html#a2d392af62b22808d7783cb3f3378c93a',1,'roboligo::Trigger']]],
-  ['exit_1',['exit',['../classroboligo_1_1ConnectorBase.html#afed6006c4a3e1443b1e7c109d7e23b18',1,'roboligo::ConnectorBase']]]
+  ['data_0',['data',['../structroboligo_1_1RoboligoInputTwist.html#ae486d9e61f1df147c8b066fe50700fa5',1,'roboligo::RoboligoInputTwist::data'],['../structroboligo_1_1RoboligoInputTwistStamped.html#ab93607e75ff5a447d40349c45fe0473e',1,'roboligo::RoboligoInputTwistStamped::data'],['../structroboligo_1_1RoboligoOutputTwist.html#a7292ef220688e08c58ecc513470fae76',1,'roboligo::RoboligoOutputTwist::data'],['../structroboligo_1_1RoboligoOutputTwistStamped.html#a988806aefbbe7dbf7000efe993ddcfc9',1,'roboligo::RoboligoOutputTwistStamped::data'],['../structroboligo_1_1RoboligoOutputPositionTarget.html#a7f1f838c34a08a9cea70d093e22e5cc1',1,'roboligo::RoboligoOutputPositionTarget::data'],['../classroboligo_1_1Battery.html#ad7b531dd56c4229d79a75ad261513dca',1,'roboligo::Battery::data'],['../classroboligo_1_1Imu.html#a5b45d67360e8e1a0539404e1d3ac5e89',1,'roboligo::Imu::data'],['../classroboligo_1_1NavSat.html#a1188d1f10b3df7623c2d6ef1f6f5dd6d',1,'roboligo::NavSat::data'],['../classroboligo_1_1Odom.html#a00161a9d49da28c78a37fae4a37fb658',1,'roboligo::Odom::data']]],
+  ['description_1',['description',['../namespacesetup.html#aedf461ec52a946bda975938ba0b93ec0',1,'setup']]],
+  ['developments_2',['Future Developments',['../index.html#autotoc_md7',1,'']]],
+  ['disarming_2epy_3',['disarming.py',['../disarming_8py.html',1,'']]],
+  ['disarmingverb_4',['DisarmingVerb',['../classroboligo__cli_1_1verb_1_1disarming_1_1DisarmingVerb.html',1,'roboligo_cli::verb::disarming']]]
 ];

@@ -1,0 +1,7 @@
+<map id="roboligo::RoboligoInputTwist" name="roboligo::RoboligoInputTwist">
+<area shape="rect" id="Node000001" title="Encapsulates a ROS 2 subscription and data storage for Twist messages." alt="" coords="5,94,189,120"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,85,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,46,59,69,81,92,77,95,54,71,46,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="109,5,189,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,46,122,71,107,95,102,92,117,69,132,44"/>
+</map>

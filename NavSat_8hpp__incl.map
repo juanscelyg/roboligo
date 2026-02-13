@@ -1,0 +1,20 @@
+<map id="roboligo_common/include/roboligo_common/connector/sensors/NavSat.hpp" name="roboligo_common/include/roboligo_common/connector/sensors/NavSat.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="84,5,272,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,109,159,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,63,115,100,111,96,148,60"/>
+<area shape="rect" id="Node000003" href="$Sensor_8hpp.html" title=" " alt="" coords="183,109,368,150"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,60,246,97,243,100,204,63"/>
+<area shape="rect" id="Node000004" href="$Interface_8hpp.html" title=" " alt="" coords="138,286,296,327"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="267,151,245,199,225,272,220,270,239,197,262,149"/>
+<area shape="rect" id="Node000008" href="$Linker_8hpp.html" title=" " alt="" coords="254,198,412,238"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="291,149,314,183,309,186,286,152"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="357,375,410,401"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="259,325,345,366,343,370,257,330"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="117,375,188,401"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="203,329,174,364,170,361,199,326"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="213,375,332,401"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="233,326,257,360,253,364,228,329"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="308,241,257,279,254,275,305,237"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="341,238,378,359,373,361,336,239"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="332,239,324,281,310,328,291,363,287,361,305,326,319,279,327,238"/>
+</map>

@@ -1,7 +1,16 @@
 <map id="roboligo::Service" name="roboligo::Service">
-<area shape="rect" id="Node000001" title="A service commander that extends the Commander interface." alt="" coords="18,153,135,178"/>
-<area shape="rect" id="Node000002" href="$classroboligo_1_1Commander.html" title="Base class for commanding robotic operations through message publishing." alt="" coords="5,79,148,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,120,79,152,74,152,74,120"/>
-<area shape="rect" id="Node000003" href="$classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections." alt="" coords="22,5,131,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,46,79,79,74,79,74,46"/>
+<area shape="rect" id="Node000001" title="A service commander that extends the Commander interface." alt="" coords="287,274,404,300"/>
+<area shape="rect" id="Node000002" href="$classroboligo_1_1Commander.html" title="Base class for commanding robotic operations through message publishing." alt="" coords="274,199,416,225"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="348,240,348,274,343,274,343,240"/>
+<area shape="rect" id="Node000003" href="$classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections." alt="" coords="211,124,320,150"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="292,158,334,197,331,201,288,162"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,13,59,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="52,48,78,75,110,98,161,117,211,128,210,133,159,122,108,102,75,79,49,52"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="82,5,235,46"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="177,58,208,98,241,121,238,126,204,102,173,61"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="259,13,320,38"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="277,53,270,71,266,99,267,124,261,124,261,99,265,69,272,51"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="361,13,407,38"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="402,51,409,69,412,85,409,101,399,130,385,158,357,200,353,197,380,155,394,128,404,99,406,85,404,71,397,53"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="363,52,311,102,283,125,279,121,308,98,359,48"/>
 </map>

@@ -1,0 +1,20 @@
+<map id="roboligo_common/include/roboligo_common/connector/sensors/Imu.hpp" name="roboligo_common/include/roboligo_common/connector/sensors/Imu.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="102,5,291,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,116,183,142"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,64,120,108,116,104,165,60"/>
+<area shape="rect" id="Node000003" href="$Sensor_8hpp.html" title=" " alt="" coords="207,109,392,150"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,60,269,96,265,100,225,64"/>
+<area shape="rect" id="Node000004" href="$Interface_8hpp.html" title=" " alt="" coords="162,286,320,327"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="291,151,269,199,249,272,244,270,263,197,286,149"/>
+<area shape="rect" id="Node000008" href="$Linker_8hpp.html" title=" " alt="" coords="278,198,436,238"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="315,149,338,183,333,186,310,152"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="381,375,434,401"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="283,325,369,366,367,370,281,330"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="141,375,212,401"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="227,329,198,364,194,361,223,326"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="237,375,356,401"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="257,326,281,360,277,364,252,329"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="332,241,281,279,278,275,329,237"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="365,238,402,359,397,361,360,239"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="356,239,348,281,334,328,315,363,311,361,329,326,343,279,351,238"/>
+</map>

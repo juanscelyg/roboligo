@@ -91,7 +91,7 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Odom.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//  Copyright 2026 Juan S. Cely G.</span></div>
+<a href="Odom_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//  Copyright 2026 Juan S. Cely G.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//  you may not use this file except in compliance with the License.</span></div>
@@ -110,9 +110,9 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;nav_msgs/msg/odometry.hpp&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;roboligo_common/connector/Sensor.hpp&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="Sensor_8hpp.html">roboligo_common/connector/Sensor.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>roboligo</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroboligo.html">roboligo</a></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classroboligo_1_1Odom.html">   31</a></span>    <span class="keyword">class </span><a class="code hl_function" href="classroboligo_1_1Odom.html#aba8abdc8e9f42fb0536eebda99e3c23b">Odom</a> : <span class="keyword">public</span> <a class="code hl_function" href="classroboligo_1_1Sensor.html#a45770568b022e88cfb28a1adecee734e">Sensor</a></div>
@@ -134,12 +134,14 @@ $(function(){ initResizable(false); });
 </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} <span class="comment">// namespace roboligo</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif </span><span class="comment">// ROBOLIGO_COMMON_CONNECTOR_SENSORS__ODOM_HPP_</span></div>
+<div class="ttc" id="aSensor_8hpp_html"><div class="ttname"><a href="Sensor_8hpp.html">Sensor.hpp</a></div></div>
 <div class="ttc" id="aclassroboligo_1_1Odom_html_a00161a9d49da28c78a37fae4a37fb658"><div class="ttname"><a href="classroboligo_1_1Odom.html#a00161a9d49da28c78a37fae4a37fb658">roboligo::Odom::data</a></div><div class="ttdeci">nav_msgs::msg::Odometry::SharedPtr data</div><div class="ttdoc">Shared pointer storing the latest received odometry message.</div><div class="ttdef"><b>Definition</b> Odom.hpp:49</div></div>
 <div class="ttc" id="aclassroboligo_1_1Odom_html_a288654ef886ab0b8033af56065dff294"><div class="ttname"><a href="classroboligo_1_1Odom.html#a288654ef886ab0b8033af56065dff294">roboligo::Odom::~Odom</a></div><div class="ttdeci">virtual ~Odom()=default</div><div class="ttdoc">Virtual destructor.</div></div>
 <div class="ttc" id="aclassroboligo_1_1Odom_html_a874aa70eb02ce5311b16bf39662239f8"><div class="ttname"><a href="classroboligo_1_1Odom.html#a874aa70eb02ce5311b16bf39662239f8">roboligo::Odom::subscriber</a></div><div class="ttdeci">rclcpp::Subscription&lt; nav_msgs::msg::Odometry &gt;::SharedPtr subscriber</div><div class="ttdoc">ROS 2 subscription object for odometry messages.</div><div class="ttdef"><b>Definition</b> Odom.hpp:47</div></div>
 <div class="ttc" id="aclassroboligo_1_1Odom_html_a9e62c9b75a16a570eb995512fbb0568d"><div class="ttname"><a href="classroboligo_1_1Odom.html#a9e62c9b75a16a570eb995512fbb0568d">roboligo::Odom::callback</a></div><div class="ttdeci">void callback(nav_msgs::msg::Odometry::SharedPtr msg)</div><div class="ttdoc">Callback function invoked when a new odometry message is received.</div><div class="ttdef"><b>Definition</b> Odom.cpp:20</div></div>
 <div class="ttc" id="aclassroboligo_1_1Odom_html_aba8abdc8e9f42fb0536eebda99e3c23b"><div class="ttname"><a href="classroboligo_1_1Odom.html#aba8abdc8e9f42fb0536eebda99e3c23b">roboligo::Odom::Odom</a></div><div class="ttdeci">Odom(std::string new_name, std::string new_topic)</div><div class="ttdoc">Constructor for Odom sensor.</div><div class="ttdef"><b>Definition</b> Odom.hpp:39</div></div>
 <div class="ttc" id="aclassroboligo_1_1Sensor_html_a45770568b022e88cfb28a1adecee734e"><div class="ttname"><a href="classroboligo_1_1Sensor.html#a45770568b022e88cfb28a1adecee734e">roboligo::Sensor::Sensor</a></div><div class="ttdeci">Sensor(std::string new_name, std::string new_topic)</div><div class="ttdoc">Constructor for Sensor.</div><div class="ttdef"><b>Definition</b> Sensor.cpp:19</div></div>
+<div class="ttc" id="anamespaceroboligo_html"><div class="ttname"><a href="namespaceroboligo.html">roboligo</a></div><div class="ttdef"><b>Definition</b> ClassificationBase.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,0 +1,9 @@
+<map id="roboligo_common/include/roboligo_common/types/Interface.hpp" name="roboligo_common/include/roboligo_common/types/Interface.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="34,5,203,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,109,59,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,63,57,100,53,96,90,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="83,109,154,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,61,121,93,116,93,116,61"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="179,109,298,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,59,211,97,208,102,154,63"/>
+</map>

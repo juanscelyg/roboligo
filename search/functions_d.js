@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update_0',['update',['../classroboligo_1_1ClassificationBase.html#a2c65add341d891550e79ec127244cd86',1,'roboligo::ClassificationBase::update()'],['../classroboligo_1_1ConnectorBase.html#a145e997ed4cefc5af1c2a25e7fb3ace6',1,'roboligo::ConnectorBase::update()']]]
+  ['trigger_0',['Trigger',['../classroboligo_1_1Trigger.html#af334425a6fb11b460a2315de73dc5dcb',1,'roboligo::Trigger']]]
 ];

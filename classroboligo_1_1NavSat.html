@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>roboligo</b></li><li class="navelem"><a class="el" href="classroboligo_1_1NavSat.html">NavSat</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceroboligo.html">roboligo</a></li><li class="navelem"><a class="el" href="classroboligo_1_1NavSat.html">NavSat</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -117,106 +117,110 @@ Collaboration diagram for roboligo::NavSat:</div>
 <div class="dyncontent">
 <div class="center"><img src="classroboligo_1_1NavSat__coll__graph.png" border="0" usemap="#aroboligo_1_1NavSat_coll__map" alt="Collaboration graph"/></div>
 <map name="aroboligo_1_1NavSat_coll__map" id="aroboligo_1_1NavSat_coll__map">
-<area shape="rect" title="A sensor class for handling GNSS/GPS navigation satellite data." alt="" coords="5,153,122,178"/>
-<area shape="rect" href="classroboligo_1_1Sensor.html" title="A sensor class that extends Linker functionality for subscribing to sensor data." alt="" coords="7,79,120,105"/>
-<area shape="poly" title=" " alt="" coords="66,120,66,152,61,152,61,120"/>
-<area shape="rect" href="classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections." alt="" coords="9,5,118,31"/>
-<area shape="poly" title=" " alt="" coords="66,46,66,79,61,79,61,46"/>
+<area shape="rect" title="A sensor class for handling GNSS/GPS navigation satellite data." alt="" coords="447,288,564,313"/>
+<area shape="rect" href="classroboligo_1_1Sensor.html" title="A sensor class that extends Linker functionality for subscribing to sensor data." alt="" coords="329,199,442,225"/>
+<area shape="poly" title=" " alt="" coords="416,231,490,285,487,289,412,236"/>
+<area shape="rect" href="classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections." alt="" coords="251,124,360,150"/>
+<area shape="poly" title=" " alt="" coords="332,158,374,197,371,201,328,162"/>
+<area shape="rect" title=" " alt="" coords="182,13,235,38"/>
+<area shape="poly" title=" " alt="" coords="215,53,222,76,235,98,250,111,268,121,266,126,247,116,231,102,217,79,210,54"/>
+<area shape="rect" title=" " alt="" coords="5,5,158,46"/>
+<area shape="poly" title=" " alt="" coords="109,55,133,78,160,98,206,116,252,127,250,132,204,121,158,102,129,82,105,59"/>
+<area shape="rect" title=" " alt="" coords="403,13,464,38"/>
+<area shape="poly" title=" " alt="" coords="446,53,451,76,449,101,439,130,425,158,397,200,393,197,420,155,434,128,444,99,446,76,441,54"/>
+<area shape="poly" title=" " alt="" coords="419,53,400,78,375,102,336,126,333,121,372,98,396,74,415,50"/>
+<area shape="rect" title=" " alt="" coords="283,13,328,38"/>
+<area shape="poly" title=" " alt="" coords="308,54,308,124,303,124,303,54"/>
+<area shape="rect" title=" " alt="" coords="466,199,545,225"/>
+<area shape="poly" title=" " alt="" coords="508,240,508,287,503,287,503,240"/>
+<area shape="rect" title=" " alt="" coords="570,199,649,225"/>
+<area shape="poly" title=" " alt="" coords="597,240,575,266,537,289,534,285,572,262,593,236"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a423f5512b1703a8021c0e19be10dde49" id="r_a423f5512b1703a8021c0e19be10dde49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a423f5512b1703a8021c0e19be10dde49">NavSat</a> (std::string new_name, std::string new_topic)</td></tr>
-<tr class="memdesc:a423f5512b1703a8021c0e19be10dde49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classroboligo_1_1NavSat.html" title="A sensor class for handling GNSS/GPS navigation satellite data.">NavSat</a> sensor.  <br /></td></tr>
-<tr class="separator:a423f5512b1703a8021c0e19be10dde49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a279ed0c3b667c9ed6a04398c10a103d4" id="r_a279ed0c3b667c9ed6a04398c10a103d4"><td class="memItemLeft" align="right" valign="top"><a id="a279ed0c3b667c9ed6a04398c10a103d4" name="a279ed0c3b667c9ed6a04398c10a103d4"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~NavSat</b> ()=default</td></tr>
-<tr class="memdesc:a279ed0c3b667c9ed6a04398c10a103d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
-<tr class="separator:a279ed0c3b667c9ed6a04398c10a103d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a536832b3cb6bb609244fd252da40686a" id="r_a536832b3cb6bb609244fd252da40686a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a536832b3cb6bb609244fd252da40686a">callback</a> (sensor_msgs::msg::NavSatFix::SharedPtr msg)</td></tr>
 <tr class="memdesc:a536832b3cb6bb609244fd252da40686a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function invoked when new NavSatFix data is received.  <br /></td></tr>
 <tr class="separator:a536832b3cb6bb609244fd252da40686a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423f5512b1703a8021c0e19be10dde49" id="r_a423f5512b1703a8021c0e19be10dde49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a423f5512b1703a8021c0e19be10dde49">NavSat</a> (std::string new_name, std::string new_topic)</td></tr>
+<tr class="memdesc:a423f5512b1703a8021c0e19be10dde49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classroboligo_1_1NavSat.html" title="A sensor class for handling GNSS/GPS navigation satellite data.">NavSat</a> sensor.  <br /></td></tr>
+<tr class="separator:a423f5512b1703a8021c0e19be10dde49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279ed0c3b667c9ed6a04398c10a103d4" id="r_a279ed0c3b667c9ed6a04398c10a103d4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a279ed0c3b667c9ed6a04398c10a103d4">~NavSat</a> ()=default</td></tr>
+<tr class="memdesc:a279ed0c3b667c9ed6a04398c10a103d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
+<tr class="separator:a279ed0c3b667c9ed6a04398c10a103d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classroboligo_1_1Sensor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classroboligo_1_1Sensor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classroboligo_1_1Sensor.html">roboligo::Sensor</a></td></tr>
-<tr class="memitem:a45770568b022e88cfb28a1adecee734e inherit pub_methods_classroboligo_1_1Sensor" id="r_a45770568b022e88cfb28a1adecee734e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Sensor.html#a45770568b022e88cfb28a1adecee734e">Sensor</a> (std::string new_name, std::string new_topic)</td></tr>
-<tr class="memdesc:a45770568b022e88cfb28a1adecee734e inherit pub_methods_classroboligo_1_1Sensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classroboligo_1_1Sensor.html" title="A sensor class that extends Linker functionality for subscribing to sensor data.">Sensor</a>.  <br /></td></tr>
-<tr class="separator:a45770568b022e88cfb28a1adecee734e inherit pub_methods_classroboligo_1_1Sensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a6b2008275f46718dbc4cbb8278ae8a inherit pub_methods_classroboligo_1_1Sensor" id="r_a2a6b2008275f46718dbc4cbb8278ae8a"><td class="memItemLeft" align="right" valign="top">
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Sensor</b> ()=default</td></tr>
-<tr class="memdesc:a2a6b2008275f46718dbc4cbb8278ae8a inherit pub_methods_classroboligo_1_1Sensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
-<tr class="separator:a2a6b2008275f46718dbc4cbb8278ae8a inherit pub_methods_classroboligo_1_1Sensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0756506c6d32205cfabe28802333da3 inherit pub_methods_classroboligo_1_1Sensor" id="r_ac0756506c6d32205cfabe28802333da3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Sensor.html#ac0756506c6d32205cfabe28802333da3">init</a> (std::string new_name, std::string new_topic)</td></tr>
 <tr class="memdesc:ac0756506c6d32205cfabe28802333da3 inherit pub_methods_classroboligo_1_1Sensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the sensor with a name and topic.  <br /></td></tr>
 <tr class="separator:ac0756506c6d32205cfabe28802333da3 inherit pub_methods_classroboligo_1_1Sensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45770568b022e88cfb28a1adecee734e inherit pub_methods_classroboligo_1_1Sensor" id="r_a45770568b022e88cfb28a1adecee734e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Sensor.html#a45770568b022e88cfb28a1adecee734e">Sensor</a> (std::string new_name, std::string new_topic)</td></tr>
+<tr class="memdesc:a45770568b022e88cfb28a1adecee734e inherit pub_methods_classroboligo_1_1Sensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classroboligo_1_1Sensor.html" title="A sensor class that extends Linker functionality for subscribing to sensor data.">Sensor</a>.  <br /></td></tr>
+<tr class="separator:a45770568b022e88cfb28a1adecee734e inherit pub_methods_classroboligo_1_1Sensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6b2008275f46718dbc4cbb8278ae8a inherit pub_methods_classroboligo_1_1Sensor" id="r_a2a6b2008275f46718dbc4cbb8278ae8a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Sensor.html#a2a6b2008275f46718dbc4cbb8278ae8a">~Sensor</a> ()=default</td></tr>
+<tr class="memdesc:a2a6b2008275f46718dbc4cbb8278ae8a inherit pub_methods_classroboligo_1_1Sensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
+<tr class="separator:a2a6b2008275f46718dbc4cbb8278ae8a inherit pub_methods_classroboligo_1_1Sensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classroboligo_1_1Linker"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classroboligo_1_1Linker')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classroboligo_1_1Linker.html">roboligo::Linker</a></td></tr>
-<tr class="memitem:a41477bcc50b3168fae4035576a328deb inherit pub_methods_classroboligo_1_1Linker" id="r_a41477bcc50b3168fae4035576a328deb"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>Linker</b> ()</td></tr>
-<tr class="memdesc:a41477bcc50b3168fae4035576a328deb inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
-<tr class="separator:a41477bcc50b3168fae4035576a328deb inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55c52391c1d4b60fdb1eec36c8b8f581 inherit pub_methods_classroboligo_1_1Linker" id="r_a55c52391c1d4b60fdb1eec36c8b8f581"><td class="memItemLeft" align="right" valign="top">
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Linker</b> ()=default</td></tr>
-<tr class="memdesc:a55c52391c1d4b60fdb1eec36c8b8f581 inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
-<tr class="separator:a55c52391c1d4b60fdb1eec36c8b8f581 inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d3c46663a2b72eb59f31b17a3f0d9b0 inherit pub_methods_classroboligo_1_1Linker" id="r_a3d3c46663a2b72eb59f31b17a3f0d9b0"><td class="memItemLeft" align="right" valign="top">interfaces::modes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a3d3c46663a2b72eb59f31b17a3f0d9b0">get_mode</a> ()</td></tr>
+<tr class="memitem:a3d3c46663a2b72eb59f31b17a3f0d9b0 inherit pub_methods_classroboligo_1_1Linker" id="r_a3d3c46663a2b72eb59f31b17a3f0d9b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceroboligo_1_1interfaces.html#a60124be772a9f2b185c0278185c711e9">interfaces::modes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a3d3c46663a2b72eb59f31b17a3f0d9b0">get_mode</a> ()</td></tr>
 <tr class="memdesc:a3d3c46663a2b72eb59f31b17a3f0d9b0 inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current mode of the linker.  <br /></td></tr>
 <tr class="separator:a3d3c46663a2b72eb59f31b17a3f0d9b0 inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb66c48fe38eb6125781fb5570657064 inherit pub_methods_classroboligo_1_1Linker" id="r_abb66c48fe38eb6125781fb5570657064"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#abb66c48fe38eb6125781fb5570657064">set_mode</a> (interfaces::modes new_mode)</td></tr>
-<tr class="memdesc:abb66c48fe38eb6125781fb5570657064 inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the linker mode.  <br /></td></tr>
-<tr class="separator:abb66c48fe38eb6125781fb5570657064 inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6404f9fe8f23ccf0c67c35351671ea6f inherit pub_methods_classroboligo_1_1Linker" id="r_a6404f9fe8f23ccf0c67c35351671ea6f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a6404f9fe8f23ccf0c67c35351671ea6f">get_name</a> ()</td></tr>
 <tr class="memdesc:a6404f9fe8f23ccf0c67c35351671ea6f inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the linker name.  <br /></td></tr>
 <tr class="separator:a6404f9fe8f23ccf0c67c35351671ea6f inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af914284c7e0a98098fa84c56e56512ce inherit pub_methods_classroboligo_1_1Linker" id="r_af914284c7e0a98098fa84c56e56512ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#af914284c7e0a98098fa84c56e56512ce">set_name</a> (std::string new_name)</td></tr>
-<tr class="memdesc:af914284c7e0a98098fa84c56e56512ce inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the linker name.  <br /></td></tr>
-<tr class="separator:af914284c7e0a98098fa84c56e56512ce inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e3e90d2af78d2b8511bba9532045f2b inherit pub_methods_classroboligo_1_1Linker" id="r_a6e3e90d2af78d2b8511bba9532045f2b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a6e3e90d2af78d2b8511bba9532045f2b">get_topic</a> ()</td></tr>
 <tr class="memdesc:a6e3e90d2af78d2b8511bba9532045f2b inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the topic name.  <br /></td></tr>
 <tr class="separator:a6e3e90d2af78d2b8511bba9532045f2b inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5ad2420439d5f6140f48ef52198a626 inherit pub_methods_classroboligo_1_1Linker" id="r_ac5ad2420439d5f6140f48ef52198a626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#ac5ad2420439d5f6140f48ef52198a626">set_topic</a> (std::string new_name)</td></tr>
-<tr class="memdesc:ac5ad2420439d5f6140f48ef52198a626 inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the topic name.  <br /></td></tr>
-<tr class="separator:ac5ad2420439d5f6140f48ef52198a626 inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa63681d3c06990b4432164b6ac29cd inherit pub_methods_classroboligo_1_1Linker" id="r_aaaa63681d3c06990b4432164b6ac29cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#aaaa63681d3c06990b4432164b6ac29cd">set_service</a> (std::string new_name)</td></tr>
-<tr class="memdesc:aaaa63681d3c06990b4432164b6ac29cd inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the service name.  <br /></td></tr>
-<tr class="separator:aaaa63681d3c06990b4432164b6ac29cd inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e8ece97464e48ef68d7d94f0fd31934 inherit pub_methods_classroboligo_1_1Linker" id="r_a1e8ece97464e48ef68d7d94f0fd31934"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a1e8ece97464e48ef68d7d94f0fd31934">set_interface</a> (std::string name_, std::string topic_name_)</td></tr>
-<tr class="memdesc:a1e8ece97464e48ef68d7d94f0fd31934 inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the interface with name and topic.  <br /></td></tr>
-<tr class="separator:a1e8ece97464e48ef68d7d94f0fd31934 inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79539ee8163592c0981eaadabb44e34f inherit pub_methods_classroboligo_1_1Linker" id="r_a79539ee8163592c0981eaadabb44e34f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a79539ee8163592c0981eaadabb44e34f">is_available</a> (void)</td></tr>
 <tr class="memdesc:a79539ee8163592c0981eaadabb44e34f inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the linker is available.  <br /></td></tr>
 <tr class="separator:a79539ee8163592c0981eaadabb44e34f inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc277962252716bf5186a577ecafcadc inherit pub_methods_classroboligo_1_1Linker" id="r_adc277962252716bf5186a577ecafcadc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#adc277962252716bf5186a577ecafcadc">is_configured</a> (void)</td></tr>
 <tr class="memdesc:adc277962252716bf5186a577ecafcadc inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the linker is configured.  <br /></td></tr>
 <tr class="separator:adc277962252716bf5186a577ecafcadc inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41477bcc50b3168fae4035576a328deb inherit pub_methods_classroboligo_1_1Linker" id="r_a41477bcc50b3168fae4035576a328deb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a41477bcc50b3168fae4035576a328deb">Linker</a> ()</td></tr>
+<tr class="memdesc:a41477bcc50b3168fae4035576a328deb inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="separator:a41477bcc50b3168fae4035576a328deb inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81ca554e7a0c7205404a89411c5bd5f8 inherit pub_methods_classroboligo_1_1Linker" id="r_a81ca554e7a0c7205404a89411c5bd5f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a81ca554e7a0c7205404a89411c5bd5f8">set_available</a> (bool new_state)</td></tr>
 <tr class="memdesc:a81ca554e7a0c7205404a89411c5bd5f8 inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the availability state.  <br /></td></tr>
 <tr class="separator:a81ca554e7a0c7205404a89411c5bd5f8 inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7deff658a8134a1e176be1d42c9f9cc2 inherit pub_methods_classroboligo_1_1Linker" id="r_a7deff658a8134a1e176be1d42c9f9cc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a7deff658a8134a1e176be1d42c9f9cc2">set_configured</a> (bool new_state)</td></tr>
 <tr class="memdesc:a7deff658a8134a1e176be1d42c9f9cc2 inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the configuration state.  <br /></td></tr>
 <tr class="separator:a7deff658a8134a1e176be1d42c9f9cc2 inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8ece97464e48ef68d7d94f0fd31934 inherit pub_methods_classroboligo_1_1Linker" id="r_a1e8ece97464e48ef68d7d94f0fd31934"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a1e8ece97464e48ef68d7d94f0fd31934">set_interface</a> (std::string name_, std::string topic_name_)</td></tr>
+<tr class="memdesc:a1e8ece97464e48ef68d7d94f0fd31934 inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the interface with name and topic.  <br /></td></tr>
+<tr class="separator:a1e8ece97464e48ef68d7d94f0fd31934 inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb66c48fe38eb6125781fb5570657064 inherit pub_methods_classroboligo_1_1Linker" id="r_abb66c48fe38eb6125781fb5570657064"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#abb66c48fe38eb6125781fb5570657064">set_mode</a> (<a class="el" href="namespaceroboligo_1_1interfaces.html#a60124be772a9f2b185c0278185c711e9">interfaces::modes</a> new_mode)</td></tr>
+<tr class="memdesc:abb66c48fe38eb6125781fb5570657064 inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the linker mode.  <br /></td></tr>
+<tr class="separator:abb66c48fe38eb6125781fb5570657064 inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af914284c7e0a98098fa84c56e56512ce inherit pub_methods_classroboligo_1_1Linker" id="r_af914284c7e0a98098fa84c56e56512ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#af914284c7e0a98098fa84c56e56512ce">set_name</a> (std::string new_name)</td></tr>
+<tr class="memdesc:af914284c7e0a98098fa84c56e56512ce inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the linker name.  <br /></td></tr>
+<tr class="separator:af914284c7e0a98098fa84c56e56512ce inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa63681d3c06990b4432164b6ac29cd inherit pub_methods_classroboligo_1_1Linker" id="r_aaaa63681d3c06990b4432164b6ac29cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#aaaa63681d3c06990b4432164b6ac29cd">set_service</a> (std::string new_name)</td></tr>
+<tr class="memdesc:aaaa63681d3c06990b4432164b6ac29cd inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the service name.  <br /></td></tr>
+<tr class="separator:aaaa63681d3c06990b4432164b6ac29cd inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ad2420439d5f6140f48ef52198a626 inherit pub_methods_classroboligo_1_1Linker" id="r_ac5ad2420439d5f6140f48ef52198a626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#ac5ad2420439d5f6140f48ef52198a626">set_topic</a> (std::string new_name)</td></tr>
+<tr class="memdesc:ac5ad2420439d5f6140f48ef52198a626 inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the topic name.  <br /></td></tr>
+<tr class="separator:ac5ad2420439d5f6140f48ef52198a626 inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c52391c1d4b60fdb1eec36c8b8f581 inherit pub_methods_classroboligo_1_1Linker" id="r_a55c52391c1d4b60fdb1eec36c8b8f581"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a55c52391c1d4b60fdb1eec36c8b8f581">~Linker</a> ()=default</td></tr>
+<tr class="memdesc:a55c52391c1d4b60fdb1eec36c8b8f581 inherit pub_methods_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
+<tr class="separator:a55c52391c1d4b60fdb1eec36c8b8f581 inherit pub_methods_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2f78f9e8cec90adf45910cfa7deb71f1" id="r_a2f78f9e8cec90adf45910cfa7deb71f1"><td class="memItemLeft" align="right" valign="top"><a id="a2f78f9e8cec90adf45910cfa7deb71f1" name="a2f78f9e8cec90adf45910cfa7deb71f1"></a>
-rclcpp::Subscription&lt; sensor_msgs::msg::NavSatFix &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><b>subscriber</b></td></tr>
-<tr class="memdesc:a2f78f9e8cec90adf45910cfa7deb71f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ROS 2 subscription to NavSatFix messages. <br /></td></tr>
-<tr class="separator:a2f78f9e8cec90adf45910cfa7deb71f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1188d1f10b3df7623c2d6ef1f6f5dd6d" id="r_a1188d1f10b3df7623c2d6ef1f6f5dd6d"><td class="memItemLeft" align="right" valign="top"><a id="a1188d1f10b3df7623c2d6ef1f6f5dd6d" name="a1188d1f10b3df7623c2d6ef1f6f5dd6d"></a>
-sensor_msgs::msg::NavSatFix::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
-<tr class="memdesc:a1188d1f10b3df7623c2d6ef1f6f5dd6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the most recent NavSatFix data received. <br /></td></tr>
+<tr class="memitem:a1188d1f10b3df7623c2d6ef1f6f5dd6d" id="r_a1188d1f10b3df7623c2d6ef1f6f5dd6d"><td class="memItemLeft" align="right" valign="top">sensor_msgs::msg::NavSatFix::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1188d1f10b3df7623c2d6ef1f6f5dd6d">data</a></td></tr>
+<tr class="memdesc:a1188d1f10b3df7623c2d6ef1f6f5dd6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the most recent NavSatFix data received.  <br /></td></tr>
 <tr class="separator:a1188d1f10b3df7623c2d6ef1f6f5dd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f78f9e8cec90adf45910cfa7deb71f1" id="r_a2f78f9e8cec90adf45910cfa7deb71f1"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; sensor_msgs::msg::NavSatFix &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f78f9e8cec90adf45910cfa7deb71f1">subscriber</a></td></tr>
+<tr class="memdesc:a2f78f9e8cec90adf45910cfa7deb71f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ROS 2 subscription to NavSatFix messages.  <br /></td></tr>
+<tr class="separator:a2f78f9e8cec90adf45910cfa7deb71f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classroboligo_1_1Linker"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classroboligo_1_1Linker')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classroboligo_1_1Linker.html">roboligo::Linker</a></td></tr>
-<tr class="memitem:a700e8e55eaba2127c76590d8a2d818fc inherit pub_attribs_classroboligo_1_1Linker" id="r_a700e8e55eaba2127c76590d8a2d818fc"><td class="memItemLeft" align="right" valign="top">
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> {&quot;linker&quot;}</td></tr>
-<tr class="memdesc:a700e8e55eaba2127c76590d8a2d818fc inherit pub_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections.">Linker</a> identifier name. <br /></td></tr>
-<tr class="separator:a700e8e55eaba2127c76590d8a2d818fc inherit pub_attribs_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c1e345b4d448c041bd05146aff95552 inherit pub_attribs_classroboligo_1_1Linker" id="r_a1c1e345b4d448c041bd05146aff95552"><td class="memItemLeft" align="right" valign="top">
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>topic_name</b> {&quot;/interface&quot;}</td></tr>
-<tr class="memdesc:a1c1e345b4d448c041bd05146aff95552 inherit pub_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associated topic name. <br /></td></tr>
-<tr class="separator:a1c1e345b4d448c041bd05146aff95552 inherit pub_attribs_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb33bdc28ab0b8c76f92fca658096caa inherit pub_attribs_classroboligo_1_1Linker" id="r_abb33bdc28ab0b8c76f92fca658096caa"><td class="memItemLeft" align="right" valign="top">
-std::shared_ptr&lt; <a class="el" href="classroboligo_1_1interfaces_1_1Interface.html">interfaces::Interface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interface</b></td></tr>
-<tr class="memdesc:abb33bdc28ab0b8c76f92fca658096caa inherit pub_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer to the interface object. <br /></td></tr>
+<tr class="memitem:abb33bdc28ab0b8c76f92fca658096caa inherit pub_attribs_classroboligo_1_1Linker" id="r_abb33bdc28ab0b8c76f92fca658096caa"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classroboligo_1_1interfaces_1_1Interface.html">interfaces::Interface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#abb33bdc28ab0b8c76f92fca658096caa">interface</a></td></tr>
+<tr class="memdesc:abb33bdc28ab0b8c76f92fca658096caa inherit pub_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer to the interface object.  <br /></td></tr>
 <tr class="separator:abb33bdc28ab0b8c76f92fca658096caa inherit pub_attribs_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700e8e55eaba2127c76590d8a2d818fc inherit pub_attribs_classroboligo_1_1Linker" id="r_a700e8e55eaba2127c76590d8a2d818fc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a700e8e55eaba2127c76590d8a2d818fc">name</a> {&quot;linker&quot;}</td></tr>
+<tr class="memdesc:a700e8e55eaba2127c76590d8a2d818fc inherit pub_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections.">Linker</a> identifier name.  <br /></td></tr>
+<tr class="separator:a700e8e55eaba2127c76590d8a2d818fc inherit pub_attribs_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1e345b4d448c041bd05146aff95552 inherit pub_attribs_classroboligo_1_1Linker" id="r_a1c1e345b4d448c041bd05146aff95552"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a1c1e345b4d448c041bd05146aff95552">topic_name</a> {&quot;/interface&quot;}</td></tr>
+<tr class="memdesc:a1c1e345b4d448c041bd05146aff95552 inherit pub_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associated topic name.  <br /></td></tr>
+<tr class="separator:a1c1e345b4d448c041bd05146aff95552 inherit pub_attribs_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -225,23 +229,19 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a29bd6c30783a3882e10800abc7bbd5de inherit pro_methods_classroboligo_1_1Sensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected initialization method.  <br /></td></tr>
 <tr class="separator:a29bd6c30783a3882e10800abc7bbd5de inherit pro_methods_classroboligo_1_1Sensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classroboligo_1_1Sensor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classroboligo_1_1Sensor')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classroboligo_1_1Sensor.html">roboligo::Sensor</a></td></tr>
-<tr class="memitem:a0fcca511560bb038487ede6b7da4372a inherit pro_attribs_classroboligo_1_1Sensor" id="r_a0fcca511560bb038487ede6b7da4372a"><td class="memItemLeft" align="right" valign="top">
-interfaces::modes&#160;</td><td class="memItemRight" valign="bottom"><b>mode_</b> {interfaces::modes::SUBSCRIBER}</td></tr>
-<tr class="memdesc:a0fcca511560bb038487ede6b7da4372a inherit pro_attribs_classroboligo_1_1Sensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">The connection mode set to SUBSCRIBER for receiving sensor data. <br /></td></tr>
+<tr class="memitem:a0fcca511560bb038487ede6b7da4372a inherit pro_attribs_classroboligo_1_1Sensor" id="r_a0fcca511560bb038487ede6b7da4372a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceroboligo_1_1interfaces.html#a60124be772a9f2b185c0278185c711e9">interfaces::modes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Sensor.html#a0fcca511560bb038487ede6b7da4372a">mode_</a> {<a class="el" href="namespaceroboligo_1_1interfaces.html#a60124be772a9f2b185c0278185c711e9ac34fea6778f48f5678c8458ed0de675e">interfaces::modes::SUBSCRIBER</a>}</td></tr>
+<tr class="memdesc:a0fcca511560bb038487ede6b7da4372a inherit pro_attribs_classroboligo_1_1Sensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">The connection mode set to SUBSCRIBER for receiving sensor data.  <br /></td></tr>
 <tr class="separator:a0fcca511560bb038487ede6b7da4372a inherit pro_attribs_classroboligo_1_1Sensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classroboligo_1_1Linker"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classroboligo_1_1Linker')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classroboligo_1_1Linker.html">roboligo::Linker</a></td></tr>
-<tr class="memitem:add3fd2ab4a4dfbdc967a2719547fe182 inherit pro_attribs_classroboligo_1_1Linker" id="r_add3fd2ab4a4dfbdc967a2719547fe182"><td class="memItemLeft" align="right" valign="top">
-interfaces::modes&#160;</td><td class="memItemRight" valign="bottom"><b>mode_</b></td></tr>
-<tr class="memdesc:add3fd2ab4a4dfbdc967a2719547fe182 inherit pro_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current operating mode. <br /></td></tr>
-<tr class="separator:add3fd2ab4a4dfbdc967a2719547fe182 inherit pro_attribs_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a908b573e223a46ea01dfe6d32ff3bf75 inherit pro_attribs_classroboligo_1_1Linker" id="r_a908b573e223a46ea01dfe6d32ff3bf75"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>available_</b> {false}</td></tr>
-<tr class="memdesc:a908b573e223a46ea01dfe6d32ff3bf75 inherit pro_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Availability flag. <br /></td></tr>
+<tr class="memitem:a908b573e223a46ea01dfe6d32ff3bf75 inherit pro_attribs_classroboligo_1_1Linker" id="r_a908b573e223a46ea01dfe6d32ff3bf75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a908b573e223a46ea01dfe6d32ff3bf75">available_</a> {false}</td></tr>
+<tr class="memdesc:a908b573e223a46ea01dfe6d32ff3bf75 inherit pro_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Availability flag.  <br /></td></tr>
 <tr class="separator:a908b573e223a46ea01dfe6d32ff3bf75 inherit pro_attribs_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a2fe234ebad9462c12de1efa5abc4a2 inherit pro_attribs_classroboligo_1_1Linker" id="r_a2a2fe234ebad9462c12de1efa5abc4a2"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>configured_</b> {false}</td></tr>
-<tr class="memdesc:a2a2fe234ebad9462c12de1efa5abc4a2 inherit pro_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration state flag. <br /></td></tr>
+<tr class="memitem:a2a2fe234ebad9462c12de1efa5abc4a2 inherit pro_attribs_classroboligo_1_1Linker" id="r_a2a2fe234ebad9462c12de1efa5abc4a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#a2a2fe234ebad9462c12de1efa5abc4a2">configured_</a> {false}</td></tr>
+<tr class="memdesc:a2a2fe234ebad9462c12de1efa5abc4a2 inherit pro_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration state flag.  <br /></td></tr>
 <tr class="separator:a2a2fe234ebad9462c12de1efa5abc4a2 inherit pro_attribs_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3fd2ab4a4dfbdc967a2719547fe182 inherit pro_attribs_classroboligo_1_1Linker" id="r_add3fd2ab4a4dfbdc967a2719547fe182"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceroboligo_1_1interfaces.html#a60124be772a9f2b185c0278185c711e9">interfaces::modes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroboligo_1_1Linker.html#add3fd2ab4a4dfbdc967a2719547fe182">mode_</a></td></tr>
+<tr class="memdesc:add3fd2ab4a4dfbdc967a2719547fe182 inherit pro_attribs_classroboligo_1_1Linker"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current operating mode.  <br /></td></tr>
+<tr class="separator:add3fd2ab4a4dfbdc967a2719547fe182 inherit pro_attribs_classroboligo_1_1Linker"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A sensor class for handling GNSS/GPS navigation satellite data. </p>
@@ -285,6 +285,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>configured_</b> {fals
 
 </div>
 </div>
+<a id="a279ed0c3b667c9ed6a04398c10a103d4" name="a279ed0c3b667c9ed6a04398c10a103d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279ed0c3b667c9ed6a04398c10a103d4">&#9670;&#160;</a></span>~NavSat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual roboligo::NavSat::~NavSat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual destructor. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a536832b3cb6bb609244fd252da40686a" name="a536832b3cb6bb609244fd252da40686a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a536832b3cb6bb609244fd252da40686a">&#9670;&#160;</a></span>callback()</h2>
@@ -311,9 +338,42 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>configured_</b> {fals
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1188d1f10b3df7623c2d6ef1f6f5dd6d" name="a1188d1f10b3df7623c2d6ef1f6f5dd6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1188d1f10b3df7623c2d6ef1f6f5dd6d">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sensor_msgs::msg::NavSatFix::SharedPtr roboligo::NavSat::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the most recent NavSatFix data received. </p>
+
+</div>
+</div>
+<a id="a2f78f9e8cec90adf45910cfa7deb71f1" name="a2f78f9e8cec90adf45910cfa7deb71f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f78f9e8cec90adf45910cfa7deb71f1">&#9670;&#160;</a></span>subscriber</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::Subscription&lt;sensor_msgs::msg::NavSatFix&gt;::SharedPtr roboligo::NavSat::subscriber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ROS 2 subscription to NavSatFix messages. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>roboligo_common/include/roboligo_common/connector/sensors/<a class="el" href="NavSat_8hpp_source.html">NavSat.hpp</a></li>
-<li>roboligo_common/src/roboligo_common/connector/sensors/<b>NavSat.cpp</b></li>
+<li>roboligo_common/src/roboligo_common/connector/sensors/<a class="el" href="NavSat_8cpp.html">NavSat.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

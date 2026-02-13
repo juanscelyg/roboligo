@@ -1,0 +1,15 @@
+<map id="roboligo_common/src/roboligo_common/types/Linker.cpp" name="roboligo_common/src/roboligo_common/types/Linker.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="54,5,216,61"/>
+<area shape="rect" id="Node000002" href="$Linker_8hpp.html" title=" " alt="" coords="56,109,214,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,62,137,94,132,94,132,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,286,59,312"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,152,69,172,46,199,34,235,32,271,27,271,29,234,42,196,65,169,94,148"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="191,286,310,312"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="174,148,203,169,228,196,244,234,251,270,246,271,239,235,223,199,199,173,171,152"/>
+<area shape="rect" id="Node000005" href="$Interface_8hpp.html" title=" " alt="" coords="56,198,214,238"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="137,150,137,182,132,182,132,150"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="111,241,61,279,58,274,108,237"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="165,237,222,275,219,280,162,241"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="95,286,166,312"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="136,239,135,271,129,271,131,239"/>
+</map>

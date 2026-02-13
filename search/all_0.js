@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['active_5f_0',['active_',['../classroboligo_1_1Mode.html#a14c2232d56c01d9041d96498eb9584d0',1,'roboligo::Mode']]],
-  ['and_20build_1',['Clone and Build',['../md_README.html#autotoc_md3',1,'']]],
-  ['armingverb_2',['ArmingVerb',['../classroboligo__cli_1_1verb_1_1arming_1_1ArmingVerb.html',1,'roboligo_cli::verb::arming']]],
-  ['available_5f_3',['available_',['../classroboligo_1_1Trigger.html#a0644ff69e181d416593bd280353a1c66',1,'roboligo::Trigger::available_'],['../classroboligo_1_1Linker.html#a908b573e223a46ea01dfe6d32ff3bf75',1,'roboligo::Linker::available_']]]
+  ['_5f_5finit_5f_5f_2epy_0',['__init__.py',['../____init_____8py.html',1,'(Global Namespace)'],['../api_2____init_____8py.html',1,'(Global Namespace)'],['../command_2____init_____8py.html',1,'(Global Namespace)'],['../verb_2____init_____8py.html',1,'(Global Namespace)']]],
+  ['_5fsubparser_1',['_subparser',['../classroboligo__cli_1_1command_1_1roboligo_1_1RoboligoCommand.html#acda2c6aca5a3bc10dfa21d75a0688c56',1,'roboligo_cli::command::roboligo::RoboligoCommand']]]
 ];

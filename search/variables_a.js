@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['subscriber_0',['subscriber',['../classroboligo_1_1Battery.html#a9ae26492f076c738d2e0f851c7c4424b',1,'roboligo::Battery::subscriber'],['../classroboligo_1_1Imu.html#a6a31ad8470b69004be4e5f70fbf7b39b',1,'roboligo::Imu::subscriber'],['../classroboligo_1_1NavSat.html#a2f78f9e8cec90adf45910cfa7deb71f1',1,'roboligo::NavSat::subscriber'],['../classroboligo_1_1Odom.html#a874aa70eb02ce5311b16bf39662239f8',1,'roboligo::Odom::subscriber']]]
+  ['maintainer_0',['maintainer',['../namespacesetup.html#aa1a7cf9bbf76004bb72697dc00bbee9d',1,'setup']]],
+  ['maintainer_5femail_1',['maintainer_email',['../namespacesetup.html#a92a81adbfdd219564d5246ce8d77f869',1,'setup']]],
+  ['mode_2',['mode',['../structroboligo_1_1interfaces_1_1type.html#abfb5e884d330c73f159608abcc6d5a5f',1,'roboligo::interfaces::type']]],
+  ['mode_5f_3',['mode_',['../classroboligo_1_1Sensor.html#a0fcca511560bb038487ede6b7da4372a',1,'roboligo::Sensor::mode_'],['../classroboligo_1_1Linker.html#add3fd2ab4a4dfbdc967a2719547fe182',1,'roboligo::Linker::mode_']]]
 ];

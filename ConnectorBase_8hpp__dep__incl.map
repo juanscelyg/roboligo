@@ -1,0 +1,16 @@
+<map id="roboligo_common/include/roboligo_common/connector/ConnectorBase.hpp" name="roboligo_common/include/roboligo_common/connector/ConnectorBase.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="213,5,402,61"/>
+<area shape="rect" id="Node000002" href="$ConnectorBase_8cpp.html" title=" " alt="" coords="5,109,194,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,71,157,111,154,106,237,66"/>
+<area shape="rect" id="Node000003" href="$ConnectorNode_8hpp.html" title=" " alt="" coords="218,109,397,165"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="310,77,310,108,305,108,305,77"/>
+<area shape="rect" id="Node000005" href="$RoboligoNode_8hpp.html" title=" " alt="" coords="320,220,548,261"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="373,68,394,86,411,108,425,136,433,167,437,220,432,220,427,168,420,138,407,110,390,90,369,72"/>
+<area shape="rect" id="Node000004" href="$ConnectorNode_8cpp.html" title=" " alt="" coords="140,213,296,268"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="275,178,244,214,240,210,271,175"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="355,172,411,218,408,222,351,177"/>
+<area shape="rect" id="Node000006" href="$roboligo__main_8cpp.html" title=" " alt="" coords="262,316,399,357"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="403,273,353,318,350,314,400,269"/>
+<area shape="rect" id="Node000007" href="$RoboligoNode_8cpp.html" title=" " alt="" coords="423,316,651,357"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="468,269,517,314,514,318,465,273"/>
+</map>

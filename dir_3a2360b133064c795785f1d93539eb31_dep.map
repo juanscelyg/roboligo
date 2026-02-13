@@ -1,4 +1,7 @@
 <map id="roboligo_connector/src/roboligo_connector" name="roboligo_connector/src/roboligo_connector">
 <area shape="rect" id="node1" href="dir_3a2360b133064c795785f1d93539eb31.html" title="roboligo_connector" alt="" coords="27,52,157,78"/>
+<area shape="rect" id="node2" href="dir_07483ed5e8df90d712692181cbd36cc1.html" title="include" alt="" coords="61,126,123,152"/>
+<area shape="poly" id="edge1" href="dir_000019_000009.html" alt="" coords="95,78,95,110,89,110,89,78"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000019_000009.html" title="1" alt="" coords="97,100,104,115"/>
 <area shape="rect" id="clust1" href="dir_579f9963cb262bd4663d2d4487330f77.html" title="src" alt="" coords="16,16,168,89"/>
 </map>

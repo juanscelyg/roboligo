@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>roboligo</b></li><li class="navelem"><a class="el" href="classroboligo_1_1ConnectorNode.html">ConnectorNode</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceroboligo.html">roboligo</a></li><li class="navelem"><a class="el" href="classroboligo_1_1ConnectorNode.html">ConnectorNode</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -123,8 +123,7 @@ Collaboration diagram for roboligo::ConnectorNode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab7edf08b00b30cc03329b10a25feb16b" id="r_ab7edf08b00b30cc03329b10a25feb16b"><td class="memItemLeft" align="right" valign="top"><a id="ab7edf08b00b30cc03329b10a25feb16b" name="ab7edf08b00b30cc03329b10a25feb16b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>CallbackReturnT</b> = rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn</td></tr>
+<tr class="memitem:ab7edf08b00b30cc03329b10a25feb16b" id="r_ab7edf08b00b30cc03329b10a25feb16b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> = rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn</td></tr>
 <tr class="separator:ab7edf08b00b30cc03329b10a25feb16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -132,43 +131,56 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aada8d6029880b6f296ffd315115ba05b" id="r_aada8d6029880b6f296ffd315115ba05b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aada8d6029880b6f296ffd315115ba05b">ConnectorNode</a> (const rclcpp::NodeOptions &amp;options=rclcpp::NodeOptions())</td></tr>
 <tr class="memdesc:aada8d6029880b6f296ffd315115ba05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classroboligo_1_1ConnectorNode.html" title="A lifecycle node that manages the robot connector.">ConnectorNode</a>.  <br /></td></tr>
 <tr class="separator:aada8d6029880b6f296ffd315115ba05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3b147b2c2a7df50c54131467b30eb67" id="r_ad3b147b2c2a7df50c54131467b30eb67"><td class="memItemLeft" align="right" valign="top"><a id="ad3b147b2c2a7df50c54131467b30eb67" name="ad3b147b2c2a7df50c54131467b30eb67"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~ConnectorNode</b> ()</td></tr>
-<tr class="memdesc:ad3b147b2c2a7df50c54131467b30eb67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
-<tr class="separator:ad3b147b2c2a7df50c54131467b30eb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa68d6d3405795b5dc022a8e866c544a6" id="r_aa68d6d3405795b5dc022a8e866c544a6"><td class="memItemLeft" align="right" valign="top">CallbackReturnT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa68d6d3405795b5dc022a8e866c544a6">on_configure</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
-<tr class="memdesc:aa68d6d3405795b5dc022a8e866c544a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_configure state.  <br /></td></tr>
-<tr class="separator:aa68d6d3405795b5dc022a8e866c544a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b183d44027628c34a25510cdeb2f677" id="r_a6b183d44027628c34a25510cdeb2f677"><td class="memItemLeft" align="right" valign="top">CallbackReturnT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b183d44027628c34a25510cdeb2f677">on_activate</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
-<tr class="memdesc:a6b183d44027628c34a25510cdeb2f677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_activate state.  <br /></td></tr>
-<tr class="separator:a6b183d44027628c34a25510cdeb2f677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb6b5fb6308b51f05f898a542fa7721" id="r_a6cb6b5fb6308b51f05f898a542fa7721"><td class="memItemLeft" align="right" valign="top">CallbackReturnT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cb6b5fb6308b51f05f898a542fa7721">on_deactivate</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
-<tr class="memdesc:a6cb6b5fb6308b51f05f898a542fa7721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_deactivate state.  <br /></td></tr>
-<tr class="separator:a6cb6b5fb6308b51f05f898a542fa7721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9900c7471e1710e81632a9c8eea273c8" id="r_a9900c7471e1710e81632a9c8eea273c8"><td class="memItemLeft" align="right" valign="top">CallbackReturnT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9900c7471e1710e81632a9c8eea273c8">on_cleanup</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
-<tr class="memdesc:a9900c7471e1710e81632a9c8eea273c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_cleanup state.  <br /></td></tr>
-<tr class="separator:a9900c7471e1710e81632a9c8eea273c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38af1b7d5d35765b3bd984851d5a373a" id="r_a38af1b7d5d35765b3bd984851d5a373a"><td class="memItemLeft" align="right" valign="top">CallbackReturnT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38af1b7d5d35765b3bd984851d5a373a">on_shutdown</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
-<tr class="memdesc:a38af1b7d5d35765b3bd984851d5a373a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_shutdown state.  <br /></td></tr>
-<tr class="separator:a38af1b7d5d35765b3bd984851d5a373a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b5c257b6cc63af219082176270dd42b" id="r_a7b5c257b6cc63af219082176270dd42b"><td class="memItemLeft" align="right" valign="top">CallbackReturnT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b5c257b6cc63af219082176270dd42b">on_error</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
-<tr class="memdesc:a7b5c257b6cc63af219082176270dd42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_error state.  <br /></td></tr>
-<tr class="separator:a7b5c257b6cc63af219082176270dd42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebbbd4ff844cf8a7fbe0e20b0470f527" id="r_aebbbd4ff844cf8a7fbe0e20b0470f527"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebbbd4ff844cf8a7fbe0e20b0470f527">init</a> (std::shared_ptr&lt; <a class="el" href="classroboligo_1_1RobotState.html">RobotState</a> &gt; robot_state)</td></tr>
-<tr class="memdesc:aebbbd4ff844cf8a7fbe0e20b0470f527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method called when the node is initialize.  <br /></td></tr>
-<tr class="separator:aebbbd4ff844cf8a7fbe0e20b0470f527"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8ac39674055f5ddb914320cebe4f26a" id="r_ae8ac39674055f5ddb914320cebe4f26a"><td class="memItemLeft" align="right" valign="top"><a id="ae8ac39674055f5ddb914320cebe4f26a" name="ae8ac39674055f5ddb914320cebe4f26a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (void)</td></tr>
-<tr class="memdesc:ae8ac39674055f5ddb914320cebe4f26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method called when the node will be destroyed. <br /></td></tr>
-<tr class="separator:ae8ac39674055f5ddb914320cebe4f26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad87edbbb128a8bd6e91a5e7ae493d91d" id="r_ad87edbbb128a8bd6e91a5e7ae493d91d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad87edbbb128a8bd6e91a5e7ae493d91d">cycle</a> (std::shared_ptr&lt; <a class="el" href="classroboligo_1_1RobotState.html">RobotState</a> &gt; robot_state)</td></tr>
 <tr class="memdesc:ad87edbbb128a8bd6e91a5e7ae493d91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method called cycle by cycle.  <br /></td></tr>
 <tr class="separator:ad87edbbb128a8bd6e91a5e7ae493d91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebbbd4ff844cf8a7fbe0e20b0470f527" id="r_aebbbd4ff844cf8a7fbe0e20b0470f527"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebbbd4ff844cf8a7fbe0e20b0470f527">init</a> (std::shared_ptr&lt; <a class="el" href="classroboligo_1_1RobotState.html">RobotState</a> &gt; robot_state)</td></tr>
+<tr class="memdesc:aebbbd4ff844cf8a7fbe0e20b0470f527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method called when the node is initialize.  <br /></td></tr>
+<tr class="separator:aebbbd4ff844cf8a7fbe0e20b0470f527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b183d44027628c34a25510cdeb2f677" id="r_a6b183d44027628c34a25510cdeb2f677"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b183d44027628c34a25510cdeb2f677">on_activate</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
+<tr class="memdesc:a6b183d44027628c34a25510cdeb2f677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_activate state.  <br /></td></tr>
+<tr class="separator:a6b183d44027628c34a25510cdeb2f677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9900c7471e1710e81632a9c8eea273c8" id="r_a9900c7471e1710e81632a9c8eea273c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9900c7471e1710e81632a9c8eea273c8">on_cleanup</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
+<tr class="memdesc:a9900c7471e1710e81632a9c8eea273c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_cleanup state.  <br /></td></tr>
+<tr class="separator:a9900c7471e1710e81632a9c8eea273c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68d6d3405795b5dc022a8e866c544a6" id="r_aa68d6d3405795b5dc022a8e866c544a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa68d6d3405795b5dc022a8e866c544a6">on_configure</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
+<tr class="memdesc:aa68d6d3405795b5dc022a8e866c544a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_configure state.  <br /></td></tr>
+<tr class="separator:aa68d6d3405795b5dc022a8e866c544a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb6b5fb6308b51f05f898a542fa7721" id="r_a6cb6b5fb6308b51f05f898a542fa7721"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cb6b5fb6308b51f05f898a542fa7721">on_deactivate</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
+<tr class="memdesc:a6cb6b5fb6308b51f05f898a542fa7721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_deactivate state.  <br /></td></tr>
+<tr class="separator:a6cb6b5fb6308b51f05f898a542fa7721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5c257b6cc63af219082176270dd42b" id="r_a7b5c257b6cc63af219082176270dd42b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b5c257b6cc63af219082176270dd42b">on_error</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
+<tr class="memdesc:a7b5c257b6cc63af219082176270dd42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_error state.  <br /></td></tr>
+<tr class="separator:a7b5c257b6cc63af219082176270dd42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38af1b7d5d35765b3bd984851d5a373a" id="r_a38af1b7d5d35765b3bd984851d5a373a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38af1b7d5d35765b3bd984851d5a373a">on_shutdown</a> (const rclcpp_lifecycle::State &amp;state)</td></tr>
+<tr class="memdesc:a38af1b7d5d35765b3bd984851d5a373a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructions on_shutdown state.  <br /></td></tr>
+<tr class="separator:a38af1b7d5d35765b3bd984851d5a373a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8ac39674055f5ddb914320cebe4f26a" id="r_ae8ac39674055f5ddb914320cebe4f26a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8ac39674055f5ddb914320cebe4f26a">reset_connector</a> (void)</td></tr>
+<tr class="memdesc:ae8ac39674055f5ddb914320cebe4f26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method called when the node will be destroyed.  <br /></td></tr>
+<tr class="separator:ae8ac39674055f5ddb914320cebe4f26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b147b2c2a7df50c54131467b30eb67" id="r_ad3b147b2c2a7df50c54131467b30eb67"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3b147b2c2a7df50c54131467b30eb67">~ConnectorNode</a> ()</td></tr>
+<tr class="memdesc:ad3b147b2c2a7df50c54131467b30eb67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:ad3b147b2c2a7df50c54131467b30eb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A lifecycle node that manages the robot connector. </p>
 <p>This class managments the connector working into roboligo </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ab7edf08b00b30cc03329b10a25feb16b" name="ab7edf08b00b30cc03329b10a25feb16b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7edf08b00b30cc03329b10a25feb16b">&#9670;&#160;</a></span>CallbackReturnT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">roboligo::ConnectorNode::CallbackReturnT</a> = rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aada8d6029880b6f296ffd315115ba05b" name="aada8d6029880b6f296ffd315115ba05b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aada8d6029880b6f296ffd315115ba05b">&#9670;&#160;</a></span>ConnectorNode()</h2>
 
@@ -199,6 +211,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ad3b147b2c2a7df50c54131467b30eb67" name="ad3b147b2c2a7df50c54131467b30eb67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b147b2c2a7df50c54131467b30eb67">&#9670;&#160;</a></span>~ConnectorNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">roboligo::ConnectorNode::~ConnectorNode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
 
 </div>
 </div>
@@ -262,7 +301,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CallbackReturnT roboligo::ConnectorNode::on_activate </td>
+          <td class="memname"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> roboligo::ConnectorNode::on_activate </td>
           <td>(</td>
           <td class="paramtype">const rclcpp_lifecycle::State &amp;</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
           <td></td>
@@ -277,7 +316,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CallbackReturnT defined in this class </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> defined in this class </dd></dl>
 
 </div>
 </div>
@@ -288,7 +327,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CallbackReturnT roboligo::ConnectorNode::on_cleanup </td>
+          <td class="memname"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> roboligo::ConnectorNode::on_cleanup </td>
           <td>(</td>
           <td class="paramtype">const rclcpp_lifecycle::State &amp;</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
           <td></td>
@@ -303,7 +342,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CallbackReturnT defined in this class </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> defined in this class </dd></dl>
 
 </div>
 </div>
@@ -314,7 +353,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CallbackReturnT roboligo::ConnectorNode::on_configure </td>
+          <td class="memname"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> roboligo::ConnectorNode::on_configure </td>
           <td>(</td>
           <td class="paramtype">const rclcpp_lifecycle::State &amp;</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
           <td></td>
@@ -329,7 +368,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CallbackReturnT defined in this class </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> defined in this class </dd></dl>
 
 </div>
 </div>
@@ -340,7 +379,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CallbackReturnT roboligo::ConnectorNode::on_deactivate </td>
+          <td class="memname"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> roboligo::ConnectorNode::on_deactivate </td>
           <td>(</td>
           <td class="paramtype">const rclcpp_lifecycle::State &amp;</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
           <td></td>
@@ -355,7 +394,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CallbackReturnT defined in this class </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> defined in this class </dd></dl>
 
 </div>
 </div>
@@ -366,7 +405,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CallbackReturnT roboligo::ConnectorNode::on_error </td>
+          <td class="memname"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> roboligo::ConnectorNode::on_error </td>
           <td>(</td>
           <td class="paramtype">const rclcpp_lifecycle::State &amp;</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
           <td></td>
@@ -381,7 +420,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CallbackReturnT defined in this class </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> defined in this class </dd></dl>
 
 </div>
 </div>
@@ -392,7 +431,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CallbackReturnT roboligo::ConnectorNode::on_shutdown </td>
+          <td class="memname"><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> roboligo::ConnectorNode::on_shutdown </td>
           <td>(</td>
           <td class="paramtype">const rclcpp_lifecycle::State &amp;</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
           <td></td>
@@ -407,13 +446,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_connector</b> (
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CallbackReturnT defined in this class </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#ab7edf08b00b30cc03329b10a25feb16b">CallbackReturnT</a> defined in this class </dd></dl>
+
+</div>
+</div>
+<a id="ae8ac39674055f5ddb914320cebe4f26a" name="ae8ac39674055f5ddb914320cebe4f26a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8ac39674055f5ddb914320cebe4f26a">&#9670;&#160;</a></span>reset_connector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roboligo::ConnectorNode::reset_connector </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method called when the node will be destroyed. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>roboligo_connector/include/roboligo_connector/<a class="el" href="ConnectorNode_8hpp_source.html">ConnectorNode.hpp</a></li>
-<li>roboligo_connector/src/roboligo_connector/<b>ConnectorNode.cpp</b></li>
+<li>roboligo_connector/src/roboligo_connector/<a class="el" href="ConnectorNode_8cpp.html">ConnectorNode.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

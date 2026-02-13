@@ -91,7 +91,7 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">NavSat.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//  Copyright 2026 Juan S. Cely G.</span></div>
+<a href="NavSat_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//  Copyright 2026 Juan S. Cely G.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//  you may not use this file except in compliance with the License.</span></div>
@@ -110,9 +110,9 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;sensor_msgs/msg/nav_sat_fix.hpp&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;roboligo_common/connector/Sensor.hpp&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="Sensor_8hpp.html">roboligo_common/connector/Sensor.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>roboligo</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroboligo.html">roboligo</a></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classroboligo_1_1NavSat.html">   31</a></span>    <span class="keyword">class </span><a class="code hl_function" href="classroboligo_1_1NavSat.html#a423f5512b1703a8021c0e19be10dde49">NavSat</a> : <span class="keyword">public</span> <a class="code hl_function" href="classroboligo_1_1Sensor.html#a45770568b022e88cfb28a1adecee734e">Sensor</a></div>
@@ -133,12 +133,14 @@ $(function(){ initResizable(false); });
 </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>} <span class="comment">// namespace roboligo</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif </span><span class="comment">// ROBOLIGO_COMMON_CONNECTOR_SENSORS__NAVSAT_HPP_</span></div>
+<div class="ttc" id="aSensor_8hpp_html"><div class="ttname"><a href="Sensor_8hpp.html">Sensor.hpp</a></div></div>
 <div class="ttc" id="aclassroboligo_1_1NavSat_html_a1188d1f10b3df7623c2d6ef1f6f5dd6d"><div class="ttname"><a href="classroboligo_1_1NavSat.html#a1188d1f10b3df7623c2d6ef1f6f5dd6d">roboligo::NavSat::data</a></div><div class="ttdeci">sensor_msgs::msg::NavSatFix::SharedPtr data</div><div class="ttdoc">Pointer to the most recent NavSatFix data received.</div><div class="ttdef"><b>Definition</b> NavSat.hpp:49</div></div>
 <div class="ttc" id="aclassroboligo_1_1NavSat_html_a279ed0c3b667c9ed6a04398c10a103d4"><div class="ttname"><a href="classroboligo_1_1NavSat.html#a279ed0c3b667c9ed6a04398c10a103d4">roboligo::NavSat::~NavSat</a></div><div class="ttdeci">virtual ~NavSat()=default</div><div class="ttdoc">Virtual destructor.</div></div>
 <div class="ttc" id="aclassroboligo_1_1NavSat_html_a2f78f9e8cec90adf45910cfa7deb71f1"><div class="ttname"><a href="classroboligo_1_1NavSat.html#a2f78f9e8cec90adf45910cfa7deb71f1">roboligo::NavSat::subscriber</a></div><div class="ttdeci">rclcpp::Subscription&lt; sensor_msgs::msg::NavSatFix &gt;::SharedPtr subscriber</div><div class="ttdoc">ROS 2 subscription to NavSatFix messages.</div><div class="ttdef"><b>Definition</b> NavSat.hpp:47</div></div>
 <div class="ttc" id="aclassroboligo_1_1NavSat_html_a423f5512b1703a8021c0e19be10dde49"><div class="ttname"><a href="classroboligo_1_1NavSat.html#a423f5512b1703a8021c0e19be10dde49">roboligo::NavSat::NavSat</a></div><div class="ttdeci">NavSat(std::string new_name, std::string new_topic)</div><div class="ttdoc">Constructor for NavSat sensor.</div><div class="ttdef"><b>Definition</b> NavSat.hpp:39</div></div>
 <div class="ttc" id="aclassroboligo_1_1NavSat_html_a536832b3cb6bb609244fd252da40686a"><div class="ttname"><a href="classroboligo_1_1NavSat.html#a536832b3cb6bb609244fd252da40686a">roboligo::NavSat::callback</a></div><div class="ttdeci">void callback(sensor_msgs::msg::NavSatFix::SharedPtr msg)</div><div class="ttdoc">Callback function invoked when new NavSatFix data is received.</div><div class="ttdef"><b>Definition</b> NavSat.cpp:20</div></div>
 <div class="ttc" id="aclassroboligo_1_1Sensor_html_a45770568b022e88cfb28a1adecee734e"><div class="ttname"><a href="classroboligo_1_1Sensor.html#a45770568b022e88cfb28a1adecee734e">roboligo::Sensor::Sensor</a></div><div class="ttdeci">Sensor(std::string new_name, std::string new_topic)</div><div class="ttdoc">Constructor for Sensor.</div><div class="ttdef"><b>Definition</b> Sensor.cpp:19</div></div>
+<div class="ttc" id="anamespaceroboligo_html"><div class="ttname"><a href="namespaceroboligo.html">roboligo</a></div><div class="ttdef"><b>Definition</b> ClassificationBase.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

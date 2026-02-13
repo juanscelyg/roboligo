@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['gps_0',['gps',['../classroboligo_1_1RobotState.html#ad822b07f77618001603d7e36ea7ed857',1,'roboligo::RobotState']]]
+  ['data_0',['data',['../structroboligo_1_1RoboligoInputTwist.html#ae486d9e61f1df147c8b066fe50700fa5',1,'roboligo::RoboligoInputTwist::data'],['../structroboligo_1_1RoboligoInputTwistStamped.html#ab93607e75ff5a447d40349c45fe0473e',1,'roboligo::RoboligoInputTwistStamped::data'],['../structroboligo_1_1RoboligoOutputTwist.html#a7292ef220688e08c58ecc513470fae76',1,'roboligo::RoboligoOutputTwist::data'],['../structroboligo_1_1RoboligoOutputTwistStamped.html#a988806aefbbe7dbf7000efe993ddcfc9',1,'roboligo::RoboligoOutputTwistStamped::data'],['../structroboligo_1_1RoboligoOutputPositionTarget.html#a7f1f838c34a08a9cea70d093e22e5cc1',1,'roboligo::RoboligoOutputPositionTarget::data'],['../classroboligo_1_1Battery.html#ad7b531dd56c4229d79a75ad261513dca',1,'roboligo::Battery::data'],['../classroboligo_1_1Imu.html#a5b45d67360e8e1a0539404e1d3ac5e89',1,'roboligo::Imu::data'],['../classroboligo_1_1NavSat.html#a1188d1f10b3df7623c2d6ef1f6f5dd6d',1,'roboligo::NavSat::data'],['../classroboligo_1_1Odom.html#a00161a9d49da28c78a37fae4a37fb658',1,'roboligo::Odom::data']]],
+  ['description_1',['description',['../namespacesetup.html#aedf461ec52a946bda975938ba0b93ec0',1,'setup']]]
 ];

@@ -1,0 +1,33 @@
+<map id="roboligo_common/include/roboligo_common/types/RobotState.hpp" name="roboligo_common/include/roboligo_common/types/RobotState.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="514,5,683,61"/>
+<area shape="rect" id="Node000002" href="$ClassificationBase_8hpp.html" title=" " alt="" coords="265,109,471,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="524,70,431,111,429,106,522,65"/>
+<area shape="rect" id="Node000004" href="$StatesNode_8hpp.html" title=" " alt="" coords="5,220,216,261"/>
+<area shape="poly" id="edge17_Node000001_Node000004" title=" " alt="" coords="499,45,442,53,379,66,315,86,254,111,215,136,180,166,128,222,124,218,176,162,212,132,252,107,313,81,377,61,441,48,499,39"/>
+<area shape="rect" id="Node000006" href="$RoboligoNode_8hpp.html" title=" " alt="" coords="419,324,647,364"/>
+<area shape="poly" id="edge18_Node000001_Node000006" title=" " alt="" coords="576,75,561,110,547,170,539,230,535,324,530,323,534,230,542,169,556,108,571,73"/>
+<area shape="rect" id="Node000009" href="$ConnectorBase_8hpp.html" title=" " alt="" coords="571,109,759,165"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="627,73,649,107,645,110,622,76"/>
+<area shape="rect" id="Node000011" href="$ConnectorNode_8hpp.html" title=" " alt="" coords="834,213,1014,268"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="696,65,736,84,773,107,790,121,800,134,824,163,885,210,882,214,821,167,796,137,786,125,770,111,733,88,694,70"/>
+<area shape="rect" id="Node000013" href="$RobotState_8cpp.html" title=" " alt="" coords="835,109,997,165"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="699,64,835,107,833,112,697,69"/>
+<area shape="rect" id="Node000003" href="$ClassificationBase_8cpp.html" title=" " alt="" coords="239,213,446,268"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="360,181,352,213,347,211,355,179"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="286,173,161,222,159,217,284,168"/>
+<area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="420,173,459,211,500,270,527,322,522,325,495,273,455,214,416,177"/>
+<area shape="rect" id="Node000005" href="$StatesNode_8cpp.html" title=" " alt="" coords="5,324,216,364"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="113,277,113,323,108,323,108,277"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="208,262,452,321,450,326,207,268"/>
+<area shape="rect" id="Node000007" href="$roboligo__main_8cpp.html" title=" " alt="" coords="360,420,498,461"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="502,377,452,422,449,418,499,373"/>
+<area shape="rect" id="Node000008" href="$RoboligoNode_8cpp.html" title=" " alt="" coords="522,420,750,461"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="567,373,616,418,613,422,564,377"/>
+<area shape="poly" id="edge14_Node000009_Node000006" title=" " alt="" coords="637,179,611,214,546,325,541,322,607,211,632,176"/>
+<area shape="rect" id="Node000010" href="$ConnectorBase_8cpp.html" title=" " alt="" coords="622,213,810,268"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="688,178,705,211,700,213,683,180"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="750,168,855,210,853,215,748,173"/>
+<area shape="poly" id="edge13_Node000011_Node000006" title=" " alt="" coords="820,272,610,326,609,321,818,267"/>
+<area shape="rect" id="Node000012" href="$ConnectorNode_8cpp.html" title=" " alt="" coords="846,316,1002,372"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="926,284,926,316,921,316,921,284"/>
+</map>

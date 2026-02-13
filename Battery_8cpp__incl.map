@@ -1,0 +1,22 @@
+<map id="roboligo_common/src/roboligo_common/connector/sensors/Battery.cpp" name="roboligo_common/src/roboligo_common/connector/sensors/Battery.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="97,5,285,61"/>
+<area shape="rect" id="Node000002" href="$Battery_8hpp.html" title=" " alt="" coords="99,109,283,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,62,194,94,188,94,188,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,198,177,238"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="170,152,127,189,123,185,167,148"/>
+<area shape="rect" id="Node000004" href="$Sensor_8hpp.html" title=" " alt="" coords="200,198,384,238"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="216,148,260,185,256,189,212,152"/>
+<area shape="rect" id="Node000005" href="$Interface_8hpp.html" title=" " alt="" coords="154,375,313,416"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="284,240,262,287,242,360,237,359,256,285,279,238"/>
+<area shape="rect" id="Node000009" href="$Linker_8hpp.html" title=" " alt="" coords="270,286,429,327"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="308,237,331,272,326,275,303,240"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="374,464,427,489"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="276,414,362,454,360,459,274,419"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="134,464,205,489"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="220,418,191,453,187,450,216,414"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="230,464,349,489"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="250,415,274,449,270,452,245,418"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="325,330,274,368,271,363,322,325"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="358,326,395,448,390,450,353,328"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="349,328,341,369,327,417,308,452,304,449,322,415,336,368,344,327"/>
+</map>

@@ -91,7 +91,7 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Sensor.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//  Copyright 2026 Juan S. Cely G.</span></div>
+<a href="Sensor_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//  Copyright 2026 Juan S. Cely G.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//  you may not use this file except in compliance with the License.</span></div>
@@ -108,10 +108,10 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifndef ROBOLIGO_COMMON_CONNECTOR__SENSOR_HPP_</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define ROBOLIGO_COMMON_CONNECTOR__SENSOR_HPP_</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;roboligo_common/types/Interface.hpp&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;roboligo_common/types/Linker.hpp&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="Interface_8hpp.html">roboligo_common/types/Interface.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="Linker_8hpp.html">roboligo_common/types/Linker.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>roboligo</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroboligo.html">roboligo</a></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
 <div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classroboligo_1_1Sensor.html">   30</a></span>    <span class="keyword">class </span><a class="code hl_function" href="classroboligo_1_1Sensor.html#a45770568b022e88cfb28a1adecee734e">Sensor</a> : <span class="keyword">public</span> <a class="code hl_function" href="classroboligo_1_1Linker.html#a41477bcc50b3168fae4035576a328deb">Linker</a></div>
@@ -127,19 +127,24 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroboligo_1_1Sensor.html#a29bd6c30783a3882e10800abc7bbd5de">initialize</a>(std::string new_name, std::string new_topic);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classroboligo_1_1Sensor.html#a0fcca511560bb038487ede6b7da4372a">   61</a></span>            interfaces::modes <a class="code hl_variable" href="classroboligo_1_1Sensor.html#a0fcca511560bb038487ede6b7da4372a">mode_</a>{interfaces::modes::SUBSCRIBER}; </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classroboligo_1_1Sensor.html#a0fcca511560bb038487ede6b7da4372a">   61</a></span>            <a class="code hl_enumeration" href="namespaceroboligo_1_1interfaces.html#a60124be772a9f2b185c0278185c711e9">interfaces::modes</a> <a class="code hl_variable" href="classroboligo_1_1Sensor.html#a0fcca511560bb038487ede6b7da4372a">mode_</a>{<a class="code hl_enumvalue" href="namespaceroboligo_1_1interfaces.html#a60124be772a9f2b185c0278185c711e9ac34fea6778f48f5678c8458ed0de675e">interfaces::modes::SUBSCRIBER</a>}; </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    };</div>
 </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>} <span class="comment">// namespace roboligo</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif </span><span class="comment">// ROBOLIGO_COMMON_CONNECTOR__SENSOR_HPP_</span></div>
+<div class="ttc" id="aInterface_8hpp_html"><div class="ttname"><a href="Interface_8hpp.html">Interface.hpp</a></div></div>
+<div class="ttc" id="aLinker_8hpp_html"><div class="ttname"><a href="Linker_8hpp.html">Linker.hpp</a></div></div>
 <div class="ttc" id="aclassroboligo_1_1Linker_html_a41477bcc50b3168fae4035576a328deb"><div class="ttname"><a href="classroboligo_1_1Linker.html#a41477bcc50b3168fae4035576a328deb">roboligo::Linker::Linker</a></div><div class="ttdeci">Linker()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition</b> Linker.hpp:51</div></div>
 <div class="ttc" id="aclassroboligo_1_1Sensor_html_a0fcca511560bb038487ede6b7da4372a"><div class="ttname"><a href="classroboligo_1_1Sensor.html#a0fcca511560bb038487ede6b7da4372a">roboligo::Sensor::mode_</a></div><div class="ttdeci">interfaces::modes mode_</div><div class="ttdoc">The connection mode set to SUBSCRIBER for receiving sensor data.</div><div class="ttdef"><b>Definition</b> Sensor.hpp:61</div></div>
 <div class="ttc" id="aclassroboligo_1_1Sensor_html_a29bd6c30783a3882e10800abc7bbd5de"><div class="ttname"><a href="classroboligo_1_1Sensor.html#a29bd6c30783a3882e10800abc7bbd5de">roboligo::Sensor::initialize</a></div><div class="ttdeci">void initialize(std::string new_name, std::string new_topic)</div><div class="ttdoc">Protected initialization method.</div><div class="ttdef"><b>Definition</b> Sensor.cpp:25</div></div>
 <div class="ttc" id="aclassroboligo_1_1Sensor_html_a2a6b2008275f46718dbc4cbb8278ae8a"><div class="ttname"><a href="classroboligo_1_1Sensor.html#a2a6b2008275f46718dbc4cbb8278ae8a">roboligo::Sensor::~Sensor</a></div><div class="ttdeci">virtual ~Sensor()=default</div><div class="ttdoc">Virtual destructor.</div></div>
 <div class="ttc" id="aclassroboligo_1_1Sensor_html_a45770568b022e88cfb28a1adecee734e"><div class="ttname"><a href="classroboligo_1_1Sensor.html#a45770568b022e88cfb28a1adecee734e">roboligo::Sensor::Sensor</a></div><div class="ttdeci">Sensor(std::string new_name, std::string new_topic)</div><div class="ttdoc">Constructor for Sensor.</div><div class="ttdef"><b>Definition</b> Sensor.cpp:19</div></div>
 <div class="ttc" id="aclassroboligo_1_1Sensor_html_ac0756506c6d32205cfabe28802333da3"><div class="ttname"><a href="classroboligo_1_1Sensor.html#ac0756506c6d32205cfabe28802333da3">roboligo::Sensor::init</a></div><div class="ttdeci">void init(std::string new_name, std::string new_topic)</div><div class="ttdoc">Initializes the sensor with a name and topic.</div><div class="ttdef"><b>Definition</b> Sensor.cpp:33</div></div>
+<div class="ttc" id="anamespaceroboligo_1_1interfaces_html_a60124be772a9f2b185c0278185c711e9"><div class="ttname"><a href="namespaceroboligo_1_1interfaces.html#a60124be772a9f2b185c0278185c711e9">roboligo::interfaces::modes</a></div><div class="ttdeci">modes</div><div class="ttdoc">Enumeration for interface operational modes.</div><div class="ttdef"><b>Definition</b> Interface.hpp:51</div></div>
+<div class="ttc" id="anamespaceroboligo_1_1interfaces_html_a60124be772a9f2b185c0278185c711e9ac34fea6778f48f5678c8458ed0de675e"><div class="ttname"><a href="namespaceroboligo_1_1interfaces.html#a60124be772a9f2b185c0278185c711e9ac34fea6778f48f5678c8458ed0de675e">roboligo::interfaces::modes::SUBSCRIBER</a></div><div class="ttdeci">@ SUBSCRIBER</div><div class="ttdef"><b>Definition</b> Interface.hpp:53</div></div>
+<div class="ttc" id="anamespaceroboligo_html"><div class="ttname"><a href="namespaceroboligo.html">roboligo</a></div><div class="ttdef"><b>Definition</b> ClassificationBase.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

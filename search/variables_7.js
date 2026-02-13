@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['name_0',['name',['../classroboligo_1_1Linker.html#a700e8e55eaba2127c76590d8a2d818fc',1,'roboligo::Linker']]],
-  ['name_5f_1',['name_',['../classroboligo_1_1Mode.html#ada28adbc53e3c36058041d9503df4048',1,'roboligo::Mode::name_'],['../classroboligo_1_1Trigger.html#a524f4d5d4ae340e1310ebbab5e4c33ae',1,'roboligo::Trigger::name_']]],
-  ['next_5f_2',['next_',['../classroboligo_1_1Trigger.html#a38785eb86e1d922898aa55b171a0364a',1,'roboligo::Trigger']]],
-  ['node_5fptr_3',['node_ptr',['../structroboligo_1_1RoboligoNodeInfo.html#a235dc3b6ee9522ab1c4103dfc42e3aff',1,'roboligo::RoboligoNodeInfo']]]
+  ['imu_0',['imu',['../classroboligo_1_1RobotState.html#ab63bbe6abaf185c6d5b590d4bc5b3fcd',1,'roboligo::RobotState']]],
+  ['input_1',['input',['../classroboligo_1_1RobotState.html#a7885ac1a4ef7dacd937dd4765b5dbeb5',1,'roboligo::RobotState']]],
+  ['input_5fcommand_2',['input_command',['../classroboligo_1_1RoboligoNode.html#a952e6b6eb2fdd55f3de7fc51677e576c',1,'roboligo::RoboligoNode']]],
+  ['install_5frequires_3',['install_requires',['../namespacesetup.html#abead4f26b530856f858f0d44c7cf2588',1,'setup']]],
+  ['interface_4',['interface',['../classroboligo_1_1Linker.html#abb33bdc28ab0b8c76f92fca658096caa',1,'roboligo::Linker']]]
 ];

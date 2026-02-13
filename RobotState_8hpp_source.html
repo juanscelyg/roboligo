@@ -91,7 +91,7 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">RobotState.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//  Copyright 2026 Juan S. Cely G.</span></div>
+<a href="RobotState_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//  Copyright 2026 Juan S. Cely G.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//  you may not use this file except in compliance with the License.</span></div>
@@ -113,18 +113,18 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;rclcpp/rclcpp.hpp&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;roboligo_common/connector/sensors/Imu.hpp&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;roboligo_common/connector/sensors/NavSat.hpp&quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;roboligo_common/connector/sensors/Battery.hpp&quot;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;roboligo_common/connector/sensors/Odom.hpp&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="Imu_8hpp.html">roboligo_common/connector/sensors/Imu.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="NavSat_8hpp.html">roboligo_common/connector/sensors/NavSat.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="Battery_8hpp.html">roboligo_common/connector/sensors/Battery.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="Odom_8hpp.html">roboligo_common/connector/sensors/Odom.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;roboligo_common/connector/commanders/Input.hpp&quot;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;roboligo_common/connector/commanders/Output.hpp&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="Input_8hpp.html">roboligo_common/connector/commanders/Input.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="Output_8hpp.html">roboligo_common/connector/commanders/Output.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;roboligo_common/classification/Trigger.hpp&quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;roboligo_common/classification/Mode.hpp&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="Trigger_8hpp.html">roboligo_common/classification/Trigger.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="Mode_8hpp.html">roboligo_common/classification/Mode.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span>roboligo</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroboligo.html">roboligo</a></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
 <div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classroboligo_1_1RobotState.html">   44</a></span>    <span class="keyword">class </span><a class="code hl_function" href="classroboligo_1_1RobotState.html#ab711d82e4f04e412d22a979b451e2263">RobotState</a></div>
@@ -208,6 +208,14 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#endif </span><span class="comment">// ROBOLIGO_COMMON__ROBOT_HPP_</span></div>
+<div class="ttc" id="aBattery_8hpp_html"><div class="ttname"><a href="Battery_8hpp.html">Battery.hpp</a></div></div>
+<div class="ttc" id="aImu_8hpp_html"><div class="ttname"><a href="Imu_8hpp.html">Imu.hpp</a></div></div>
+<div class="ttc" id="aInput_8hpp_html"><div class="ttname"><a href="Input_8hpp.html">Input.hpp</a></div></div>
+<div class="ttc" id="aMode_8hpp_html"><div class="ttname"><a href="Mode_8hpp.html">Mode.hpp</a></div></div>
+<div class="ttc" id="aNavSat_8hpp_html"><div class="ttname"><a href="NavSat_8hpp.html">NavSat.hpp</a></div></div>
+<div class="ttc" id="aOdom_8hpp_html"><div class="ttname"><a href="Odom_8hpp.html">Odom.hpp</a></div></div>
+<div class="ttc" id="aOutput_8hpp_html"><div class="ttname"><a href="Output_8hpp.html">Output.hpp</a></div></div>
+<div class="ttc" id="aTrigger_8hpp_html"><div class="ttname"><a href="Trigger_8hpp.html">Trigger.hpp</a></div></div>
 <div class="ttc" id="aclassroboligo_1_1Mode_html"><div class="ttname"><a href="classroboligo_1_1Mode.html">roboligo::Mode</a></div><div class="ttdoc">Represents a configurable mode with name, value, and active status.</div><div class="ttdef"><b>Definition</b> Mode.hpp:31</div></div>
 <div class="ttc" id="aclassroboligo_1_1RobotState_html_a009e9b5d24093092047d5f9abbc331d5"><div class="ttname"><a href="classroboligo_1_1RobotState.html#a009e9b5d24093092047d5f9abbc331d5">roboligo::RobotState::get_triggers</a></div><div class="ttdeci">std::vector&lt; Trigger &gt; get_triggers(void)</div><div class="ttdoc">Gets all available triggers.</div><div class="ttdef"><b>Definition</b> RobotState.cpp:63</div></div>
 <div class="ttc" id="aclassroboligo_1_1RobotState_html_a04a07600f2df21adf533f61cc03d2afd"><div class="ttname"><a href="classroboligo_1_1RobotState.html#a04a07600f2df21adf533f61cc03d2afd">roboligo::RobotState::set_stamp</a></div><div class="ttdeci">void set_stamp(bool new_state)</div><div class="ttdoc">Enables or disables time stamping.</div><div class="ttdef"><b>Definition</b> RobotState.cpp:111</div></div>
@@ -236,6 +244,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclassroboligo_1_1RobotState_html_afcdcc95aa7bfaec1188a1c592a0b0b03"><div class="ttname"><a href="classroboligo_1_1RobotState.html#afcdcc95aa7bfaec1188a1c592a0b0b03">roboligo::RobotState::get_mode</a></div><div class="ttdeci">Mode * get_mode(const std::string &amp;mode_name)</div><div class="ttdoc">Retrieves a mode by name.</div><div class="ttdef"><b>Definition</b> RobotState.cpp:46</div></div>
 <div class="ttc" id="aclassroboligo_1_1RobotState_html_afcfeb48b1e629a2ea57383650cd60549"><div class="ttname"><a href="classroboligo_1_1RobotState.html#afcfeb48b1e629a2ea57383650cd60549">roboligo::RobotState::get_name</a></div><div class="ttdeci">std::string get_name(void)</div><div class="ttdoc">Gets the robot name.</div><div class="ttdef"><b>Definition</b> RobotState.cpp:21</div></div>
 <div class="ttc" id="aclassroboligo_1_1Trigger_html"><div class="ttname"><a href="classroboligo_1_1Trigger.html">roboligo::Trigger</a></div><div class="ttdoc">Represents a trigger that can transition between different modes in a state machine.</div><div class="ttdef"><b>Definition</b> Trigger.hpp:36</div></div>
+<div class="ttc" id="anamespaceroboligo_html"><div class="ttname"><a href="namespaceroboligo.html">roboligo</a></div><div class="ttdef"><b>Definition</b> ClassificationBase.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

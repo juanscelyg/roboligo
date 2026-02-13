@@ -1,0 +1,22 @@
+<map id="roboligo_common/src/roboligo_common/connector/sensors/Imu.cpp" name="roboligo_common/src/roboligo_common/connector/sensors/Imu.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="102,5,291,61"/>
+<area shape="rect" id="Node000002" href="$Imu_8hpp.html" title=" " alt="" coords="104,109,289,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,62,199,94,194,94,194,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,205,183,231"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="175,152,121,197,118,193,172,148"/>
+<area shape="rect" id="Node000004" href="$Sensor_8hpp.html" title=" " alt="" coords="207,198,392,238"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="222,148,266,185,263,189,218,152"/>
+<area shape="rect" id="Node000005" href="$Interface_8hpp.html" title=" " alt="" coords="162,375,320,416"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="291,240,269,287,249,360,244,359,263,285,286,238"/>
+<area shape="rect" id="Node000009" href="$Linker_8hpp.html" title=" " alt="" coords="278,286,436,327"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="315,237,338,272,333,275,310,240"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="381,464,434,489"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="283,414,369,454,367,459,281,419"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="141,464,212,489"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="227,418,198,453,194,450,223,414"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="237,464,356,489"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="257,415,281,449,277,452,252,418"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="332,330,281,368,278,363,329,325"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="365,326,402,448,397,450,360,328"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="356,328,348,369,334,417,315,452,311,449,329,415,343,368,351,327"/>
+</map>

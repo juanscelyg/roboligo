@@ -1,13 +1,34 @@
 <map id="roboligo::Output" name="roboligo::Output">
-<area shape="rect" id="Node000001" title="Handles output commands for robot motion control." alt="" coords="460,96,572,122"/>
-<area shape="rect" id="Node000002" href="$classroboligo_1_1Commander.html" title="Base class for commanding robotic operations through message publishing." alt="" coords="172,5,315,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="325,32,381,47,437,66,493,93,490,98,435,71,379,53,323,38"/>
-<area shape="rect" id="Node000003" href="$classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections." alt="" coords="5,5,114,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,16,172,16,172,21,129,21"/>
-<area shape="rect" id="Node000004" href="$structroboligo_1_1RoboligoOutputTwist.html" title="Encapsulates a ROS 2 publisher and message data for Twist commands." alt="" coords="163,55,324,96"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="340,85,460,99,460,105,340,90"/>
-<area shape="rect" id="Node000005" href="$structroboligo_1_1RoboligoOutputTwistStamped.html" title="Encapsulates a ROS 2 publisher and message data for stamped Twist commands." alt="" coords="163,120,324,161"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="339,128,436,117,460,114,460,119,437,122,340,134"/>
-<area shape="rect" id="Node000006" href="$structroboligo_1_1RoboligoOutputPositionTarget.html" title="Encapsulates a ROS 2 publisher and message data for position target commands with control parameters." alt="" coords="163,186,324,226"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="339,180,435,148,491,120,494,125,437,153,340,185"/>
+<area shape="rect" id="Node000001" title="Handles output commands for robot motion control." alt="" coords="829,214,941,240"/>
+<area shape="rect" id="Node000002" href="$classroboligo_1_1Commander.html" title="Base class for commanding robotic operations through message publishing." alt="" coords="542,92,684,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="664,121,806,182,862,212,859,216,804,187,662,126"/>
+<area shape="rect" id="Node000003" href="$classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections." alt="" coords="273,92,381,117"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,102,541,102,541,107,396,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="55,85,108,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="124,98,182,100,272,102,272,107,182,105,124,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,135,158,176"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="173,137,248,122,276,116,277,121,249,128,174,143"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="51,200,112,225"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="126,203,186,186,218,173,247,156,259,142,271,127,289,116,291,120,274,131,263,145,250,160,220,178,188,191,127,208"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="59,10,104,36"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="120,18,182,14,215,12,249,14,340,29,430,49,571,89,569,94,428,54,339,34,248,19,215,18,182,19,120,23"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="120,30,250,70,296,89,295,94,248,75,118,35"/>
+<area shape="rect" id="Node000008" href="$structroboligo_1_1RoboligoOutputTwist.html" title="Encapsulates a ROS 2 publisher and message data for Twist commands." alt="" coords="532,170,693,210"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="709,200,829,217,828,222,709,206"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="287,281,366,307"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="376,271,379,268,387,258,390,248,394,237,403,226,426,216,457,208,531,195,532,201,458,213,427,221,407,231,398,240,395,249,391,260,383,272,380,275"/>
+<area shape="rect" id="Node000011" href="$structroboligo_1_1RoboligoOutputTwistStamped.html" title="Encapsulates a ROS 2 publisher and message data for stamped Twist commands." alt="" coords="532,235,693,276"/>
+<area shape="poly" id="edge12_Node000011_Node000009" title=" " alt="" coords="382,285,508,269,531,265,532,271,508,274,383,290"/>
+<area shape="rect" id="Node000013" href="$structroboligo_1_1RoboligoOutputPositionTarget.html" title="Encapsulates a ROS 2 publisher and message data for position target commands with control parameters." alt="" coords="532,346,693,386"/>
+<area shape="poly" id="edge15_Node000013_Node000009" title=" " alt="" coords="382,305,532,343,531,348,381,310"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="287,141,366,167"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="382,158,532,177,531,182,381,163"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="709,246,805,237,829,234,829,239,806,242,709,252"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="287,232,366,257"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="382,244,532,250,532,255,382,249"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="667,336,804,265,856,238,859,243,807,270,669,341"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="287,433,366,459"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="382,441,443,433,507,418,544,403,578,385,580,389,547,408,509,423,444,439,382,446"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="308,384,346,409"/>
+<area shape="poly" id="edge17_Node000013_Node000015" title=" " alt="" coords="362,396,429,397,508,392,545,384,546,390,508,397,429,403,362,401"/>
 </map>

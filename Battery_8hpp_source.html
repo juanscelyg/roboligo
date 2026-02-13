@@ -91,7 +91,7 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Battery.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//  Copyright 2026 Juan S. Cely G.</span></div>
+<a href="Battery_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//  Copyright 2026 Juan S. Cely G.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//  you may not use this file except in compliance with the License.</span></div>
@@ -110,9 +110,9 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;sensor_msgs/msg/battery_state.hpp&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;roboligo_common/connector/Sensor.hpp&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="Sensor_8hpp.html">roboligo_common/connector/Sensor.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>roboligo</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroboligo.html">roboligo</a></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classroboligo_1_1Battery.html">   31</a></span>    <span class="keyword">class </span><a class="code hl_function" href="classroboligo_1_1Battery.html#aeaa4e2f0b7130671c2a8df9707c36b5d">Battery</a> : <span class="keyword">public</span> <a class="code hl_function" href="classroboligo_1_1Sensor.html#a45770568b022e88cfb28a1adecee734e">Sensor</a></div>
@@ -134,12 +134,14 @@ $(function(){ initResizable(false); });
 </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} <span class="comment">// namespace roboligo</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif </span><span class="comment">// ROBOLIGO_COMMON_CONNECTOR_SENSORS__BATTERY_HPP_</span></div>
+<div class="ttc" id="aSensor_8hpp_html"><div class="ttname"><a href="Sensor_8hpp.html">Sensor.hpp</a></div></div>
 <div class="ttc" id="aclassroboligo_1_1Battery_html_a2ddcf1488bba19d1aca90f8a78f9351e"><div class="ttname"><a href="classroboligo_1_1Battery.html#a2ddcf1488bba19d1aca90f8a78f9351e">roboligo::Battery::callback</a></div><div class="ttdeci">void callback(sensor_msgs::msg::BatteryState::SharedPtr msg)</div><div class="ttdoc">Callback function invoked when a new battery state message is received.</div><div class="ttdef"><b>Definition</b> Battery.cpp:20</div></div>
 <div class="ttc" id="aclassroboligo_1_1Battery_html_a92019e252a607cba264bce2ba45c215d"><div class="ttname"><a href="classroboligo_1_1Battery.html#a92019e252a607cba264bce2ba45c215d">roboligo::Battery::~Battery</a></div><div class="ttdeci">virtual ~Battery()=default</div><div class="ttdoc">Virtual destructor.</div></div>
 <div class="ttc" id="aclassroboligo_1_1Battery_html_a9ae26492f076c738d2e0f851c7c4424b"><div class="ttname"><a href="classroboligo_1_1Battery.html#a9ae26492f076c738d2e0f851c7c4424b">roboligo::Battery::subscriber</a></div><div class="ttdeci">rclcpp::Subscription&lt; sensor_msgs::msg::BatteryState &gt;::SharedPtr subscriber</div><div class="ttdoc">ROS 2 subscription to receive BatteryState messages.</div><div class="ttdef"><b>Definition</b> Battery.hpp:47</div></div>
 <div class="ttc" id="aclassroboligo_1_1Battery_html_ad7b531dd56c4229d79a75ad261513dca"><div class="ttname"><a href="classroboligo_1_1Battery.html#ad7b531dd56c4229d79a75ad261513dca">roboligo::Battery::data</a></div><div class="ttdeci">sensor_msgs::msg::BatteryState::SharedPtr data</div><div class="ttdoc">Latest received battery state data.</div><div class="ttdef"><b>Definition</b> Battery.hpp:49</div></div>
 <div class="ttc" id="aclassroboligo_1_1Battery_html_aeaa4e2f0b7130671c2a8df9707c36b5d"><div class="ttname"><a href="classroboligo_1_1Battery.html#aeaa4e2f0b7130671c2a8df9707c36b5d">roboligo::Battery::Battery</a></div><div class="ttdeci">Battery(std::string new_name, std::string new_topic)</div><div class="ttdoc">Constructor for Battery sensor.</div><div class="ttdef"><b>Definition</b> Battery.hpp:39</div></div>
 <div class="ttc" id="aclassroboligo_1_1Sensor_html_a45770568b022e88cfb28a1adecee734e"><div class="ttname"><a href="classroboligo_1_1Sensor.html#a45770568b022e88cfb28a1adecee734e">roboligo::Sensor::Sensor</a></div><div class="ttdeci">Sensor(std::string new_name, std::string new_topic)</div><div class="ttdoc">Constructor for Sensor.</div><div class="ttdef"><b>Definition</b> Sensor.cpp:19</div></div>
+<div class="ttc" id="anamespaceroboligo_html"><div class="ttname"><a href="namespaceroboligo.html">roboligo</a></div><div class="ttdef"><b>Definition</b> ClassificationBase.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

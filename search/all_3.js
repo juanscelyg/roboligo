@@ -1,6 +1,28 @@
 var searchData=
 [
-  ['data_0',['data',['../classroboligo_1_1Battery.html#ad7b531dd56c4229d79a75ad261513dca',1,'roboligo::Battery::data'],['../classroboligo_1_1Imu.html#a5b45d67360e8e1a0539404e1d3ac5e89',1,'roboligo::Imu::data'],['../classroboligo_1_1NavSat.html#a1188d1f10b3df7623c2d6ef1f6f5dd6d',1,'roboligo::NavSat::data'],['../classroboligo_1_1Odom.html#a00161a9d49da28c78a37fae4a37fb658',1,'roboligo::Odom::data']]],
-  ['developments_1',['Future Developments',['../md_README.html#autotoc_md7',1,'']]],
-  ['disarmingverb_2',['DisarmingVerb',['../classroboligo__cli_1_1verb_1_1disarming_1_1DisarmingVerb.html',1,'roboligo_cli::verb::disarming']]]
+  ['callback_0',['callback',['../classroboligo_1_1Input.html#a3ae414b931038da6bc20f8c9daeb90d1',1,'roboligo::Input::callback()'],['../classroboligo_1_1Battery.html#a2ddcf1488bba19d1aca90f8a78f9351e',1,'roboligo::Battery::callback()'],['../classroboligo_1_1Imu.html#a5e7a46f4d86bdd2d97375602bc2e6c30',1,'roboligo::Imu::callback()'],['../classroboligo_1_1NavSat.html#a536832b3cb6bb609244fd252da40686a',1,'roboligo::NavSat::callback()'],['../classroboligo_1_1Odom.html#a9e62c9b75a16a570eb995512fbb0568d',1,'roboligo::Odom::callback()']]],
+  ['callback_5fstamped_1',['callback_stamped',['../classroboligo_1_1Input.html#a12ada612eca7a05340c55baadc54b98e',1,'roboligo::Input']]],
+  ['callbackreturnt_2',['CallbackReturnT',['../classroboligo_1_1ConnectorNode.html#ab7edf08b00b30cc03329b10a25feb16b',1,'roboligo::ConnectorNode::CallbackReturnT'],['../classroboligo_1_1StatesNode.html#aee26d99860e92190def09bc6d9c73e83',1,'roboligo::StatesNode::CallbackReturnT'],['../classroboligo_1_1RoboligoNode.html#a855edffa85e24561384cfd7823f585ae',1,'roboligo::RoboligoNode::CallbackReturnT'],['../namespaceroboligo.html#a37f9ab7e1a32d3d7c835dd4e4b8d5ed1',1,'roboligo::CallbackReturnT']]],
+  ['caller_3',['CALLER',['../namespaceroboligo_1_1interfaces.html#a60124be772a9f2b185c0278185c711e9a4c12b490bfbcac4fd03f3f29f56c8666',1,'roboligo::interfaces']]],
+  ['cb_4',['cb',['../classroboligo_1_1Trigger.html#a1829da52251f1d8cc31a818c4b3f3cb3',1,'roboligo::Trigger']]],
+  ['cbg_5',['cbg',['../structroboligo_1_1RoboligoNodeInfo.html#a8ce6a1684de7991b7305341ce313c7a6',1,'roboligo::RoboligoNodeInfo']]],
+  ['classificationbase_6',['ClassificationBase',['../classroboligo_1_1ClassificationBase.html',1,'roboligo::ClassificationBase'],['../classroboligo_1_1ClassificationBase.html#a0b1e5cbaca4ed8fbfe2af763aab758ba',1,'roboligo::ClassificationBase::ClassificationBase()']]],
+  ['classificationbase_2ecpp_7',['ClassificationBase.cpp',['../ClassificationBase_8cpp.html',1,'']]],
+  ['classificationbase_2ehpp_8',['ClassificationBase.hpp',['../ClassificationBase_8hpp.html',1,'']]],
+  ['classifiers_9',['classifiers',['../namespacesetup.html#abe96a9c38c1c61f9f0fdb002c482f785',1,'setup']]],
+  ['clone_20and_20build_10',['Clone and Build',['../index.html#autotoc_md3',1,'']]],
+  ['commander_11',['Commander',['../classroboligo_1_1Commander.html',1,'roboligo::Commander'],['../classroboligo_1_1Commander.html#ae54fc55b8b2bef502d3c2654099f66e8',1,'roboligo::Commander::Commander()']]],
+  ['commander_2ecpp_12',['Commander.cpp',['../Commander_8cpp.html',1,'']]],
+  ['commander_2ehpp_13',['Commander.hpp',['../Commander_8hpp.html',1,'']]],
+  ['commandextension_14',['CommandExtension',['../classCommandExtension.html',1,'']]],
+  ['configured_5f_15',['configured_',['../classroboligo_1_1Linker.html#a2a2fe234ebad9462c12de1efa5abc4a2',1,'roboligo::Linker']]],
+  ['connectorbase_16',['ConnectorBase',['../classroboligo_1_1ConnectorBase.html',1,'roboligo::ConnectorBase'],['../classroboligo_1_1ConnectorBase.html#a73f68c1263c5d68298862f737524ec19',1,'roboligo::ConnectorBase::ConnectorBase()']]],
+  ['connectorbase_2ecpp_17',['ConnectorBase.cpp',['../ConnectorBase_8cpp.html',1,'']]],
+  ['connectorbase_2ehpp_18',['ConnectorBase.hpp',['../ConnectorBase_8hpp.html',1,'']]],
+  ['connectornode_19',['ConnectorNode',['../classroboligo_1_1ConnectorNode.html',1,'roboligo::ConnectorNode'],['../classroboligo_1_1ConnectorNode.html#aada8d6029880b6f296ffd315115ba05b',1,'roboligo::ConnectorNode::ConnectorNode()']]],
+  ['connectornode_2ecpp_20',['ConnectorNode.cpp',['../ConnectorNode_8cpp.html',1,'']]],
+  ['connectornode_2ehpp_21',['ConnectorNode.hpp',['../ConnectorNode_8hpp.html',1,'']]],
+  ['contributing_22',['Contributing',['../index.html#autotoc_md8',1,'']]],
+  ['coordinate_5fframe_23',['coordinate_frame',['../structroboligo_1_1RoboligoOutputPositionTarget.html#af9d9a5f1b7171c9259f7afec3f944313',1,'roboligo::RoboligoOutputPositionTarget']]],
+  ['cycle_24',['cycle',['../classroboligo_1_1ConnectorNode.html#ad87edbbb128a8bd6e91a5e7ae493d91d',1,'roboligo::ConnectorNode::cycle()'],['../classroboligo_1_1StatesNode.html#aa28d4b0a5fe2d337524a4299f37f0922',1,'roboligo::StatesNode::cycle()']]]
 ];

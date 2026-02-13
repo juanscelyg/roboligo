@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>roboligo: Main Page</title>
+<title>roboligo: roboligo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,10 +83,97 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">roboligo Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">roboligo </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a></p>
+<p><a href="https://github.com/juanscelyg/roboligo/actions/workflows/main.yml"><img src="https://github.com/juanscelyg/roboligo/actions/workflows/main.yml/badge.svg?branch=main" alt="main" style="pointer-events: none;" class="inline"/></a></p>
+<p>Roboligo is a centralized command interface layer that bridges navigation stacks and hardware interfaces for robotic systems. It provides a unified abstraction for robot control, simplifying the complexity of managing diverse hardware implementations while maintaining compatibility with standard navigation algorithms.</p>
+<p><img src="docs/img/roboligo_0.png" alt="Roboligo" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Key Features</h1>
+<ul>
+<li><b>Centralized Command Interface</b>: Standardize robot instructions across different platforms</li>
+<li><b>Hardware Abstraction Layer</b>: Decouple navigation logic from hardware-specific implementations</li>
+<li><b>Modular Design</b>: Easy integration with various robot morphologies and sensor configurations</li>
+</ul>
+<p>This architecture allows developers to focus on high-level navigation strategies without worrying about the underlying hardware details, fostering innovation and accelerating development cycles in robotic applications.</p>
+<p>The connectors components are designed to be modular and extensible, allowing for easy integration of new robot types and hardware configurations. This flexibility ensures that roboligo can adapt to a wide range of robotic platforms, from wheeled robots to legged systems, while maintaining a consistent interface for navigation and control. This is possible to use plugins to connect and configure any robot.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Installation</h1>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Clone and Build</h2>
+<div class="fragment"><div class="line">cd ~/ros2_ws/src</div>
+<div class="line">git clone https://github.com/juanscelyg/roboligo.git</div>
+<div class="line">cd ~/ros2_ws</div>
+<div class="line">colcon build --symlink-install</div>
+<div class="line">source install/setup.bash</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+Quick Start</h1>
+<p>Launch roboligo with:</p>
+<div class="fragment"><div class="line">ros2 launch roboligo roboligo.launch.py</div>
+</div><!-- fragment --><p>Into launch, you should replace <code>your_params_file.yaml</code> with the path to your configuration file containing robot-specific parameters.</p>
+<p>The structure of the configuration file is shown below:</p>
+<div class="fragment"><div class="line">states_node:</div>
+<div class="line">  ros__parameters:</div>
+<div class="line">    use_sim_time: true</div>
+<div class="line">    robot_types: [&lt;robot_type&gt;]</div>
+<div class="line">    &lt;robot_type&gt;:</div>
+<div class="line">      plugin: &lt;plugin_name&gt;</div>
+<div class="line"> </div>
+<div class="line">connector_node:</div>
+<div class="line">  ros__parameters:</div>
+<div class="line">    use_sim_time: true</div>
+<div class="line">    connector_types: [&lt;connector_type&gt;]</div>
+<div class="line">    &lt;connector_type&gt;:</div>
+<div class="line">      plugin: &lt;plugin_name&gt;</div>
+<div class="line"> </div>
+<div class="line">roboligo_node:</div>
+<div class="line">  ros__parameters:</div>
+<div class="line">    use_sim_time: true</div>
+<div class="line">    robot_name: &lt;robot_name&gt;</div>
+<div class="line">    input_topic: &lt;topic_name&gt;</div>
+<div class="line">    stamped: &lt;use_stamped&gt;</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+Usage</h1>
+<p>Once roboligo is running, you can send commands to the robot using standard ROS 2 cli. For example, to send an instruction to specific trigger configured previously in a plugin, you can use:</p>
+<div class="fragment"><div class="line">`ros2 roboligo &lt;trigger_name&gt;`</div>
+</div><!-- fragment --><p>Where <code>&lt;trigger_name&gt;</code> corresponds to the name of the trigger defined in your configuration. This command will send the appropriate instruction to the robot based on the configured trigger, allowing for seamless control and interaction with the robotic system.</p>
+<p>Currently is available the following triggers:</p>
+<ul>
+<li><code>arming</code>: Arm the robot</li>
+<li><code>disarming</code>: Disarm the robot</li>
+<li><code>takeoff</code>: Command the robot to take off</li>
+<li><code>landing</code>: Command the robot to land</li>
+<li><code>offboard</code>: Command the robot to offboard mode</li>
+<li><code>standby</code>: Command the robot to keep the robot at current position</li>
+</ul>
+<p>Those implementation are available using plugins (more plugins coming soon) and can be used for any robot, but currently are tested with a quadrotor.</p>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Integration</h1>
+<p>Roboligo is developed in collaboration with <a href="https://github.com/easynavigation">EasyNav</a>, a navigation framework from the <a href="https://intelligentroboticslab.gsyc.urjc.es/">Intelligent Robotics Lab</a> at URJC.</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Future Developments</h1>
+<p>Upcoming releases will extend support for diverse robot morphologies:</p>
+<ul>
+<li>Quadruped locomotion systems</li>
+<li>Bipedal robots</li>
+<li>Underwater vehicles (AUVs)</li>
+</ul>
+<p>These extensions will maintain the same centralized interface paradigm, enabling seamless control across different robotic platforms.</p>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Contributing</h1>
+<p>Contributions to roboligo are welcome! Please follow these guidelines:</p>
+<ol type="1">
+<li>Fork the repository and create a new branch for your feature or bug fix.</li>
+<li>Ensure your code adheres to the existing style and includes appropriate documentation.</li>
+<li>Submit a pull request with a clear description of your changes and the problem they address.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md9"></a>
+License</h1>
+<p>This project is licensed under the Apache License 2.0. See the LICENSE file for details. </p>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 <!-- start footer part -->

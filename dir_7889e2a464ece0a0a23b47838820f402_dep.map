@@ -1,4 +1,13 @@
 <map id="roboligo_system/include/roboligo_system" name="roboligo_system/include/roboligo_system">
-<area shape="rect" id="node1" href="dir_7889e2a464ece0a0a23b47838820f402.html" title="roboligo_system" alt="" coords="26,52,142,78"/>
-<area shape="rect" id="clust1" href="dir_578a9e91fb002c846c6ea1acea6c6564.html" title="include" alt="" coords="16,16,152,89"/>
+<area shape="rect" id="node1" href="dir_7889e2a464ece0a0a23b47838820f402.html" title="roboligo_system" alt="" coords="164,52,279,78"/>
+<area shape="rect" id="node2" href="dir_4f52d1b411ab09c265a73b13a0969004.html" title="roboligo_connector" alt="" coords="5,126,136,152"/>
+<area shape="poly" id="edge1" href="dir_000024_000017.html" alt="" coords="197,81,111,121,109,117,194,76"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000024_000017.html" title="1" alt="" coords="113,118,120,133"/>
+<area shape="rect" id="node3" href="dir_af323da4f7da82d4f527c2af34145c92.html" title="roboligo_common" alt="" coords="160,126,283,152"/>
+<area shape="poly" id="edge2" href="dir_000024_000014.html" alt="" coords="224,78,224,110,218,110,218,78"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000024_000014.html" title="3" alt="" coords="226,100,233,115"/>
+<area shape="rect" id="node4" href="dir_d6580b6a4e7dd068e298b213a8058daf.html" title="roboligo_states" alt="" coords="306,126,416,152"/>
+<area shape="poly" id="edge3" href="dir_000024_000020.html" alt="" coords="246,76,325,116,323,121,244,81"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000024_000020.html" title="1" alt="" coords="321,102,328,117"/>
+<area shape="rect" id="clust1" href="dir_578a9e91fb002c846c6ea1acea6c6564.html" title="include" alt="" coords="153,16,289,89"/>
 </map>

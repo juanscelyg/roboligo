@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,177,110,202"/>
+<area shape="rect" id="Node000000" href="$classVerbExtension.html" title=" " alt="" coords="5,177,110,202"/>
 <area shape="rect" id="Node000001" href="$classroboligo__cli_1_1verb_1_1arming_1_1ArmingVerb.html" title=" " alt="" coords="166,5,326,46"/>
 <area shape="poly" id="edge16_Node000000_Node000001" title=" " alt="" coords="71,162,105,109,129,81,156,57,177,44,180,49,159,61,133,85,110,112,75,165"/>
 <area shape="rect" id="Node000002" href="$classroboligo__cli_1_1verb_1_1disarming_1_1DisarmingVerb.html" title=" " alt="" coords="158,71,334,111"/>

@@ -1,21 +1,15 @@
 var searchData=
 [
-  ['imu_0',['Imu',['../classroboligo_1_1Imu.html',1,'roboligo::Imu'],['../classroboligo_1_1Imu.html#a26294d6c1dfff81b5359865695f5f1ba',1,'roboligo::Imu::Imu()']]],
-  ['imu_1',['imu',['../classroboligo_1_1RobotState.html#ab63bbe6abaf185c6d5b590d4bc5b3fcd',1,'roboligo::RobotState']]],
-  ['init_2',['init',['../classroboligo_1_1Commander.html#a9208bf92e9399c006e088547319eb5a1',1,'roboligo::Commander::init()'],['../classroboligo_1_1Sensor.html#ac0756506c6d32205cfabe28802333da3',1,'roboligo::Sensor::init()'],['../classroboligo_1_1ConnectorNode.html#aebbbd4ff844cf8a7fbe0e20b0470f527',1,'roboligo::ConnectorNode::init()'],['../classroboligo_1_1StatesNode.html#adc609ef4ec6ac54cd2be72661a12a834',1,'roboligo::StatesNode::init()']]],
-  ['initialize_3',['initialize',['../classroboligo_1_1ClassificationBase.html#a0f6409f77932ad87acf22d6203347b7f',1,'roboligo::ClassificationBase::initialize()'],['../classroboligo_1_1Commander.html#a597b3f70176374b34f8acefcc08868f0',1,'roboligo::Commander::initialize()'],['../classroboligo_1_1ConnectorBase.html#a6f5eac0e99297e4e013f501cbed8a7a0',1,'roboligo::ConnectorBase::initialize()'],['../classroboligo_1_1Sensor.html#a29bd6c30783a3882e10800abc7bbd5de',1,'roboligo::Sensor::initialize()'],['../classroboligo_1_1PluginBase.html#a3ec233e17f310ca7604b6ef1a44081ee',1,'roboligo::PluginBase::initialize()']]],
-  ['input_4',['Input',['../classroboligo_1_1Input.html',1,'roboligo::Input'],['../classroboligo_1_1Input.html#a6103d81d5647807426b7445e4c28a241',1,'roboligo::Input::Input()']]],
-  ['input_5',['input',['../classroboligo_1_1RobotState.html#a7885ac1a4ef7dacd937dd4765b5dbeb5',1,'roboligo::RobotState']]],
-  ['input_5fcallback_6',['input_callback',['../classroboligo_1_1RoboligoNode.html#acfed01704284ccc980fd36c2ccaaf755',1,'roboligo::RoboligoNode']]],
-  ['input_5fcommand_7',['input_command',['../classroboligo_1_1RoboligoNode.html#a952e6b6eb2fdd55f3de7fc51677e576c',1,'roboligo::RoboligoNode']]],
-  ['installation_8',['Installation',['../md_README.html#autotoc_md2',1,'']]],
-  ['integration_9',['Integration',['../md_README.html#autotoc_md6',1,'']]],
-  ['interface_10',['Interface',['../classroboligo_1_1interfaces_1_1Interface.html',1,'roboligo::interfaces::Interface'],['../classroboligo_1_1interfaces_1_1Interface.html#ac5aa5b3c3fd8647c58ddf623ff1b77d8',1,'roboligo::interfaces::Interface::Interface()']]],
-  ['interface_11',['interface',['../classroboligo_1_1Linker.html#abb33bdc28ab0b8c76f92fca658096caa',1,'roboligo::Linker']]],
-  ['interfaces_12',['interfaces',['../namespaceinterfaces.html',1,'']]],
-  ['is_5fative_13',['is_ative',['../classroboligo_1_1Mode.html#af5478542290bb91a5526fd712df2e74a',1,'roboligo::Mode']]],
-  ['is_5favailable_14',['is_available',['../classroboligo_1_1Trigger.html#a1d736c76d9ed8efcc0bf8c292b9d0d42',1,'roboligo::Trigger::is_available()'],['../classroboligo_1_1Linker.html#a79539ee8163592c0981eaadabb44e34f',1,'roboligo::Linker::is_available()'],['../classroboligo_1_1RobotState.html#a605f30b5e2555e26f3efa3761e544725',1,'roboligo::RobotState::is_available()']]],
-  ['is_5fconfigured_15',['is_configured',['../classroboligo_1_1Linker.html#adc277962252716bf5186a577ecafcadc',1,'roboligo::Linker']]],
-  ['is_5fsimulation_16',['is_simulation',['../classroboligo_1_1RobotState.html#ac43be727ef41f007f6886afa08f42437',1,'roboligo::RobotState']]],
-  ['is_5fstamped_17',['is_stamped',['../classroboligo_1_1Commander.html#acccd2a038565ce5c6453a2a44f74db9c',1,'roboligo::Commander::is_stamped()'],['../classroboligo_1_1RobotState.html#a14309035b68620f68ebb04d33e596e54',1,'roboligo::RobotState::is_stamped()']]]
+  ['get_5fmode_0',['get_mode',['../classroboligo_1_1interfaces_1_1Interface.html#a02df0d694ee2ab927f7cc75ea93b0af5',1,'roboligo::interfaces::Interface::get_mode()'],['../classroboligo_1_1Linker.html#a3d3c46663a2b72eb59f31b17a3f0d9b0',1,'roboligo::Linker::get_mode()'],['../classroboligo_1_1RobotState.html#afcdcc95aa7bfaec1188a1c592a0b0b03',1,'roboligo::RobotState::get_mode(const std::string &amp;mode_name)']]],
+  ['get_5fmodes_1',['get_modes',['../classroboligo_1_1RobotState.html#a7832225cccdd1053f3e834e71dcd5562',1,'roboligo::RobotState']]],
+  ['get_5fname_2',['get_name',['../classroboligo_1_1Mode.html#af9d8bd8ce5bdd8f59c0670171b15b5f6',1,'roboligo::Mode::get_name()'],['../classroboligo_1_1Trigger.html#a97073de0f3f40b5430aaad3b08187f9f',1,'roboligo::Trigger::get_name()'],['../classroboligo_1_1interfaces_1_1Interface.html#a1181e25a115177506cc9887095a4368a',1,'roboligo::interfaces::Interface::get_name()'],['../classroboligo_1_1Linker.html#a6404f9fe8f23ccf0c67c35351671ea6f',1,'roboligo::Linker::get_name()'],['../classroboligo_1_1RobotState.html#afcfeb48b1e629a2ea57383650cd60549',1,'roboligo::RobotState::get_name()']]],
+  ['get_5fnode_3',['get_node',['../classroboligo_1_1PluginBase.html#a01106cc7159104f0241fd77454ec785a',1,'roboligo::PluginBase']]],
+  ['get_5fplugin_5fname_4',['get_plugin_name',['../classroboligo_1_1PluginBase.html#a0b7c6bfe3cd08a4c41e75eb44ea09529',1,'roboligo::PluginBase']]],
+  ['get_5froboligo_5fsystem_5fnodes_5',['get_roboligo_system_nodes',['../classroboligo_1_1RoboligoNode.html#a53c1718478f703d28d1d74769b3e0421',1,'roboligo::RoboligoNode']]],
+  ['get_5ftopic_6',['get_topic',['../classroboligo_1_1Linker.html#a6e3e90d2af78d2b8511bba9532045f2b',1,'roboligo::Linker']]],
+  ['get_5ftrigger_7',['get_trigger',['../classroboligo_1_1RobotState.html#a30c07a67b4ab1107d90ae4ed6833a99a',1,'roboligo::RobotState']]],
+  ['get_5ftriggers_8',['get_triggers',['../classroboligo_1_1RobotState.html#a009e9b5d24093092047d5f9abbc331d5',1,'roboligo::RobotState']]],
+  ['get_5ftype_9',['get_type',['../classroboligo_1_1interfaces_1_1Interface.html#a41ea6577fecc7426cd5a8c37edf6e356',1,'roboligo::interfaces::Interface']]],
+  ['get_5fvalue_10',['get_value',['../classroboligo_1_1Mode.html#a7da7b5b14b29239d19922f92403e156d',1,'roboligo::Mode::get_value()'],['../classroboligo_1_1Trigger.html#a03f43e17a24164778b5246b922497b8c',1,'roboligo::Trigger::get_value()'],['../classroboligo_1_1interfaces_1_1Interface.html#a7dd80ff133392719be7ac9e485490e89',1,'roboligo::interfaces::Interface::get_value()']]],
+  ['gps_11',['gps',['../classroboligo_1_1RobotState.html#ad822b07f77618001603d7e36ea7ed857',1,'roboligo::RobotState']]]
 ];

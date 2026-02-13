@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>roboligo</b></li><li class="navelem"><a class="el" href="classroboligo_1_1Trigger.html">Trigger</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceroboligo.html">roboligo</a></li><li class="navelem"><a class="el" href="classroboligo_1_1Trigger.html">Trigger</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -101,74 +101,82 @@ $(function(){ initResizable(false); });
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Trigger_8hpp_source.html">Trigger.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for roboligo::Trigger:</div>
+<div class="dyncontent">
+<div class="center"><img src="classroboligo_1_1Trigger__coll__graph.png" border="0" usemap="#aroboligo_1_1Trigger_coll__map" alt="Collaboration graph"/></div>
+<map name="aroboligo_1_1Trigger_coll__map" id="aroboligo_1_1Trigger_coll__map">
+<area shape="rect" title="Represents a trigger that can transition between different modes in a state machine." alt="" coords="183,109,295,135"/>
+<area shape="rect" title=" " alt="" coords="5,5,124,31"/>
+<area shape="poly" title=" " alt="" coords="99,37,175,83,218,106,215,111,173,87,96,42"/>
+<area shape="rect" title=" " alt="" coords="147,5,200,31"/>
+<area shape="poly" title=" " alt="" coords="192,43,234,107,229,110,188,46"/>
+<area shape="rect" title=" " alt="" coords="225,5,387,31"/>
+<area shape="poly" title=" " alt="" coords="292,46,265,86,249,110,245,107,261,84,287,43"/>
+<area shape="rect" title=" " alt="" coords="411,5,456,31"/>
+<area shape="poly" title=" " alt="" coords="410,43,380,66,344,87,285,111,283,106,342,83,377,61,407,39"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af334425a6fb11b460a2315de73dc5dcb" id="r_af334425a6fb11b460a2315de73dc5dcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af334425a6fb11b460a2315de73dc5dcb">Trigger</a> (std::string name, std::string value, std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt; previous, std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt; next)</td></tr>
-<tr class="memdesc:af334425a6fb11b460a2315de73dc5dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classroboligo_1_1Trigger.html" title="Represents a trigger that can transition between different modes in a state machine.">Trigger</a>.  <br /></td></tr>
-<tr class="separator:af334425a6fb11b460a2315de73dc5dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae042c8d054ad83ebbd4f15835db1c1d3" id="r_ae042c8d054ad83ebbd4f15835db1c1d3"><td class="memItemLeft" align="right" valign="top"><a id="ae042c8d054ad83ebbd4f15835db1c1d3" name="ae042c8d054ad83ebbd4f15835db1c1d3"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Trigger</b> ()=default</td></tr>
-<tr class="memdesc:ae042c8d054ad83ebbd4f15835db1c1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
-<tr class="separator:ae042c8d054ad83ebbd4f15835db1c1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d392af62b22808d7783cb3f3378c93a" id="r_a2d392af62b22808d7783cb3f3378c93a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d392af62b22808d7783cb3f3378c93a">execute</a> (void)</td></tr>
+<tr class="memdesc:a2d392af62b22808d7783cb3f3378c93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the trigger and invokes its registered callback.  <br /></td></tr>
+<tr class="separator:a2d392af62b22808d7783cb3f3378c93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97073de0f3f40b5430aaad3b08187f9f" id="r_a97073de0f3f40b5430aaad3b08187f9f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97073de0f3f40b5430aaad3b08187f9f">get_name</a> (void)</td></tr>
 <tr class="memdesc:a97073de0f3f40b5430aaad3b08187f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the trigger.  <br /></td></tr>
 <tr class="separator:a97073de0f3f40b5430aaad3b08187f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03f43e17a24164778b5246b922497b8c" id="r_a03f43e17a24164778b5246b922497b8c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03f43e17a24164778b5246b922497b8c">get_value</a> (void)</td></tr>
 <tr class="memdesc:a03f43e17a24164778b5246b922497b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the trigger.  <br /></td></tr>
 <tr class="separator:a03f43e17a24164778b5246b922497b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa7c0d236609e70f8afa7b5858086a2b" id="r_afa7c0d236609e70f8afa7b5858086a2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa7c0d236609e70f8afa7b5858086a2b">set_name</a> (std::string new_name)</td></tr>
-<tr class="memdesc:afa7c0d236609e70f8afa7b5858086a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new name for the trigger.  <br /></td></tr>
-<tr class="separator:afa7c0d236609e70f8afa7b5858086a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb622d2a7adecbf096d29f33aeb5df67" id="r_abb622d2a7adecbf096d29f33aeb5df67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb622d2a7adecbf096d29f33aeb5df67">set_value</a> (std::string new_value)</td></tr>
-<tr class="memdesc:abb622d2a7adecbf096d29f33aeb5df67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new value for the trigger.  <br /></td></tr>
-<tr class="separator:abb622d2a7adecbf096d29f33aeb5df67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad875d784d64198340a41925badb2cba9" id="r_ad875d784d64198340a41925badb2cba9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad875d784d64198340a41925badb2cba9">set_previous_modes</a> (std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt; modes)</td></tr>
-<tr class="memdesc:ad875d784d64198340a41925badb2cba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the previous modes for this trigger.  <br /></td></tr>
-<tr class="separator:ad875d784d64198340a41925badb2cba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbb4f62c228bc2e20839b02f5dbd7a7b" id="r_abbb4f62c228bc2e20839b02f5dbd7a7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbb4f62c228bc2e20839b02f5dbd7a7b">set_next_modes</a> (std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt; modes)</td></tr>
-<tr class="memdesc:abbb4f62c228bc2e20839b02f5dbd7a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the next modes for this trigger.  <br /></td></tr>
-<tr class="separator:abbb4f62c228bc2e20839b02f5dbd7a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d736c76d9ed8efcc0bf8c292b9d0d42" id="r_a1d736c76d9ed8efcc0bf8c292b9d0d42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d736c76d9ed8efcc0bf8c292b9d0d42">is_available</a> (void)</td></tr>
 <tr class="memdesc:a1d736c76d9ed8efcc0bf8c292b9d0d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the trigger is available for execution.  <br /></td></tr>
 <tr class="separator:a1d736c76d9ed8efcc0bf8c292b9d0d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5efa6f9d867e9fc09e2babfb1988a130" id="r_a5efa6f9d867e9fc09e2babfb1988a130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5efa6f9d867e9fc09e2babfb1988a130">register_callback</a> (const std::function&lt; void()&gt; &amp;callback)</td></tr>
 <tr class="memdesc:a5efa6f9d867e9fc09e2babfb1988a130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a callback function to be executed when the trigger fires.  <br /></td></tr>
 <tr class="separator:a5efa6f9d867e9fc09e2babfb1988a130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d392af62b22808d7783cb3f3378c93a" id="r_a2d392af62b22808d7783cb3f3378c93a"><td class="memItemLeft" align="right" valign="top"><a id="a2d392af62b22808d7783cb3f3378c93a" name="a2d392af62b22808d7783cb3f3378c93a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> (void)</td></tr>
-<tr class="memdesc:a2d392af62b22808d7783cb3f3378c93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the trigger and invokes its registered callback. <br /></td></tr>
-<tr class="separator:a2d392af62b22808d7783cb3f3378c93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7c0d236609e70f8afa7b5858086a2b" id="r_afa7c0d236609e70f8afa7b5858086a2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa7c0d236609e70f8afa7b5858086a2b">set_name</a> (std::string new_name)</td></tr>
+<tr class="memdesc:afa7c0d236609e70f8afa7b5858086a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new name for the trigger.  <br /></td></tr>
+<tr class="separator:afa7c0d236609e70f8afa7b5858086a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb4f62c228bc2e20839b02f5dbd7a7b" id="r_abbb4f62c228bc2e20839b02f5dbd7a7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbb4f62c228bc2e20839b02f5dbd7a7b">set_next_modes</a> (std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt; modes)</td></tr>
+<tr class="memdesc:abbb4f62c228bc2e20839b02f5dbd7a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the next modes for this trigger.  <br /></td></tr>
+<tr class="separator:abbb4f62c228bc2e20839b02f5dbd7a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad875d784d64198340a41925badb2cba9" id="r_ad875d784d64198340a41925badb2cba9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad875d784d64198340a41925badb2cba9">set_previous_modes</a> (std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt; modes)</td></tr>
+<tr class="memdesc:ad875d784d64198340a41925badb2cba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the previous modes for this trigger.  <br /></td></tr>
+<tr class="separator:ad875d784d64198340a41925badb2cba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb622d2a7adecbf096d29f33aeb5df67" id="r_abb622d2a7adecbf096d29f33aeb5df67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb622d2a7adecbf096d29f33aeb5df67">set_value</a> (std::string new_value)</td></tr>
+<tr class="memdesc:abb622d2a7adecbf096d29f33aeb5df67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new value for the trigger.  <br /></td></tr>
+<tr class="separator:abb622d2a7adecbf096d29f33aeb5df67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af334425a6fb11b460a2315de73dc5dcb" id="r_af334425a6fb11b460a2315de73dc5dcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af334425a6fb11b460a2315de73dc5dcb">Trigger</a> (std::string name, std::string value, std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt; previous, std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt; next)</td></tr>
+<tr class="memdesc:af334425a6fb11b460a2315de73dc5dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classroboligo_1_1Trigger.html" title="Represents a trigger that can transition between different modes in a state machine.">Trigger</a>.  <br /></td></tr>
+<tr class="separator:af334425a6fb11b460a2315de73dc5dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae042c8d054ad83ebbd4f15835db1c1d3" id="r_ae042c8d054ad83ebbd4f15835db1c1d3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae042c8d054ad83ebbd4f15835db1c1d3">~Trigger</a> ()=default</td></tr>
+<tr class="memdesc:ae042c8d054ad83ebbd4f15835db1c1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:ae042c8d054ad83ebbd4f15835db1c1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1829da52251f1d8cc31a818c4b3f3cb3" id="r_a1829da52251f1d8cc31a818c4b3f3cb3"><td class="memItemLeft" align="right" valign="top"><a id="a1829da52251f1d8cc31a818c4b3f3cb3" name="a1829da52251f1d8cc31a818c4b3f3cb3"></a>
-std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cb</b></td></tr>
-<tr class="memdesc:a1829da52251f1d8cc31a818c4b3f3cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function. <br /></td></tr>
+<tr class="memitem:a1829da52251f1d8cc31a818c4b3f3cb3" id="r_a1829da52251f1d8cc31a818c4b3f3cb3"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1829da52251f1d8cc31a818c4b3f3cb3">cb</a></td></tr>
+<tr class="memdesc:a1829da52251f1d8cc31a818c4b3f3cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function.  <br /></td></tr>
 <tr class="separator:a1829da52251f1d8cc31a818c4b3f3cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a524f4d5d4ae340e1310ebbab5e4c33ae" id="r_a524f4d5d4ae340e1310ebbab5e4c33ae"><td class="memItemLeft" align="right" valign="top"><a id="a524f4d5d4ae340e1310ebbab5e4c33ae" name="a524f4d5d4ae340e1310ebbab5e4c33ae"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name_</b></td></tr>
-<tr class="memdesc:a524f4d5d4ae340e1310ebbab5e4c33ae"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classroboligo_1_1Trigger.html" title="Represents a trigger that can transition between different modes in a state machine.">Trigger</a> name. <br /></td></tr>
-<tr class="separator:a524f4d5d4ae340e1310ebbab5e4c33ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17df1819d07d988735f0d3e99d0414eb" id="r_a17df1819d07d988735f0d3e99d0414eb"><td class="memItemLeft" align="right" valign="top"><a id="a17df1819d07d988735f0d3e99d0414eb" name="a17df1819d07d988735f0d3e99d0414eb"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>value_</b></td></tr>
-<tr class="memdesc:a17df1819d07d988735f0d3e99d0414eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value for the trigger. <br /></td></tr>
-<tr class="separator:a17df1819d07d988735f0d3e99d0414eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e90baf236c5f5bd08c76e1ede02cde2" id="r_a6e90baf236c5f5bd08c76e1ede02cde2"><td class="memItemLeft" align="right" valign="top"><a id="a6e90baf236c5f5bd08c76e1ede02cde2" name="a6e90baf236c5f5bd08c76e1ede02cde2"></a>
-std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>previous_</b></td></tr>
-<tr class="memdesc:a6e90baf236c5f5bd08c76e1ede02cde2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of previous modes. <br /></td></tr>
-<tr class="separator:a6e90baf236c5f5bd08c76e1ede02cde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38785eb86e1d922898aa55b171a0364a" id="r_a38785eb86e1d922898aa55b171a0364a"><td class="memItemLeft" align="right" valign="top"><a id="a38785eb86e1d922898aa55b171a0364a" name="a38785eb86e1d922898aa55b171a0364a"></a>
-std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>next_</b></td></tr>
-<tr class="memdesc:a38785eb86e1d922898aa55b171a0364a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of next modes. <br /></td></tr>
-<tr class="separator:a38785eb86e1d922898aa55b171a0364a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0644ff69e181d416593bd280353a1c66" id="r_a0644ff69e181d416593bd280353a1c66"><td class="memItemLeft" align="right" valign="top"><a id="a0644ff69e181d416593bd280353a1c66" name="a0644ff69e181d416593bd280353a1c66"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>available_</b> {false}</td></tr>
-<tr class="memdesc:a0644ff69e181d416593bd280353a1c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">If trigger is available. <br /></td></tr>
+<tr class="memitem:a0644ff69e181d416593bd280353a1c66" id="r_a0644ff69e181d416593bd280353a1c66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0644ff69e181d416593bd280353a1c66">available_</a> {false}</td></tr>
+<tr class="memdesc:a0644ff69e181d416593bd280353a1c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">If trigger is available.  <br /></td></tr>
 <tr class="separator:a0644ff69e181d416593bd280353a1c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524f4d5d4ae340e1310ebbab5e4c33ae" id="r_a524f4d5d4ae340e1310ebbab5e4c33ae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a524f4d5d4ae340e1310ebbab5e4c33ae">name_</a></td></tr>
+<tr class="memdesc:a524f4d5d4ae340e1310ebbab5e4c33ae"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classroboligo_1_1Trigger.html" title="Represents a trigger that can transition between different modes in a state machine.">Trigger</a> name.  <br /></td></tr>
+<tr class="separator:a524f4d5d4ae340e1310ebbab5e4c33ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38785eb86e1d922898aa55b171a0364a" id="r_a38785eb86e1d922898aa55b171a0364a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38785eb86e1d922898aa55b171a0364a">next_</a></td></tr>
+<tr class="memdesc:a38785eb86e1d922898aa55b171a0364a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of next modes.  <br /></td></tr>
+<tr class="separator:a38785eb86e1d922898aa55b171a0364a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e90baf236c5f5bd08c76e1ede02cde2" id="r_a6e90baf236c5f5bd08c76e1ede02cde2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classroboligo_1_1Mode.html">Mode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e90baf236c5f5bd08c76e1ede02cde2">previous_</a></td></tr>
+<tr class="memdesc:a6e90baf236c5f5bd08c76e1ede02cde2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of previous modes.  <br /></td></tr>
+<tr class="separator:a6e90baf236c5f5bd08c76e1ede02cde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17df1819d07d988735f0d3e99d0414eb" id="r_a17df1819d07d988735f0d3e99d0414eb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17df1819d07d988735f0d3e99d0414eb">value_</a></td></tr>
+<tr class="memdesc:a17df1819d07d988735f0d3e99d0414eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value for the trigger.  <br /></td></tr>
+<tr class="separator:a17df1819d07d988735f0d3e99d0414eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a trigger that can transition between different modes in a state machine. </p>
@@ -224,7 +232,53 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>available_</b> {false
 
 </div>
 </div>
+<a id="ae042c8d054ad83ebbd4f15835db1c1d3" name="ae042c8d054ad83ebbd4f15835db1c1d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae042c8d054ad83ebbd4f15835db1c1d3">&#9670;&#160;</a></span>~Trigger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual roboligo::Trigger::~Trigger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2d392af62b22808d7783cb3f3378c93a" name="a2d392af62b22808d7783cb3f3378c93a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d392af62b22808d7783cb3f3378c93a">&#9670;&#160;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roboligo::Trigger::execute </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Executes the trigger and invokes its registered callback. </p>
+
+</div>
+</div>
 <a id="a97073de0f3f40b5430aaad3b08187f9f" name="a97073de0f3f40b5430aaad3b08187f9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97073de0f3f40b5430aaad3b08187f9f">&#9670;&#160;</a></span>get_name()</h2>
 
@@ -410,9 +464,146 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>available_</b> {false
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0644ff69e181d416593bd280353a1c66" name="a0644ff69e181d416593bd280353a1c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0644ff69e181d416593bd280353a1c66">&#9670;&#160;</a></span>available_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool roboligo::Trigger::available_ {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If trigger is available. </p>
+
+</div>
+</div>
+<a id="a1829da52251f1d8cc31a818c4b3f3cb3" name="a1829da52251f1d8cc31a818c4b3f3cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1829da52251f1d8cc31a818c4b3f3cb3">&#9670;&#160;</a></span>cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void()&gt; roboligo::Trigger::cb</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function. </p>
+
+</div>
+</div>
+<a id="a524f4d5d4ae340e1310ebbab5e4c33ae" name="a524f4d5d4ae340e1310ebbab5e4c33ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a524f4d5d4ae340e1310ebbab5e4c33ae">&#9670;&#160;</a></span>name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string roboligo::Trigger::name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classroboligo_1_1Trigger.html" title="Represents a trigger that can transition between different modes in a state machine.">Trigger</a> name. </p>
+
+</div>
+</div>
+<a id="a38785eb86e1d922898aa55b171a0364a" name="a38785eb86e1d922898aa55b171a0364a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38785eb86e1d922898aa55b171a0364a">&#9670;&#160;</a></span>next_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classroboligo_1_1Mode.html">Mode</a>&gt; roboligo::Trigger::next_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vector of next modes. </p>
+
+</div>
+</div>
+<a id="a6e90baf236c5f5bd08c76e1ede02cde2" name="a6e90baf236c5f5bd08c76e1ede02cde2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e90baf236c5f5bd08c76e1ede02cde2">&#9670;&#160;</a></span>previous_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classroboligo_1_1Mode.html">Mode</a>&gt; roboligo::Trigger::previous_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vector of previous modes. </p>
+
+</div>
+</div>
+<a id="a17df1819d07d988735f0d3e99d0414eb" name="a17df1819d07d988735f0d3e99d0414eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17df1819d07d988735f0d3e99d0414eb">&#9670;&#160;</a></span>value_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string roboligo::Trigger::value_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Value for the trigger. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>roboligo_common/include/roboligo_common/classification/<a class="el" href="Trigger_8hpp_source.html">Trigger.hpp</a></li>
-<li>roboligo_common/src/roboligo_common/classification/<b>Trigger.cpp</b></li>
+<li>roboligo_common/src/roboligo_common/classification/<a class="el" href="Trigger_8cpp.html">Trigger.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>roboligo</b></li><li class="navelem"><a class="el" href="classroboligo_1_1PluginBase.html">PluginBase</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceroboligo.html">roboligo</a></li><li class="navelem"><a class="el" href="classroboligo_1_1PluginBase.html">PluginBase</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -114,32 +114,84 @@ Inheritance diagram for roboligo::PluginBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d42cc7072fd23dd24b8b6bd796f4698" id="r_a7d42cc7072fd23dd24b8b6bd796f4698"><td class="memItemLeft" align="right" valign="top"><a id="a7d42cc7072fd23dd24b8b6bd796f4698" name="a7d42cc7072fd23dd24b8b6bd796f4698"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PluginBase</b> ()=default</td></tr>
-<tr class="memdesc:a7d42cc7072fd23dd24b8b6bd796f4698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
-<tr class="separator:a7d42cc7072fd23dd24b8b6bd796f4698"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85b541467f073c4bfb86e4ff9a01803f" id="r_a85b541467f073c4bfb86e4ff9a01803f"><td class="memItemLeft" align="right" valign="top"><a id="a85b541467f073c4bfb86e4ff9a01803f" name="a85b541467f073c4bfb86e4ff9a01803f"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~PluginBase</b> ()=default</td></tr>
-<tr class="memdesc:a85b541467f073c4bfb86e4ff9a01803f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for proper cleanup of derived classes. <br /></td></tr>
-<tr class="separator:a85b541467f073c4bfb86e4ff9a01803f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ec233e17f310ca7604b6ef1a44081ee" id="r_a3ec233e17f310ca7604b6ef1a44081ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ec233e17f310ca7604b6ef1a44081ee">initialize</a> (const std::shared_ptr&lt; rclcpp_lifecycle::LifecycleNode &gt; parent_node, const std::string &amp;plugin_name)</td></tr>
-<tr class="memdesc:a3ec233e17f310ca7604b6ef1a44081ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the plugin with a parent lifecycle node and plugin name.  <br /></td></tr>
-<tr class="separator:a3ec233e17f310ca7604b6ef1a44081ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc1401aaa6423c6eaf3840b8e3d8c20b" id="r_acc1401aaa6423c6eaf3840b8e3d8c20b"><td class="memItemLeft" align="right" valign="top"><a id="acc1401aaa6423c6eaf3840b8e3d8c20b" name="acc1401aaa6423c6eaf3840b8e3d8c20b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_initialize</b> ()</td></tr>
-<tr class="memdesc:acc1401aaa6423c6eaf3840b8e3d8c20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called during plugin initialization. Override in derived classes for custom setup. <br /></td></tr>
-<tr class="separator:acc1401aaa6423c6eaf3840b8e3d8c20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01106cc7159104f0241fd77454ec785a" id="r_a01106cc7159104f0241fd77454ec785a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; rclcpp_lifecycle::LifecycleNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01106cc7159104f0241fd77454ec785a">get_node</a> () const</td></tr>
 <tr class="memdesc:a01106cc7159104f0241fd77454ec785a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the parent lifecycle node.  <br /></td></tr>
 <tr class="separator:a01106cc7159104f0241fd77454ec785a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7c6bfe3cd08a4c41e75eb44ea09529" id="r_a0b7c6bfe3cd08a4c41e75eb44ea09529"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b7c6bfe3cd08a4c41e75eb44ea09529">get_plugin_name</a> () const</td></tr>
 <tr class="memdesc:a0b7c6bfe3cd08a4c41e75eb44ea09529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the plugin name.  <br /></td></tr>
 <tr class="separator:a0b7c6bfe3cd08a4c41e75eb44ea09529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec233e17f310ca7604b6ef1a44081ee" id="r_a3ec233e17f310ca7604b6ef1a44081ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ec233e17f310ca7604b6ef1a44081ee">initialize</a> (const std::shared_ptr&lt; rclcpp_lifecycle::LifecycleNode &gt; parent_node, const std::string &amp;plugin_name)</td></tr>
+<tr class="memdesc:a3ec233e17f310ca7604b6ef1a44081ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the plugin with a parent lifecycle node and plugin name.  <br /></td></tr>
+<tr class="separator:a3ec233e17f310ca7604b6ef1a44081ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1401aaa6423c6eaf3840b8e3d8c20b" id="r_acc1401aaa6423c6eaf3840b8e3d8c20b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc1401aaa6423c6eaf3840b8e3d8c20b">on_initialize</a> ()</td></tr>
+<tr class="memdesc:acc1401aaa6423c6eaf3840b8e3d8c20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called during plugin initialization. Override in derived classes for custom setup.  <br /></td></tr>
+<tr class="separator:acc1401aaa6423c6eaf3840b8e3d8c20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d42cc7072fd23dd24b8b6bd796f4698" id="r_a7d42cc7072fd23dd24b8b6bd796f4698"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d42cc7072fd23dd24b8b6bd796f4698">PluginBase</a> ()=default</td></tr>
+<tr class="memdesc:a7d42cc7072fd23dd24b8b6bd796f4698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="separator:a7d42cc7072fd23dd24b8b6bd796f4698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b541467f073c4bfb86e4ff9a01803f" id="r_a85b541467f073c4bfb86e4ff9a01803f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85b541467f073c4bfb86e4ff9a01803f">~PluginBase</a> ()=default</td></tr>
+<tr class="memdesc:a85b541467f073c4bfb86e4ff9a01803f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for proper cleanup of derived classes.  <br /></td></tr>
+<tr class="separator:a85b541467f073c4bfb86e4ff9a01803f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for plugin implementations with lifecycle node integration. </p>
 <p>Provides common functionality for plugins including initialization, node management, and plugin identification within a ROS2 lifecycle framework. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7d42cc7072fd23dd24b8b6bd796f4698" name="a7d42cc7072fd23dd24b8b6bd796f4698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d42cc7072fd23dd24b8b6bd796f4698">&#9670;&#160;</a></span>PluginBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">roboligo::PluginBase::PluginBase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+</div>
+</div>
+<a id="a85b541467f073c4bfb86e4ff9a01803f" name="a85b541467f073c4bfb86e4ff9a01803f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b541467f073c4bfb86e4ff9a01803f">&#9670;&#160;</a></span>~PluginBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual roboligo::PluginBase::~PluginBase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual destructor for proper cleanup of derived classes. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a01106cc7159104f0241fd77454ec785a" name="a01106cc7159104f0241fd77454ec785a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01106cc7159104f0241fd77454ec785a">&#9670;&#160;</a></span>get_node()</h2>
 
@@ -236,9 +288,36 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_initialize
 
 </div>
 </div>
+<a id="acc1401aaa6423c6eaf3840b8e3d8c20b" name="acc1401aaa6423c6eaf3840b8e3d8c20b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc1401aaa6423c6eaf3840b8e3d8c20b">&#9670;&#160;</a></span>on_initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void roboligo::PluginBase::on_initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called during plugin initialization. Override in derived classes for custom setup. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>roboligo_common/include/roboligo_common/types/<a class="el" href="PluginBase_8hpp_source.html">PluginBase.hpp</a></li>
-<li>roboligo_common/src/roboligo_common/types/<b>PluginBase.cpp</b></li>
+<li>roboligo_common/src/roboligo_common/types/<a class="el" href="PluginBase_8cpp.html">PluginBase.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

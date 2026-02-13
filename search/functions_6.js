@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mode_0',['Mode',['../classroboligo_1_1Mode.html#ae45f8f575624381f353dbcf075899cf2',1,'roboligo::Mode']]]
+  ['linker_0',['Linker',['../classroboligo_1_1Linker.html#a41477bcc50b3168fae4035576a328deb',1,'roboligo::Linker']]]
 ];
