@@ -1,12 +1,12 @@
-name: main
+name: rolling
 
 on:
   pull_request:
     branches:
-      - main
+      - rolling
   push:
     branches:
-      - main
+      - rolling
 jobs:
   build-and-test:
     runs-on: ubuntu-24.04
@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: rolling
       - name: Setup ROS 2
         uses: ros-tooling/setup-ros@0.7.15
       - name: build and test
