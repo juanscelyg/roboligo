@@ -1,12 +1,12 @@
-name: rolling
+name: jazzy
 
 on:
   pull_request:
     branches:
-      - rolling
+      - jazzy
   push:
     branches:
-      - rolling
+      - jazzy
 jobs:
   build-and-test:
     runs-on: ubuntu-24.04
@@ -15,14 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: rolling
+          ref: jazzy
       - name: Setup ROS 2
         uses: ros-tooling/setup-ros@0.7.15
       - name: build and test
         uses: ros-tooling/action-ros-ci@0.4.5
         with:
           package-name: roboligo roboligo_cli roboligo_common roboligo_connector roboligo_interfaces roboligo_states roboligo_system roboligo_connector_mavros roboligo_robot_drone
-          target-ros2-distro: rolling
+          target-ros2-distro: jazzy
           colcon-defaults: |
             {
               "test": {
