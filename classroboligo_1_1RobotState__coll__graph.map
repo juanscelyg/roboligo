@@ -1,15 +1,15 @@
 <map id="roboligo::RobotState" name="roboligo::RobotState">
-<area shape="rect" id="Node000001" title="Represents the state and configuration of a robot." alt="" coords="277,177,414,202"/>
+<area shape="rect" id="Node000001" title="Represents the state and configuration of a robot." alt="" coords="285,172,422,197"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,144,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,49,207,70,254,97,302,137,335,175,331,178,298,141,251,101,205,75,156,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,39,212,56,262,81,289,102,313,126,346,169,341,173,309,130,285,106,259,85,210,61,158,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,71,144,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,113,254,146,317,174,315,179,252,151,158,118"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,105,262,135,331,169,328,173,260,140,158,110"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="5,136,144,177"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,164,277,179,276,184,159,169"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,162,284,175,284,180,159,167"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="5,201,144,242"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="159,209,252,198,276,195,276,200,253,203,160,214"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="159,213,260,201,291,195,292,200,261,206,160,218"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="5,267,144,307"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="158,271,205,260,252,244,292,223,325,201,328,205,295,228,254,249,207,265,160,276"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="159,283,210,276,260,260,284,246,306,229,339,196,343,199,310,233,287,251,262,265,211,281,160,289"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="5,332,144,373"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="158,331,206,313,251,289,277,268,300,244,333,201,338,204,304,248,281,272,254,294,208,318,160,336"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="159,346,211,334,259,312,290,285,314,253,344,196,349,199,319,256,293,289,262,316,212,339,160,351"/>
 </map>

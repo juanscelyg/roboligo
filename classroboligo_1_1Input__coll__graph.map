@@ -1,27 +1,27 @@
 <map id="roboligo::Input" name="roboligo::Input">
-<area shape="rect" id="Node000001" title="Commander that subscribes to and processes Twist messages." alt="" coords="811,291,913,316"/>
-<area shape="rect" id="Node000002" href="$classroboligo_1_1Commander.html" title="Base class for commanding robotic operations through message publishing." alt="" coords="512,219,655,244"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="653,246,788,281,812,287,811,293,787,286,652,251"/>
-<area shape="rect" id="Node000003" href="$classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections." alt="" coords="273,113,381,139"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="376,143,551,216,549,221,373,148"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="55,5,108,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="124,26,184,45,250,72,283,91,310,111,307,115,280,95,247,77,182,50,122,31"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="5,55,158,96"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="174,89,249,105,273,110,272,115,248,110,173,95"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="51,120,112,146"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="127,129,272,125,272,130,127,134"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="59,196,104,222"/>
-<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="119,208,512,226,512,231,119,213"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="119,199,180,184,248,163,301,137,304,142,250,168,181,190,120,204"/>
-<area shape="rect" id="Node000008" href="$structroboligo_1_1RoboligoInputTwist.html" title="Encapsulates a ROS 2 subscription and data storage for Twist messages." alt="" coords="492,371,675,396"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="645,363,814,314,815,319,646,368"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="287,348,366,374"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="382,375,405,380,492,385,492,390,405,385,381,380"/>
-<area shape="rect" id="Node000011" href="$structroboligo_1_1RoboligoInputTwistStamped.html" title="Encapsulates a ROS 2 subscription and data storage for TwistStamped messages." alt="" coords="492,283,675,324"/>
-<area shape="poly" id="edge12_Node000011_Node000009" title=" " alt="" coords="381,346,491,321,492,327,382,351"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="287,416,366,442"/>
-<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="381,419,468,405,522,394,523,400,468,410,382,424"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="691,301,811,301,811,306,691,306"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="287,280,366,306"/>
-<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="382,292,492,297,491,302,382,298"/>
+<area shape="rect" id="Node000001" title="Commander that subscribes to and processes Twist messages." alt="" coords="829,324,931,350"/>
+<area shape="rect" id="Node000002" href="$classroboligo_1_1Commander.html" title="Base class for commanding robotic operations through message publishing." alt="" coords="526,250,668,275"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="684,276,806,307,847,321,846,326,805,312,682,281"/>
+<area shape="rect" id="Node000003" href="$classroboligo_1_1Linker.html" title="Manages the configuration and state of interface connections." alt="" coords="281,131,389,157"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="380,161,567,247,565,252,378,166"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="55,19,108,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="124,34,188,47,224,59,258,74,296,101,324,129,320,133,293,105,255,78,222,63,187,52,123,39"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,69,158,109"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="174,99,257,116,297,128,296,133,256,121,173,104"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="51,134,112,159"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="127,143,280,142,280,147,127,149"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="59,227,104,253"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="119,239,525,257,525,262,119,244"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="119,231,184,216,256,191,288,174,315,155,318,159,291,178,258,196,185,221,120,236"/>
+<area shape="rect" id="Node000008" href="$structroboligo_1_1RoboligoInputTwist.html" title="Encapsulates a ROS 2 subscription and data storage for Twist messages." alt="" coords="505,418,688,443"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="658,410,804,363,844,348,846,353,806,368,659,415"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="295,391,374,417"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="384,420,413,427,459,432,505,433,504,438,459,437,413,432,382,425"/>
+<area shape="rect" id="Node000011" href="$structroboligo_1_1RoboligoInputTwistStamped.html" title="Encapsulates a ROS 2 subscription and data storage for TwistStamped messages." alt="" coords="505,317,688,357"/>
+<area shape="poly" id="edge12_Node000011_Node000009" title=" " alt="" coords="389,388,513,356,515,361,390,393"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="295,471,374,497"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="389,476,480,462,555,441,556,446,482,467,390,481"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="704,334,829,334,829,340,704,340"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="295,311,374,337"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="390,324,505,330,504,335,390,329"/>
 </map>

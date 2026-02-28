@@ -1,7 +1,7 @@
 <map id="roboligo::RoboligoNode" name="roboligo::RoboligoNode">
-<area shape="rect" id="Node000001" title="A lifecycle node that manages the Roboligo robot system." alt="" coords="110,94,263,120"/>
+<area shape="rect" id="Node000001" title="A lifecycle node that manages the Roboligo robot system." alt="" coords="110,102,263,128"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,205,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,41,177,92,173,95,125,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,41,178,100,174,103,123,45"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="229,5,309,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,44,200,95,196,92,245,41"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,44,199,103,195,100,247,41"/>
 </map>

@@ -1,11 +1,11 @@
 <map id="roboligo::Linker" name="roboligo::Linker">
-<area shape="rect" id="Node000001" title="Manages the configuration and state of interface connections." alt="" coords="170,124,278,150"/>
+<area shape="rect" id="Node000001" title="Manages the configuration and state of interface connections." alt="" coords="170,137,278,163"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,13,59,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,48,82,74,114,98,142,111,172,121,170,126,140,116,112,102,78,78,51,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,51,71,82,101,111,135,128,170,138,169,144,133,133,98,116,66,86,44,54"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="82,5,235,46"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,58,219,122,215,125,176,60"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,59,204,112,219,136,214,139,200,115,172,61"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="259,13,320,38"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="284,55,262,101,241,125,237,122,258,99,279,53"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="286,54,277,84,262,115,241,139,237,135,258,112,272,82,281,53"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="344,13,389,38"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="359,54,345,79,324,102,303,116,279,126,277,121,300,111,321,98,340,76,354,52"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="364,55,353,86,333,115,307,132,280,143,278,138,305,127,329,111,348,84,359,53"/>
 </map>

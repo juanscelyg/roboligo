@@ -1,7 +1,7 @@
 <map id="roboligo::RoboligoInputTwistStamped" name="roboligo::RoboligoInputTwistStamped">
-<area shape="rect" id="Node000001" title="Encapsulates a ROS 2 subscription and data storage for TwistStamped messages." alt="" coords="5,94,189,135"/>
+<area shape="rect" id="Node000001" title="Encapsulates a ROS 2 subscription and data storage for TwistStamped messages." alt="" coords="5,102,189,143"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,85,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,45,59,69,77,92,73,95,54,71,46,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,46,54,77,73,100,68,103,49,79,42,47"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="109,5,189,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,46,110,95,106,92,133,43"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,46,122,79,110,103,105,100,117,77,134,44"/>
 </map>

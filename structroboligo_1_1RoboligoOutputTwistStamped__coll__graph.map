@@ -1,7 +1,7 @@
 <map id="roboligo::RoboligoOutputTwistStamped" name="roboligo::RoboligoOutputTwistStamped">
-<area shape="rect" id="Node000001" title="Encapsulates a ROS 2 publisher and message data for stamped Twist commands." alt="" coords="16,94,178,135"/>
+<area shape="rect" id="Node000001" title="Encapsulates a ROS 2 publisher and message data for stamped Twist commands." alt="" coords="16,102,178,143"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,85,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,45,67,69,83,92,78,95,62,71,51,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,46,62,77,79,100,74,103,57,79,46,47"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="109,5,189,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,46,110,95,106,92,133,43"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,46,122,79,110,103,105,100,117,77,134,44"/>
 </map>
