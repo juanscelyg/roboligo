@@ -19,7 +19,7 @@
 
 #include "rclcpp/rclcpp.hpp"
 
-#include "roboligo_common/types/Interface.hpp" 
+#include "roboligo_common/types/Interface.hpp"
 
 namespace roboligo
 {
@@ -29,118 +29,118 @@ namespace roboligo
     * @var Sense::INPUT - Linker receives data
     * @var Sense::OUTPUT - Linker sends data
     */
-    enum class Sense 
-    { 
-        INPUT, 
-        OUTPUT 
-    };
+enum class Sense
+{
+  INPUT,
+  OUTPUT
+};
 
     /**
     * @class Linker
     * @brief Manages the configuration and state of interface connections
-    * 
+    *
     * Handles linking between components through topics and services,
     * including mode management, availability, and configuration status.
     */
-    class Linker
-    {
-    public:
+class Linker
+{
+public:
         /**
         * @brief Default constructor
         */
-        Linker(){}
+  Linker() {}
 
         /**
         * @brief Virtual destructor
         */
-        virtual ~Linker() = default;
+  virtual ~Linker() = default;
 
         /**
         * @brief Gets the current mode of the linker
         * @return Current interface mode
         */
-        interfaces::modes get_mode();
+  interfaces::modes get_mode();
 
         /**
         * @brief Sets the linker mode
         * @param new_mode The mode to set
         */
-        void set_mode(interfaces::modes new_mode);
+  void set_mode(interfaces::modes new_mode);
 
         /**
         * @brief Gets the linker name
         * @return Name string
         */
-        std::string get_name();
+  std::string get_name();
 
         /**
         * @brief Sets the linker name
         * @param new_name Name to assign
         */
-        void set_name(std::string new_name);
+  void set_name(std::string new_name);
 
         /**
         * @brief Gets the topic name
         * @return Topic name string
         */
-        std::string get_topic();
+  std::string get_topic();
 
         /**
         * @brief Sets the topic name
         * @param new_name Topic name to assign
         */
-        void set_topic(std::string new_name);
+  void set_topic(std::string new_name);
 
         /**
         * @brief Sets the service name
         * @param new_name Service name to assign
         */
-        void set_service(std::string new_name);
+  void set_service(std::string new_name);
 
         /**
         * @brief Configures the interface with name and topic
         * @param name_ Interface name
         * @param topic_name_ Topic name
         */
-        void set_interface(std::string name_, std::string topic_name_);
+  void set_interface(std::string name_, std::string topic_name_);
 
         /**
         * @brief Checks if the linker is available
         * @return True if available, false otherwise
         */
-        bool is_available(void);
+  bool is_available(void);
 
         /**
         * @brief Checks if the linker is configured
         * @return True if configured, false otherwise
         */
-        bool is_configured(void);
+  bool is_configured(void);
 
         /**
         * @brief Sets the availability state
         * @param new_state Availability state
         */
-        void set_available(bool new_state);
+  void set_available(bool new_state);
 
         /**
         * @brief Sets the configuration state
         * @param new_state Configuration state
         */
-        void set_configured(bool new_state);
+  void set_configured(bool new_state);
 
-        std::string name{"linker"}; ///< Linker identifier name
+  std::string name{"linker"};       ///< Linker identifier name
 
-        std::string topic_name{"/interface"}; ///< Associated topic name
+  std::string topic_name{"/interface"};       ///< Associated topic name
 
-        std::shared_ptr<interfaces::Interface> interface; ///< Shared pointer to the interface object
+  std::shared_ptr<interfaces::Interface> interface;       ///< Shared pointer to the interface object
 
-    protected:
-        interfaces::modes mode_; ///< Current operating mode
+protected:
+  interfaces::modes mode_;       ///< Current operating mode
 
-        bool available_{false}; ///< Availability flag
-        
-        bool configured_{false}; ///< Configuration state flag
-    };
+  bool available_{false};       ///< Availability flag
+
+  bool configured_{false};       ///< Configuration state flag
+};
 } // namespace roboligo
 
 #endif // ROBOLIGO_COMMON_TYPES__LINK_HPP_

@@ -22,68 +22,68 @@ namespace roboligo
     /**
     * @class Mode
     * @brief Represents a configurable mode with name, value, and active status.
-    * 
+    *
     * This class encapsulates mode information including a name identifier,
     * a value representation, and an active status flag. It provides methods
     * to get and set these properties.
     */
-    class Mode
-    {
-    public:
+class Mode
+{
+public:
         /**
         * @brief Constructs a Mode object with the specified name and value.
         * @param name The mode name identifier
         * @param value The mode value representation
         */
-        Mode(std::string name, std::string value)
-            :name_(name), value_(value) {}
+  Mode(std::string name, std::string value)
+  :name_(name), value_(value) {}
 
         /**
         * @brief Virtual destructor for proper cleanup of derived classes.
         */
-        virtual ~Mode() = default;
+  virtual ~Mode() = default;
 
         /**
         * @brief Gets the mode name.
         * @return The name of the mode
         */
-        std::string get_name(void);
+  std::string get_name(void);
 
         /**
         * @brief Gets the mode value.
         * @return The value associated with the mode
         */
-        std::string get_value(void);
+  std::string get_value(void);
 
         /**
         * @brief Sets the mode name.
         * @param new_name The new mode name
         */
-        void set_name(std::string new_name);
+  void set_name(std::string new_name);
 
         /**
         * @brief Sets the mode value.
         * @param new_value The new mode value
         */
-        void set_value(std::string new_value);
+  void set_value(std::string new_value);
 
         /**
         * @brief Checks if the mode is active.
         * @return True if the mode is active, false otherwise
         */
-        bool is_ative(void);
+  bool is_ative(void);
 
         /**
         * @brief Sets the active status of the mode.
         * @param status The new active status
         */
-        void set_active(bool status);
+  void set_active(bool status);
 
-    protected:
-        std::string name_{"base_mode"};      ///< Mode name identifier
-        std::string value_{"MODE"};          ///< Mode value representation
-        bool active_{false};                 ///< Active status flag
-    };
+protected:
+  std::string name_{"base_mode"};            ///< Mode name identifier
+  std::string value_{"MODE"};                ///< Mode value representation
+  bool active_{false};                       ///< Active status flag
+};
 
 } // namespace roboligo
 #endif // ROBOLIGO_COMMON_CLASSIFICATION__MODE_HPP_

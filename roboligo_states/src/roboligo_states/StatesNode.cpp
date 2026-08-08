@@ -143,7 +143,7 @@ StatesNode::cycle(std::shared_ptr<RobotState> robot_state)
   return classification_->update(*robot_state);
 }
 
-void 
+void
 StatesNode::reset_classification()
 {
   classification_.reset();
