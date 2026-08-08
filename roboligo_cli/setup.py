@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from setuptools import find_packages
 from setuptools import setup
 
 package_name = 'roboligo_cli'
@@ -43,6 +42,7 @@ setup(
 roboligo cli: roboligo cli tools to manage robots.""",
     license='Apache License 2.0',
     tests_require=['pytest'],
+    test_suite='test',
     entry_points={
         'ros2cli.command': [
             'roboligo = roboligo_cli.command.roboligo:RoboligoCommand',
