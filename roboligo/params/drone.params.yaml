@@ -11,6 +11,7 @@ connector_node:
     connector_types: [mavros]
     mavros:
       plugin: roboligo_connector_mavros/RoboligoConnectorMavros
+      init_alt: 0.75
 
 roboligo_node:
   ros__parameters:

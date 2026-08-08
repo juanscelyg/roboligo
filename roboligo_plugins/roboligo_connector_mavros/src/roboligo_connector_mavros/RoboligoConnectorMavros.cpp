@@ -25,8 +25,10 @@ namespace roboligo
         const auto & plugin_name = get_plugin_name();
         // Parameters
         node->declare_parameter<bool>(plugin_name + ".verbose", verbose_);
+        node->declare_parameter<double>(plugin_name + ".init_alt", init_alt_);
 
         node->get_parameter<bool>(plugin_name + ".verbose", verbose_);
+        node->get_parameter<double>(plugin_name + ".init_alt", init_alt_);
 
         // Service
 
@@ -121,6 +123,7 @@ namespace roboligo
         set_data_loss_action(0);
         set_time_disarm_preflight(60.0);
         set_data_loss_offboard_time(30.0);
+        set_init_altitude(init_alt_);
 
         RCLCPP_INFO(node->get_logger(), "Mavros Connector --> Finishing On set");
     }
@@ -384,6 +387,27 @@ namespace roboligo
         auto result = params_change->async_send_request(request);   
     }
 
+    void
+    RoboligoConnectorMavros::set_init_altitude(double init_altitude)
+    {
+        auto node = get_node();
+        RCLCPP_INFO_STREAM(node->get_logger(), "Init altitude for takeoff will be changed."); 
+        auto request = std::make_shared<mavros_msgs::srv::ParamSetV2_Request>();
+
+        request->force_set = true;
+        request->param_id = "MIS_TAKEOFF_ALT";
+        request->value.type = 3;         
+        request->value.double_value = init_altitude; 
+
+        while (!params_change->wait_for_service(2s)) {
+            if (!rclcpp::ok()) {
+            RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
+            return;
+            }
+            RCLCPP_INFO_STREAM(node->get_logger(), "service " << params_interface->get_topic() <<" not available, waiting again..."); 
+        }
+        auto result = params_change->async_send_request(request);   
+    }
 
 } // namespace roboligo
 

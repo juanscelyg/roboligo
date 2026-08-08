@@ -159,6 +159,13 @@ namespace roboligo
             void set_rcl_loss_exception(int value);
 
             /**
+            * @fn void set_init_altitude(double init_altitude)
+            * @brief Sets init value for altitude when it makes takeoff.
+            * @param init_altitude Altitude value in meters to takeoff.
+            */
+            void set_init_altitude(double init_altitude);
+
+            /**
             * @var disarming_interface
             * @brief Roboligo service interface for disarming operations.
             */
@@ -223,7 +230,8 @@ namespace roboligo
             std::string standingby_value; ///< String identifier for standby flight mode
 
         protected:
-            bool verbose_{false}; ///< Flag to enable verbose logging output. Default is false
+            bool verbose_{false};   ///< Flag to enable verbose logging output. Default is false
+            double init_alt_{0.5};  ///< Inital altitude for takeoff. Default value is 0.5 meters. 
 
     };
 } // namespace roboligo
