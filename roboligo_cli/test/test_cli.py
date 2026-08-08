@@ -12,10 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import pytest
+import importlib
+import unittest
 
 
-def test_cli():
-    """Test that the package can be imported."""
-    module = pytest.importorskip("roboligo_cli")
-    assert module is not None
+class TestRoboligoCli(unittest.TestCase):
+
+    def test_import(self):
+        """Test that the package can be imported."""
+        module = importlib.import_module("roboligo_cli")
+        self.assertIsNotNone(module)
