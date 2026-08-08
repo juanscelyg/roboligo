@@ -41,8 +41,6 @@ setup(
     long_description="""\
 roboligo cli: roboligo cli tools to manage robots.""",
     license='Apache License 2.0',
-    tests_require=['pytest'],
-    test_suite='test',
     entry_points={
         'ros2cli.command': [
             'roboligo = roboligo_cli.command.roboligo:RoboligoCommand',
