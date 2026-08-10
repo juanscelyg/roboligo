@@ -16,11 +16,11 @@
 
 namespace roboligo
 {
-    void 
-    Odom::callback(nav_msgs::msg::Odometry::SharedPtr msg)
-    {
-        set_available(true);
-        data = msg;
-    }
+void
+Odom::callback(nav_msgs::msg::Odometry::SharedPtr msg)
+{
+  set_available(true);
+  data = msg;
+}
 
 } // namespace roboligo

@@ -16,11 +16,11 @@
 
 namespace roboligo
 {
-    void 
-    Imu::callback(sensor_msgs::msg::Imu::SharedPtr msg)
-    {
-        set_available(true);
-        data = msg;
-    }
+void
+Imu::callback(sensor_msgs::msg::Imu::SharedPtr msg)
+{
+  set_available(true);
+  data = msg;
+}
 
 } // namespace roboligo

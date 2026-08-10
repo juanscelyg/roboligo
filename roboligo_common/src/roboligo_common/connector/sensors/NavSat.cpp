@@ -16,11 +16,11 @@
 
 namespace roboligo
 {
-    void 
-    NavSat::callback(sensor_msgs::msg::NavSatFix::SharedPtr msg)
-    {
-        set_available(true);
-        data = msg;
-    }
+void
+NavSat::callback(sensor_msgs::msg::NavSatFix::SharedPtr msg)
+{
+  set_available(true);
+  data = msg;
+}
 
 } // namespace roboligo

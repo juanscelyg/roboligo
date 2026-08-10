@@ -35,7 +35,8 @@ ConnectorNode::ConnectorNode(
 ConnectorNode::~ConnectorNode()
 {
   trigger_transition(lifecycle_msgs::msg::Transition::TRANSITION_DESTROY);
-  std::cout << "Roboligo Connector Node state is :" << get_current_state().label().c_str() << std::endl; 
+  std::cout << "Roboligo Connector Node state is :" << get_current_state().label().c_str() <<
+    std::endl;
   std::vector<std::string> connector_types;
   std::string plugin;
   get_parameter("connector_types", connector_types);
@@ -53,7 +54,7 @@ ConnectorNode::on_configure([[maybe_unused]] const rclcpp_lifecycle::State & sta
 {
   std::vector<std::string> connector_types;
   declare_parameter("connector_types", connector_types);
-  
+
   get_parameter("connector_types", connector_types);
 
 
@@ -109,13 +110,12 @@ ConnectorNode::on_cleanup([[maybe_unused]] const rclcpp_lifecycle::State & state
 CallbackReturnT
 ConnectorNode::on_shutdown([[maybe_unused]] const rclcpp_lifecycle::State & state)
 {
-    if(connector_->exit(*std::make_shared<roboligo::RobotState>(*robot_state_)))
-    {
-        return CallbackReturnT::SUCCESS;
-    } else {
-        return CallbackReturnT::FAILURE;
-    }
-    
+  if(connector_->exit(*std::make_shared<roboligo::RobotState>(*robot_state_))) {
+    return CallbackReturnT::SUCCESS;
+  } else {
+    return CallbackReturnT::FAILURE;
+  }
+
 }
 
 CallbackReturnT
@@ -138,7 +138,7 @@ ConnectorNode::cycle(std::shared_ptr<RobotState> robot_state)
   return connector_->update(*robot_state);
 }
 
-void 
+void
 ConnectorNode::reset_connector()
 {
   connector_.reset();

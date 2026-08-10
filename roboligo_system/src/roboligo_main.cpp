@@ -43,7 +43,8 @@ int main(int argc, char * argv[])
 
   roboligo_node->get_parameter("spin_time", spin_time);
 
-  const auto spin_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::duration<double>(spin_time));
+  const auto spin_duration =
+    std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::duration<double>(spin_time));
 
   roboligo_node->trigger_transition(lifecycle_msgs::msg::Transition::TRANSITION_CONFIGURE);
   if (roboligo_node->get_current_state().id() !=
@@ -81,7 +82,7 @@ int main(int argc, char * argv[])
     exe.spin_all(spin_duration);
     rate.sleep();
   }
-  
+
   working.store(false, std::memory_order_relaxed);
   exe.cancel();
 
