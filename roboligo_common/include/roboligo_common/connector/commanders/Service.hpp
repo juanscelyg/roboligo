@@ -22,26 +22,26 @@ namespace roboligo
     /**
     * @class Service
     * @brief A service commander that extends the Commander interface.
-    * 
+    *
     * This class represents a service-based command handler within the roboligo system.
     * It provides functionality to manage service commands with a name and value pair.
-    * 
+    *
     * @note Implementation is pending (TODO).
     */
-    class Service : public Commander
-    {
-    public:
+class Service : public Commander
+{
+public:
         /**
         * @brief Constructs a Service commander with the specified name and value.
-        * 
+        *
         * @param new_name The name identifier for the service.
         * @param new_value The value associated with the service.
         */
-        Service(std::string new_name, std::string new_value);
+  Service(std::string new_name, std::string new_value);
 
-        virtual ~Service() = default;
-    
+  virtual ~Service() = default;
+
         // (ToDO) Implementation
-    };
+};
 } // namespace roboligo
 #endif // ROBOLIGO_COMMON_CONNECTOR_COMMANDERS__SERVICE_HPP_
