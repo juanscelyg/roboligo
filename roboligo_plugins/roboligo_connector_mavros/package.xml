@@ -15,7 +15,7 @@
 
   <depend>rclcpp</depend>
   <depend>rclcpp_lifecycle</depend>
-  <depend>roboligo_common</depend>
+  <depend>roboligo</depend>
   <depend>mavros_msgs</depend>
 
 

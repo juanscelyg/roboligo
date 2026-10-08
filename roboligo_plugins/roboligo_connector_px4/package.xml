@@ -15,8 +15,12 @@
 
   <depend>rclcpp</depend>
   <depend>rclcpp_lifecycle</depend>
-  <depend>roboligo_common</depend>
-  
+  <depend>roboligo</depend>
+  <depend>pluginlib</depend>
+  <depend>geometry_msgs</depend>
+  <depend>lifecycle_msgs</depend>
+  <depend>px_msgs</depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>

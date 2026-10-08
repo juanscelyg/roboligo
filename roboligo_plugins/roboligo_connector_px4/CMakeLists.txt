@@ -12,15 +12,13 @@ find_package(roboligo_common REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(lifecycle_msgs REQUIRED)
-find_package(px_msgs QUIET)
-if(NOT px_msgs_FOUND)
-  include(FetchContent)
-  FetchContent_Declare(
-    px_msgs
-    URL https://github.com/PX4/px4_msgs/archive/refs/tags/v1.16.0.zip
-  )
-  FetchContent_MakeAvailable(px_msgs)
-endif()
+
+include(FetchContent)
+FetchContent_Declare(
+  px4_msgs
+  URL https://github.com/PX4/px4_msgs/archive/refs/tags/v1.16.0.zip
+)
+FetchContent_MakeAvailable(px4_msgs)
 
 
 add_library(${PROJECT_NAME} SHARED
@@ -34,7 +32,8 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
   roboligo_common::roboligo_common
   pluginlib::pluginlib
   ${geometry_msgs_TARGETS}
-  ${px4_msgs_TARGETS}
+  px4_msgs__rosidl_generator_cpp
+  px4_msgs__rosidl_typesupport_cpp
 )
 
 install(
@@ -73,6 +72,6 @@ ament_export_dependencies(
   pluginlib
   geometry_msgs
   lifecycle_msgs
-  px_msgs
+  px4_msgs
 )
 ament_package()

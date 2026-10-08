@@ -24,9 +24,15 @@
 #include "rcl_interfaces/msg/parameter.hpp"
 #include "rcl_interfaces/srv/set_parameters_atomically.hpp"
 
-#include "mavros_msgs/srv/param_set_v2.hpp"
-#include "mavros_msgs/srv/command_bool.hpp"
-#include "mavros_msgs/srv/set_mode.hpp"
+#include "px4_msgs/msg/vehicle_command.hpp"
+#include "px4_msgs/msg/offboard_control_mode.hpp"
+#include "px4_msgs/msg/trajectory_setpoint.hpp"
+#include "px4_msgs/msg/vehicle_status.hpp"
+#include "px4_msgs/msg/sensor_combined.hpp"
+#include "px4_msgs/msg/sensor_gps.hpp"
+#include "px4_msgs/msg/battery_status.hpp"
+#include "px4_msgs/msg/vehicle_odometry.hpp"
+#include "px4_msgs/msg/vehicle_global_position.hpp"
 
 #include "roboligo_common/connector/ConnectorBase.hpp"
 
@@ -37,28 +43,28 @@
 namespace roboligo
 {
     /**
-    * @class RoboligoConnectorMavros
-    * @brief Connector class that interfaces with MAVROS for drone control and management.
+    * @class RoboligoConnectorPX4
+    * @brief Connector class that interfaces with PX4 for drone control and management.
     *
     * This class extends ConnectorBase and provides functionality to manage drone operations
-    * including arming, disarming, takeoff, landing, and offboarding through MAVROS services.
-    * It handles communication with the autopilot via ROS 2 services and manages various
-    * drone states and callbacks.
+    * including arming, disarming, takeoff, landing, and offboarding through PX4 native topics.
+    * It handles communication with the autopilot via ROS 2 publishers and subscribers for
+    * PX4 messages and manages various drone states and callbacks.
     */
-class RoboligoConnectorMavros : public ConnectorBase
+class RoboligoConnectorPX4 : public ConnectorBase
 {
 public:
             /**
-            * @fn RoboligoConnectorMavros()
-            * @brief Default constructor for RoboligoConnectorMavros.
+            * @fn RoboligoConnectorPX4()
+            * @brief Default constructor for RoboligoConnectorPX4.
             */
-  RoboligoConnectorMavros() {}
+  RoboligoConnectorPX4() {}
 
             /**
-            * @fn ~RoboligoConnectorMavros()
-            * @brief Default destructor for RoboligoConnectorMavros.
+            * @fn ~RoboligoConnectorPX4()
+            * @brief Default destructor for RoboligoConnectorPX4.
             */
-  ~RoboligoConnectorMavros() = default;
+  ~RoboligoConnectorPX4() = default;
 
             /**
             * @fn void on_initialize() override
@@ -207,19 +213,23 @@ public:
             */
   std::shared_ptr<roboligo::Service> standingby_interface;
 
-  rclcpp::Client<mavros_msgs::srv::ParamSetV2>::SharedPtr params_change;           ///< ROS 2 service client for changing MAVROS parameters
+  rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr vehicle_command_pub;  ///< ROS 2 publisher for vehicle commands
 
-  rclcpp::Client<mavros_msgs::srv::CommandBool>::SharedPtr arming;           ///< ROS 2 service client for arming the drone
+  rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::SharedPtr offboard_control_mode_pub;  ///< ROS 2 publisher for offboard control mode
 
-  rclcpp::Client<mavros_msgs::srv::CommandBool>::SharedPtr disarming;           ///< ROS 2 service client for disarming the drone
+  rclcpp::Publisher<px4_msgs::msg::TrajectorySetpoint>::SharedPtr trajectory_setpoint_pub;  ///< ROS 2 publisher for trajectory setpoints
 
-  rclcpp::Client<mavros_msgs::srv::SetMode>::SharedPtr takingoff;           ///< ROS 2 service client for setting takeoff flight mode
+  rclcpp::Subscription<px4_msgs::msg::VehicleStatus>::SharedPtr vehicle_status_sub;  ///< ROS 2 subscriber for vehicle status
 
-  rclcpp::Client<mavros_msgs::srv::SetMode>::SharedPtr landing;           ///< ROS 2 service client for setting landing flight mode
+  rclcpp::Subscription<px4_msgs::msg::SensorCombined>::SharedPtr sensor_imu_sub;  ///< ROS 2 subscriber for IMU data
 
-  rclcpp::Client<mavros_msgs::srv::SetMode>::SharedPtr offboarding;           ///< ROS 2 service client for setting offboard flight mode
+  rclcpp::Subscription<px4_msgs::msg::SensorGps>::SharedPtr vehicle_gps_position_sub;  ///< ROS 2 subscriber for GPS position
 
-  rclcpp::Client<mavros_msgs::srv::SetMode>::SharedPtr standingby;           ///< ROS 2 service client for setting standby flight mode
+  rclcpp::Subscription<px4_msgs::msg::BatteryStatus>::SharedPtr battery_status_sub;  ///< ROS 2 subscriber for battery status
+
+  rclcpp::Subscription<px4_msgs::msg::VehicleOdometry>::SharedPtr vehicle_odometry_sub;  ///< ROS 2 subscriber for odometry
+
+  rclcpp::Subscription<px4_msgs::msg::VehicleGlobalPosition>::SharedPtr vehicle_global_position_sub;  ///< ROS 2 subscriber for global position (AMSL altitude)
 
   std::string takingoff_value;           ///< String identifier for takeoff flight mode
 
@@ -232,7 +242,9 @@ public:
 protected:
   bool verbose_{false};             ///< Flag to enable verbose logging output. Default is false
   double init_alt_{0.5};            ///< Inital altitude for takeoff. Default value is 0.5 meters.
+  double current_alt_amsl_{NAN};    ///< Last AMSL altitude received from PX4
+  uint64_t command_counter_{0};     ///< Counter for vehicle commands to ensure unique sequence numbers
 
 };
 } // namespace roboligo
-#endif // ROBOLIGO_CONNECTOR_MAVROS__ROBOLIGOCONNECTORPX4_HPP_
+#endif // ROBOLIGO_CONNECTOR_PX4__ROBOLIGOCONNECTORPX4_HPP_
