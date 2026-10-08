@@ -1,0 +1,9 @@
+<class_libraries>
+  <library path="roboligo_connector_px4">
+    <class name="roboligo_connector_px4/RoboligoConnectorPX4"  type="roboligo::RoboligoConnectorPX4" base_class_type="roboligo::ConnectorBase">
+      <description>
+      Roboligo plugin for PX4 (not mavlink)
+      </description>
+    </class>
+  </library>
+</class_libraries>
