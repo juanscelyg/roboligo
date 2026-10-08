@@ -33,25 +33,25 @@ RoboligoConnectorMavros::on_initialize()
         // Service
 
   arming_interface = std::make_shared<roboligo::Service>("arming",
-            "/mavros/cmd/arming");
+            "/mavros/mavros/cmd/arming");
 
   disarming_interface = std::make_shared<roboligo::Service>("disarming",
-            "/mavros/cmd/arming");
+            "/mavros/mavros/cmd/arming");
 
   takingoff_interface = std::make_shared<roboligo::Service>("takingoff",
-            "/mavros/set_mode");
+            "/mavros/mavros/set_mode");
 
   landing_interface = std::make_shared<roboligo::Service>("landing",
-            "/mavros/set_mode");
+            "/mavros/mavros/set_mode");
 
   offboarding_interface = std::make_shared<roboligo::Service>("offboarding",
-            "/mavros/set_mode");
+            "/mavros/mavros/set_mode");
 
   standingby_interface = std::make_shared<roboligo::Service>("standingby",
-            "/mavros/set_mode");
+            "/mavros/mavros/set_mode");
 
   params_interface = std::make_shared<roboligo::Service>("params",
-            "/mavros/param/set");
+            "/mavros/mavros/param/set");
 
         //services
   arming = node->create_client<mavros_msgs::srv::CommandBool>(
@@ -117,11 +117,11 @@ RoboligoConnectorMavros::on_set(RobotState & robot_state)
     std::bind(&RoboligoConnectorMavros::standingby_callback, this);
   robot_state.get_trigger("standby")->register_callback(standingby_callback);
 
-  robot_state.imu->init("imu", "/mavros/imu/data");
-  robot_state.gps->init("gps", "/mavros/global_position/global");
-  robot_state.battery->init("baterry", "/mavros/battery");
-  robot_state.odom->init("odom", "/mavros/local_position/odom");
-  robot_state.position_target->init("output_position_target", "/mavros/setpoint_raw/local");
+  robot_state.imu->init("imu", "/mavros/mavros/imu/data");
+  robot_state.gps->init("gps", "/mavros/mavros/global_position/global");
+  robot_state.battery->init("baterry", "/mavros/mavros/battery");
+  robot_state.odom->init("odom", "/mavros/mavros/local_position/odom");
+  robot_state.position_target->init("output_position_target", "/mavros/mavros/setpoint_raw/local");
   robot_state.input->init("input", "/cmd_vel");
   robot_state.input->set_stamp(robot_state.is_stamped());
 
