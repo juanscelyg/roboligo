@@ -24,6 +24,8 @@
 #include "rcl_interfaces/msg/parameter.hpp"
 #include "rcl_interfaces/srv/set_parameters_atomically.hpp"
 
+#include "geometry_msgs/msg/twist.hpp"
+
 #include "px4_msgs/msg/vehicle_command.hpp"
 #include "px4_msgs/msg/offboard_control_mode.hpp"
 #include "px4_msgs/msg/trajectory_setpoint.hpp"
@@ -219,17 +221,27 @@ public:
 
   rclcpp::Publisher<px4_msgs::msg::TrajectorySetpoint>::SharedPtr trajectory_setpoint_pub;  ///< ROS 2 publisher for trajectory setpoints
 
-  rclcpp::Subscription<px4_msgs::msg::VehicleStatus>::SharedPtr vehicle_status_sub;  ///< ROS 2 subscriber for vehicle status
+  rclcpp::Subscription<px4_msgs::msg::VehicleStatus>::SharedPtr vehicle_status_sub;  ///< ROS 2 subscriber for /fmu/out/vehicle_status_v1
 
-  rclcpp::Subscription<px4_msgs::msg::SensorCombined>::SharedPtr sensor_imu_sub;  ///< ROS 2 subscriber for IMU data
+  rclcpp::Subscription<px4_msgs::msg::SensorCombined>::SharedPtr sensor_imu_sub;  ///< ROS 2 subscriber for /fmu/out/sensor_combined
 
-  rclcpp::Subscription<px4_msgs::msg::SensorGps>::SharedPtr vehicle_gps_position_sub;  ///< ROS 2 subscriber for GPS position
+  rclcpp::Subscription<px4_msgs::msg::SensorGps>::SharedPtr vehicle_gps_position_sub;  ///< ROS 2 subscriber for /fmu/out/vehicle_gps_position
 
-  rclcpp::Subscription<px4_msgs::msg::BatteryStatus>::SharedPtr battery_status_sub;  ///< ROS 2 subscriber for battery status
+  rclcpp::Subscription<px4_msgs::msg::BatteryStatus>::SharedPtr battery_status_sub;  ///< ROS 2 subscriber for /fmu/out/battery_status
 
-  rclcpp::Subscription<px4_msgs::msg::VehicleOdometry>::SharedPtr vehicle_odometry_sub;  ///< ROS 2 subscriber for odometry
+  rclcpp::Subscription<px4_msgs::msg::VehicleOdometry>::SharedPtr vehicle_odometry_sub;  ///< ROS 2 subscriber for /fmu/out/vehicle_odometry
 
-  rclcpp::Subscription<px4_msgs::msg::VehicleGlobalPosition>::SharedPtr vehicle_global_position_sub;  ///< ROS 2 subscriber for global position (AMSL altitude)
+  rclcpp::Subscription<px4_msgs::msg::VehicleGlobalPosition>::SharedPtr vehicle_global_position_sub;  ///< ROS 2 subscriber for /fmu/out/vehicle_global_position (AMSL altitude)
+
+  px4_msgs::msg::VehicleStatus::SharedPtr vehicle_status_data;  ///< Latest vehicle status received from PX4
+
+  px4_msgs::msg::SensorCombined::SharedPtr sensor_combined_data;  ///< Latest IMU data received from PX4
+
+  px4_msgs::msg::SensorGps::SharedPtr vehicle_gps_position_data;  ///< Latest GPS data received from PX4
+
+  px4_msgs::msg::BatteryStatus::SharedPtr battery_status_data;  ///< Latest battery status received from PX4
+
+  px4_msgs::msg::VehicleOdometry::SharedPtr vehicle_odometry_data;  ///< Latest odometry received from PX4
 
   std::string takingoff_value;           ///< String identifier for takeoff flight mode
 
@@ -240,9 +252,21 @@ public:
   std::string standingby_value;           ///< String identifier for standby flight mode
 
 protected:
-  bool verbose_{false};             ///< Flag to enable verbose logging output. Default is false
+            /**
+            * @fn bool flu_to_ned(const geometry_msgs::msg::Twist & twist_flu, px4_msgs::msg::TrajectorySetpoint & setpoint)
+            * @brief Converts a body FLU velocity command into a PX4 NED velocity setpoint.
+            * @param twist_flu Velocity command in body FLU (ROS convention).
+            * @param setpoint Trajectory setpoint filled with NED velocity and yaw speed.
+            * @return false if no valid heading has been received from PX4 odometry.
+            */
+  bool flu_to_ned(
+    const geometry_msgs::msg::Twist & twist_flu,
+    px4_msgs::msg::TrajectorySetpoint & setpoint);
+
+  bool verbose_{false};            ///< Flag to enable verbose logging output. Default is false
   double init_alt_{0.5};            ///< Inital altitude for takeoff. Default value is 0.5 meters.
   double current_alt_amsl_{NAN};    ///< Last AMSL altitude received from PX4
+  bool offboard_requested_{false};  ///< True after offboard is requested; velocities are only sent while set
   uint64_t command_counter_{0};     ///< Counter for vehicle commands to ensure unique sequence numbers
 
 };

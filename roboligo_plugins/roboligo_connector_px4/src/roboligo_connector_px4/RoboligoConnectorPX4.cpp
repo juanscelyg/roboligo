@@ -66,14 +66,40 @@ RoboligoConnectorPX4::on_initialize()
               current_alt_amsl_ = msg->alt;
             });
 
+  // VehicleStatus has MESSAGE_VERSION = 1, so the uXRCE-DDS client publishes it with "_v1"
   vehicle_status_sub = node->create_subscription<px4_msgs::msg::VehicleStatus>(
-            "/fmu/out/vehicle_status", rclcpp::SensorDataQoS(),
+            "/fmu/out/vehicle_status_v1", rclcpp::SensorDataQoS(),
             [this](const px4_msgs::msg::VehicleStatus::SharedPtr msg) {
+              vehicle_status_data = msg;
               if(verbose_) {
                 auto node_logger = get_node()->get_logger();
                 RCLCPP_DEBUG(node_logger, "Vehicle Status: armed=%d, mode=%d",
                   msg->arming_state, msg->nav_state);
               }
+            });
+
+  sensor_imu_sub = node->create_subscription<px4_msgs::msg::SensorCombined>(
+            "/fmu/out/sensor_combined", rclcpp::SensorDataQoS(),
+            [this](const px4_msgs::msg::SensorCombined::SharedPtr msg) {
+              sensor_combined_data = msg;
+            });
+
+  vehicle_gps_position_sub = node->create_subscription<px4_msgs::msg::SensorGps>(
+            "/fmu/out/vehicle_gps_position", rclcpp::SensorDataQoS(),
+            [this](const px4_msgs::msg::SensorGps::SharedPtr msg) {
+              vehicle_gps_position_data = msg;
+            });
+
+  battery_status_sub = node->create_subscription<px4_msgs::msg::BatteryStatus>(
+            "/fmu/out/battery_status", rclcpp::SensorDataQoS(),
+            [this](const px4_msgs::msg::BatteryStatus::SharedPtr msg) {
+              battery_status_data = msg;
+            });
+
+  vehicle_odometry_sub = node->create_subscription<px4_msgs::msg::VehicleOdometry>(
+            "/fmu/out/vehicle_odometry", rclcpp::SensorDataQoS(),
+            [this](const px4_msgs::msg::VehicleOdometry::SharedPtr msg) {
+              vehicle_odometry_data = msg;
             });
 
 }
@@ -118,11 +144,9 @@ RoboligoConnectorPX4::on_set(RobotState & robot_state)
     std::bind(&RoboligoConnectorPX4::standingby_callback, this);
   robot_state.get_trigger("standby")->register_callback(standingby_callback);
 
-  robot_state.imu->init("imu", "/fmu/out/sensor_imu");
-  robot_state.gps->init("gps", "/fmu/out/vehicle_gps_position");
-  robot_state.battery->init("battery", "/fmu/out/battery_status");
-  robot_state.odom->init("odom", "/fmu/out/vehicle_odometry");
-  robot_state.position_target->init("output_position_target", "/fmu/in/trajectory_setpoint");
+  // PX4 sensors and the trajectory setpoint are handled with px4_msgs in on_initialize();
+  // robot_state.imu/gps/battery/odom/position_target are not initialized because they
+  // use sensor_msgs/nav_msgs/mavros_msgs types that do not match the /fmu topics.
   robot_state.input->init("input", "/cmd_vel");
   robot_state.input->set_stamp(robot_state.is_stamped());
 
@@ -134,33 +158,54 @@ RoboligoConnectorPX4::on_update(RobotState & robot_state)
 {
   auto node = get_node();
 
-  if(robot_state.is_available() && robot_state.input->is_available() &&
-    robot_state.position_target->is_configured())
-  {
+  if(offboard_requested_ && robot_state.is_available() && robot_state.input->is_available()) {
+    const geometry_msgs::msg::Twist & twist_flu = robot_state.input->is_stamped() ?
+      robot_state.input->twist_stamped.data->twist : *robot_state.input->twist.data;
+
     auto msg = px4_msgs::msg::TrajectorySetpoint();
-    msg.timestamp = node->get_clock()->now().nanoseconds() / 1000;
-
-    float vx = 0.0f, vy = 0.0f, vz = 0.0f, yaw_rate = 0.0f;
-
-    if(robot_state.input->is_stamped()) {
-      vx = robot_state.input->twist_stamped.data->twist.linear.x;
-      vy = robot_state.input->twist_stamped.data->twist.linear.y;
-      vz = robot_state.input->twist_stamped.data->twist.linear.z;
-      yaw_rate = robot_state.input->twist_stamped.data->twist.angular.z;
-    } else {
-      vx = robot_state.input->twist.data->linear.x;
-      vy = robot_state.input->twist.data->linear.y;
-      vz = robot_state.input->twist.data->linear.z;
-      yaw_rate = robot_state.input->twist.data->angular.z;
+    if(!flu_to_ned(twist_flu, msg)) {
+      RCLCPP_WARN_THROTTLE(node->get_logger(), *node->get_clock(), 2000,
+        "No valid heading from /fmu/out/vehicle_odometry, velocity not sent");
+      return;
     }
-
-    msg.velocity[0] = vx;
-    msg.velocity[1] = vy;
-    msg.velocity[2] = vz;
-    msg.yawspeed = yaw_rate;
+    msg.timestamp = node->get_clock()->now().nanoseconds() / 1000;
 
     trajectory_setpoint_pub->publish(msg);
   }
+}
+
+bool
+RoboligoConnectorPX4::flu_to_ned(
+  const geometry_msgs::msg::Twist & twist_flu,
+  px4_msgs::msg::TrajectorySetpoint & setpoint)
+{
+  if(!vehicle_odometry_data || std::isnan(vehicle_odometry_data->q[0])) {
+    return false;
+  }
+
+  // Heading from q (FRD body -> NED), q = [w, x, y, z]
+  const auto & q = vehicle_odometry_data->q;
+  const double yaw = std::atan2(2.0 * (q[0] * q[3] + q[1] * q[2]),
+      1.0 - 2.0 * (q[2] * q[2] + q[3] * q[3]));
+
+  // FLU body -> FRD body
+  const double vx_frd = twist_flu.linear.x;
+  const double vy_frd = -twist_flu.linear.y;
+  const double vz_frd = -twist_flu.linear.z;
+
+  // FRD body -> NED, rotating only by heading (same as MAVLink BODY_NED)
+  setpoint.velocity[0] = static_cast<float>(std::cos(yaw) * vx_frd - std::sin(yaw) * vy_frd);
+  setpoint.velocity[1] = static_cast<float>(std::sin(yaw) * vx_frd + std::cos(yaw) * vy_frd);
+  setpoint.velocity[2] = static_cast<float>(vz_frd);
+  setpoint.yawspeed = static_cast<float>(-twist_flu.angular.z);
+
+  // Velocity-only control: unused setpoints must be NaN, otherwise PX4 tracks them
+  setpoint.position = {NAN, NAN, NAN};
+  setpoint.acceleration = {NAN, NAN, NAN};
+  setpoint.jerk = {NAN, NAN, NAN};
+  setpoint.yaw = NAN;
+
+  return true;
 }
 
 void
@@ -188,6 +233,7 @@ RoboligoConnectorPX4::disarming_callback()
 {
   auto node = get_node();
   RCLCPP_INFO_STREAM(node->get_logger(), "Disarming was required");
+  offboard_requested_ = false;
 
   auto cmd = px4_msgs::msg::VehicleCommand();
   cmd.timestamp = node->get_clock()->now().nanoseconds() / 1000;
@@ -208,6 +254,7 @@ RoboligoConnectorPX4::takingoff_callback()
 {
   auto node = get_node();
   RCLCPP_INFO_STREAM(node->get_logger(), "Taking off was required");
+  offboard_requested_ = false;
 
   node->get_parameter<double>(get_plugin_name() + ".init_alt", init_alt_);
 
@@ -234,6 +281,7 @@ RoboligoConnectorPX4::landing_callback()
 {
   auto node = get_node();
   RCLCPP_INFO_STREAM(node->get_logger(), "Landing was required");
+  offboard_requested_ = false;
 
   auto cmd = px4_msgs::msg::VehicleCommand();
   cmd.timestamp = node->get_clock()->now().nanoseconds() / 1000;
@@ -252,6 +300,7 @@ RoboligoConnectorPX4::offboarding_callback()
 {
   auto node = get_node();
   RCLCPP_INFO_STREAM(node->get_logger(), "Offboard mode was required");
+  offboard_requested_ = true;
 
   auto cmd = px4_msgs::msg::VehicleCommand();
   cmd.timestamp = node->get_clock()->now().nanoseconds() / 1000;
@@ -282,6 +331,7 @@ RoboligoConnectorPX4::standingby_callback()
 {
   auto node = get_node();
   RCLCPP_INFO_STREAM(node->get_logger(), "StandBy mode was required");
+  offboard_requested_ = false;
 
   auto cmd = px4_msgs::msg::VehicleCommand();
   cmd.timestamp = node->get_clock()->now().nanoseconds() / 1000;
