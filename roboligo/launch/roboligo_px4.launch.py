@@ -23,7 +23,7 @@ from launch.actions import ExecuteProcess
 def generate_launch_description():
 
     params_file = join(get_package_share_directory('roboligo'), 
-                         'params', 'drone.params.yaml')
+                         'params', 'drone_px4.params.yaml')
     
     roboligo = Node(
             package="roboligo_system",
