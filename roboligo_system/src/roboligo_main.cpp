@@ -39,6 +39,10 @@ int main(int argc, char * argv[])
 
   exe.add_node(roboligo_node->get_node_base_interface());
 
+  for (auto & system_node : roboligo_node->get_roboligo_system_nodes()) {
+    exe.add_node(system_node.second.node_ptr->get_node_base_interface());
+  }
+
   roboligo_node->declare_parameter("spin_time", spin_time);
 
   roboligo_node->get_parameter("spin_time", spin_time);
