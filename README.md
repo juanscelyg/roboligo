@@ -2,6 +2,7 @@
 
 [![rolling](https://github.com/juanscelyg/roboligo/actions/workflows/rolling.yml/badge.svg?branch=rolling)](https://github.com/juanscelyg/roboligo/actions/workflows/rolling.yml)
 [![jazzy](https://github.com/juanscelyg/roboligo/actions/workflows/jazzy.yml/badge.svg?branch=jazzy)](https://github.com/juanscelyg/roboligo/actions/workflows/jazzy.yml)
+[![humble](https://github.com/juanscelyg/roboligo/actions/workflows/humble.yml/badge.svg?branch=humble)](https://github.com/juanscelyg/roboligo/actions/workflows/humble.yml)
 
 Roboligo is a centralized command interface layer that bridges navigation stacks and hardware interfaces for robotic systems. It provides a unified abstraction for robot control, simplifying the complexity of managing diverse hardware implementations while maintaining compatibility with standard navigation algorithms.
 
