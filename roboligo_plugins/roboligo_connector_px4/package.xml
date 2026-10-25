@@ -19,7 +19,6 @@
   <depend>pluginlib</depend>
   <depend>geometry_msgs</depend>
   <depend>lifecycle_msgs</depend>
-  <depend>px_msgs</depend>
   <depend>micro_ros_agent</depend>
 
   <export>

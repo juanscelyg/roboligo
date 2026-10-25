@@ -8,8 +8,8 @@ states_node:
 connector_node:
   ros__parameters:
     use_sim_time: true
-    connector_types: [mavros]
-    mavros:
+    connector_types: [px4]
+    px4:
       plugin: roboligo_connector_px4/RoboligoConnectorPX4
       init_alt: 0.75
 
