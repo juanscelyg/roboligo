@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - rolling
-  schedule:
-    - cron: '0 0 * * 6'
   workflow_dispatch:
+
+concurrency:
+  group: doxygen-deployment
+  cancel-in-progress: true
 
 jobs:
   doxygen_generation:
